@@ -47,9 +47,10 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.Blue;
-            label5.Location = new Point(169, 173);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(285, 173);
             label5.Name = "label5";
             label5.Size = new Size(100, 25);
             label5.TabIndex = 52;
@@ -57,7 +58,7 @@
             // 
             // textBox_FullName
             // 
-            textBox_FullName.Location = new Point(391, 174);
+            textBox_FullName.Location = new Point(391, 171);
             textBox_FullName.Name = "textBox_FullName";
             textBox_FullName.Size = new Size(271, 27);
             textBox_FullName.TabIndex = 51;
@@ -65,10 +66,10 @@
             // 
             // button_Register
             // 
-            button_Register.BackColor = Color.Blue;
+            button_Register.BackColor = Color.DarkOrange;
             button_Register.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_Register.ForeColor = Color.White;
-            button_Register.Location = new Point(474, 476);
+            button_Register.Location = new Point(442, 461);
             button_Register.Name = "button_Register";
             button_Register.Size = new Size(152, 69);
             button_Register.TabIndex = 50;
@@ -79,9 +80,10 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.Blue;
-            label4.Location = new Point(169, 391);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(322, 391);
             label4.Name = "label4";
             label4.Size = new Size(63, 25);
             label4.TabIndex = 49;
@@ -98,13 +100,14 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Blue;
-            label3.Location = new Point(169, 334);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(212, 337);
             label3.Name = "label3";
-            label3.Size = new Size(206, 25);
+            label3.Size = new Size(173, 25);
             label3.TabIndex = 47;
-            label3.Text = "Xác nhận lại mật khẩu:";
+            label3.Text = "Nhập lại mật khẩu:";
             // 
             // textBox_ConfirmPassword
             // 
@@ -118,9 +121,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Blue;
-            label2.Location = new Point(169, 276);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(287, 276);
             label2.Name = "label2";
             label2.Size = new Size(98, 25);
             label2.TabIndex = 45;
@@ -138,9 +142,10 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Blue;
-            label1.Location = new Point(169, 219);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(253, 220);
             label1.Name = "label1";
             label1.Size = new Size(132, 25);
             label1.TabIndex = 43;
@@ -149,7 +154,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.profile;
-            pictureBox1.Location = new Point(474, 22);
+            pictureBox1.Location = new Point(452, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(128, 127);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -166,10 +171,10 @@
             // 
             // button_Exit
             // 
-            button_Exit.BackColor = Color.Blue;
+            button_Exit.BackColor = Color.Red;
             button_Exit.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_Exit.ForeColor = Color.White;
-            button_Exit.Location = new Point(809, 37);
+            button_Exit.Location = new Point(829, 12);
             button_Exit.Name = "button_Exit";
             button_Exit.Size = new Size(152, 69);
             button_Exit.TabIndex = 53;
@@ -182,6 +187,8 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            BackgroundImage = Properties.Resources.background;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(993, 562);
             Controls.Add(button_Exit);
             Controls.Add(label5);
@@ -196,6 +203,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(textBox_UserName);
+            DoubleBuffered = true;
             Name = "RegisterForm";
             Text = "RegisterForm";
             Load += RegisterForm_Load;

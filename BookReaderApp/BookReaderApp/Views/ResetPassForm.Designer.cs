@@ -42,10 +42,10 @@
             // 
             // button_Reset
             // 
-            button_Reset.BackColor = Color.Blue;
+            button_Reset.BackColor = Color.DarkOrange;
             button_Reset.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_Reset.ForeColor = Color.White;
-            button_Reset.Location = new Point(381, 437);
+            button_Reset.Location = new Point(397, 465);
             button_Reset.Name = "button_Reset";
             button_Reset.Size = new Size(212, 69);
             button_Reset.TabIndex = 52;
@@ -55,7 +55,7 @@
             // 
             // textBox_NewPassword
             // 
-            textBox_NewPassword.Location = new Point(381, 326);
+            textBox_NewPassword.Location = new Point(366, 288);
             textBox_NewPassword.Name = "textBox_NewPassword";
             textBox_NewPassword.PasswordChar = '*';
             textBox_NewPassword.Size = new Size(271, 27);
@@ -65,9 +65,10 @@
             // label_KQ
             // 
             label_KQ.AutoSize = true;
+            label_KQ.BackColor = Color.Transparent;
             label_KQ.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_KQ.ForeColor = Color.Blue;
-            label_KQ.Location = new Point(159, 325);
+            label_KQ.ForeColor = Color.White;
+            label_KQ.Location = new Point(175, 290);
             label_KQ.Name = "label_KQ";
             label_KQ.Size = new Size(185, 25);
             label_KQ.TabIndex = 50;
@@ -76,9 +77,10 @@
             // label_Email
             // 
             label_Email.AutoSize = true;
+            label_Email.BackColor = Color.Transparent;
             label_Email.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_Email.ForeColor = Color.Blue;
-            label_Email.Location = new Point(159, 267);
+            label_Email.ForeColor = Color.White;
+            label_Email.Location = new Point(198, 231);
             label_Email.Name = "label_Email";
             label_Email.Size = new Size(162, 25);
             label_Email.TabIndex = 49;
@@ -86,7 +88,7 @@
             // 
             // textBox_Email
             // 
-            textBox_Email.Location = new Point(381, 268);
+            textBox_Email.Location = new Point(366, 229);
             textBox_Email.Name = "textBox_Email";
             textBox_Email.Size = new Size(271, 27);
             textBox_Email.TabIndex = 48;
@@ -95,8 +97,9 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.FogotPass;
-            pictureBox1.Location = new Point(378, 37);
+            pictureBox1.Location = new Point(378, 22);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(231, 169);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -105,7 +108,7 @@
             // 
             // textBox_ConfirmPassword
             // 
-            textBox_ConfirmPassword.Location = new Point(381, 373);
+            textBox_ConfirmPassword.Location = new Point(366, 349);
             textBox_ConfirmPassword.Name = "textBox_ConfirmPassword";
             textBox_ConfirmPassword.PasswordChar = '*';
             textBox_ConfirmPassword.Size = new Size(271, 27);
@@ -115,22 +118,23 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Blue;
-            label1.Location = new Point(156, 372);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(154, 351);
             label1.Name = "label1";
-            label1.Size = new Size(206, 25);
+            label1.Size = new Size(210, 25);
             label1.TabIndex = 53;
-            label1.Text = "Xác nhận lại mật khẩu:";
+            label1.Text = "Nhập lại mật khẩu mới:";
             // 
             // button_Exit
             // 
-            button_Exit.BackColor = Color.Blue;
+            button_Exit.BackColor = Color.Red;
             button_Exit.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button_Exit.ForeColor = Color.White;
-            button_Exit.Location = new Point(769, 47);
+            button_Exit.Location = new Point(827, 12);
             button_Exit.Name = "button_Exit";
-            button_Exit.Size = new Size(212, 69);
+            button_Exit.Size = new Size(154, 69);
             button_Exit.TabIndex = 55;
             button_Exit.Text = "Thoát";
             button_Exit.UseVisualStyleBackColor = false;
@@ -141,6 +145,8 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            BackgroundImage = Properties.Resources.background;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(993, 562);
             Controls.Add(button_Exit);
             Controls.Add(textBox_ConfirmPassword);
@@ -151,6 +157,7 @@
             Controls.Add(label_Email);
             Controls.Add(textBox_Email);
             Controls.Add(pictureBox1);
+            DoubleBuffered = true;
             Name = "ResetPassForm";
             Text = "ResetPassForm";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
