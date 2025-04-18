@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="ViewForm\AddBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\BookManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
