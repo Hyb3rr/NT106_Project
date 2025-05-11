@@ -1,27 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace BookReaderApp.Models
 {
     public class Book
     {
-        public int BookID { get; set; } // Primary Key
+        public int BookId { get; set; }
+
+        [Required]
+        [MaxLength(255)]
         public string Title { get; set; } = "";
+
+        public string? Description { get; set; }
+
+        [Required]
         public string Author { get; set; } = "";
-        public string Description { get; set; } = "";
-        public string CoverImage { get; set; } = "";
-        public string FilePath { get; set; } = "";
-        public int FileSize { get; set; }
-        public int PageCount { get; set; }
-        public DateTime PublishDate { get; set; }
-        public int UploadedBy { get; set; }
-        public DateTime UploadDate { get; set; } = DateTime.Now;
-        public int CategoryID { get; set; }
-        public bool IsPublic { get; set; } = true;
-        public int DownloadCount { get; set; } = 0;
-        public float Rating { get; set; } = 0;
+
+        public DateTime PublishedDate { get; set; }
+
+        public string? CoverImage { get; set; }
+
+        public string? FilePath { get; set; }
+        public string? DriveUrl { get; set; }
+
+        // Quan hệ 1-nhiều với Category
+        public int? CategoryId { get; set; }
+        public Category? Category { get; set; }
+
+        [Required]
+        public int UploaderId { get; set; }
+        public User Uploader { get; set; } = null!;
+
+        public ICollection<Rating> Ratings { get; set; } = new List<Rating>();
+        public ICollection<Bookmark> Bookmarks { get; set; } = new List<Bookmark>();
+        public ICollection<Note> Notes { get; set; } = new List<Note>();
+        public ICollection<UserLibrary> UserLibraries { get; set; } = new List<UserLibrary>();
     }
 }
