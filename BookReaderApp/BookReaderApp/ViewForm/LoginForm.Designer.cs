@@ -42,23 +42,27 @@
             kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
             kryptonButton2 = new Krypton.Toolkit.KryptonButton();
             kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(components);
+            kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
+            ((System.ComponentModel.ISupportInitialize)kryptonPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtUsernameOrEmail
             // 
             txtUsernameOrEmail.Anchor = AnchorStyles.None;
-            txtUsernameOrEmail.Location = new Point(480, 47);
+            txtUsernameOrEmail.Location = new Point(818, 60);
+            txtUsernameOrEmail.Margin = new Padding(3, 2, 3, 2);
             txtUsernameOrEmail.Name = "txtUsernameOrEmail";
-            txtUsernameOrEmail.Size = new Size(178, 27);
+            txtUsernameOrEmail.Size = new Size(156, 23);
             txtUsernameOrEmail.TabIndex = 0;
             txtUsernameOrEmail.Visible = false;
             // 
             // txtPassword
             // 
             txtPassword.Anchor = AnchorStyles.None;
-            txtPassword.Location = new Point(497, 80);
+            txtPassword.Location = new Point(833, 87);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(178, 27);
+            txtPassword.Size = new Size(156, 23);
             txtPassword.TabIndex = 1;
             txtPassword.Visible = false;
             // 
@@ -67,9 +71,11 @@
             chkRememberMe.Anchor = AnchorStyles.None;
             chkRememberMe.AutoSize = true;
             chkRememberMe.Font = new Font("Calibri", 10F);
-            chkRememberMe.Location = new Point(187, 255);
+            chkRememberMe.ForeColor = SystemColors.ControlText;
+            chkRememberMe.Location = new Point(519, 160);
+            chkRememberMe.Margin = new Padding(3, 2, 3, 2);
             chkRememberMe.Name = "chkRememberMe";
-            chkRememberMe.Size = new Size(134, 25);
+            chkRememberMe.Size = new Size(111, 21);
             chkRememberMe.TabIndex = 3;
             chkRememberMe.Text = "Remember me";
             chkRememberMe.UseVisualStyleBackColor = true;
@@ -80,9 +86,9 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label1.Location = new Point(103, 147);
+            label1.Location = new Point(489, 73);
             label1.Name = "label1";
-            label1.Size = new Size(144, 21);
+            label1.Size = new Size(118, 17);
             label1.TabIndex = 4;
             label1.Text = "Username or Email";
             // 
@@ -91,9 +97,9 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label2.Location = new Point(103, 205);
+            label2.Location = new Point(489, 117);
             label2.Name = "label2";
-            label2.Size = new Size(78, 21);
+            label2.Size = new Size(65, 17);
             label2.TabIndex = 5;
             label2.Text = "Password";
             // 
@@ -101,9 +107,9 @@
             // 
             Register.Anchor = AnchorStyles.None;
             Register.AutoSize = true;
-            Register.Location = new Point(651, 57);
+            Register.Location = new Point(915, 81);
             Register.Name = "Register";
-            Register.Size = new Size(63, 20);
+            Register.Size = new Size(49, 15);
             Register.TabIndex = 7;
             Register.TabStop = true;
             Register.Text = "Register";
@@ -115,17 +121,16 @@
             lblMessage.Anchor = AnchorStyles.None;
             lblMessage.AutoSize = true;
             lblMessage.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblMessage.Location = new Point(443, 255);
+            lblMessage.Location = new Point(694, 166);
             lblMessage.Name = "lblMessage";
-            lblMessage.Size = new Size(40, 21);
+            lblMessage.Size = new Size(31, 15);
             lblMessage.TabIndex = 8;
             lblMessage.Text = "hide";
             // 
             // kryptonButton1
             // 
             kryptonButton1.Anchor = AnchorStyles.None;
-            kryptonButton1.Location = new Point(187, 308);
-            kryptonButton1.Margin = new Padding(3, 4, 3, 4);
+            kryptonButton1.Location = new Point(638, 201);
             kryptonButton1.Name = "kryptonButton1";
             kryptonButton1.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -137,7 +142,7 @@
             kryptonButton1.OverrideDefault.Border.Rounding = 20F;
             kryptonButton1.OverrideDefault.Border.Width = 1;
             kryptonButton1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButton1.Size = new Size(179, 65);
+            kryptonButton1.Size = new Size(157, 49);
             kryptonButton1.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButton1.StateCommon.Back.ColorAngle = 45F;
@@ -174,10 +179,9 @@
             // kryptonTextBox1
             // 
             kryptonTextBox1.Anchor = AnchorStyles.None;
-            kryptonTextBox1.Location = new Point(279, 129);
-            kryptonTextBox1.Margin = new Padding(3, 4, 3, 4);
+            kryptonTextBox1.Location = new Point(643, 60);
             kryptonTextBox1.Name = "kryptonTextBox1";
-            kryptonTextBox1.Size = new Size(174, 35);
+            kryptonTextBox1.Size = new Size(152, 30);
             kryptonTextBox1.StateCommon.Back.Color1 = Color.White;
             kryptonTextBox1.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBox1.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -192,10 +196,10 @@
             // kryptonTextBox2
             // 
             kryptonTextBox2.Anchor = AnchorStyles.None;
-            kryptonTextBox2.Location = new Point(279, 188);
-            kryptonTextBox2.Margin = new Padding(3, 4, 3, 4);
+            kryptonTextBox2.Location = new Point(643, 104);
             kryptonTextBox2.Name = "kryptonTextBox2";
-            kryptonTextBox2.Size = new Size(174, 35);
+            kryptonTextBox2.PasswordChar = '*';
+            kryptonTextBox2.Size = new Size(152, 30);
             kryptonTextBox2.StateCommon.Back.Color1 = Color.White;
             kryptonTextBox2.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBox2.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -210,22 +214,21 @@
             // kryptonButton2
             // 
             kryptonButton2.Anchor = AnchorStyles.None;
-            kryptonButton2.Location = new Point(398, 308);
-            kryptonButton2.Margin = new Padding(3, 4, 3, 4);
+            kryptonButton2.Location = new Point(638, 268);
             kryptonButton2.Name = "kryptonButton2";
-            kryptonButton2.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButton2.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButton2.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButton2.OverrideDefault.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButton2.OverrideDefault.Back.ColorAngle = 45F;
-            kryptonButton2.OverrideDefault.Border.Color1 = Color.FromArgb(6, 174, 244);
+            kryptonButton2.OverrideDefault.Border.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButton2.OverrideDefault.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButton2.OverrideDefault.Border.ColorAngle = 45F;
             kryptonButton2.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButton2.OverrideDefault.Border.Rounding = 20F;
             kryptonButton2.OverrideDefault.Border.Width = 1;
             kryptonButton2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButton2.Size = new Size(179, 65);
-            kryptonButton2.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButton2.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButton2.Size = new Size(157, 49);
+            kryptonButton2.StateCommon.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButton2.StateCommon.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButton2.StateCommon.Back.ColorAngle = 45F;
             kryptonButton2.StateCommon.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton2.StateCommon.Border.Color2 = Color.FromArgb(8, 142, 254);
@@ -233,25 +236,25 @@
             kryptonButton2.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButton2.StateCommon.Border.Rounding = 20F;
             kryptonButton2.StateCommon.Border.Width = 1;
-            kryptonButton2.StateCommon.Content.ShortText.Color1 = Color.White;
-            kryptonButton2.StateCommon.Content.ShortText.Color2 = Color.White;
+            kryptonButton2.StateCommon.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButton2.StateCommon.Content.ShortText.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            kryptonButton2.StatePressed.Back.Color1 = Color.FromArgb(20, 145, 198);
-            kryptonButton2.StatePressed.Back.Color2 = Color.FromArgb(22, 121, 206);
+            kryptonButton2.StatePressed.Back.Color1 = Color.FromArgb(224, 224, 224);
+            kryptonButton2.StatePressed.Back.Color2 = Color.FromArgb(224, 224, 224);
             kryptonButton2.StatePressed.Back.ColorAngle = 135F;
             kryptonButton2.StatePressed.Border.Color1 = Color.FromArgb(20, 145, 198);
             kryptonButton2.StatePressed.Border.Color2 = Color.FromArgb(22, 121, 206);
             kryptonButton2.StatePressed.Border.ColorAngle = 135F;
             kryptonButton2.StatePressed.Border.Rounding = 20F;
             kryptonButton2.StatePressed.Border.Width = 1;
-            kryptonButton2.StateTracking.Back.Color1 = Color.FromArgb(8, 142, 254);
-            kryptonButton2.StateTracking.Back.Color2 = Color.FromArgb(6, 174, 244);
+            kryptonButton2.StateTracking.Back.Color1 = SystemColors.ButtonFace;
+            kryptonButton2.StateTracking.Back.Color2 = SystemColors.ButtonFace;
             kryptonButton2.StateTracking.Back.ColorAngle = 45F;
             kryptonButton2.StateTracking.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton2.StateTracking.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButton2.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButton2.StateTracking.Border.Rounding = 20F;
             kryptonButton2.StateTracking.Border.Width = 1;
+            kryptonButton2.StateTracking.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButton2.TabIndex = 12;
             kryptonButton2.Values.DropDownArrowColor = Color.Empty;
             kryptonButton2.Values.Text = "Register";
@@ -289,11 +292,22 @@
             kryptonCustomPaletteBase1.HeaderStyles.HeaderCommon.StateCommon.Content.Padding = new Padding(10, -1, -1, -1);
             kryptonCustomPaletteBase1.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.True;
             // 
+            // kryptonPictureBox1
+            // 
+            kryptonPictureBox1.Anchor = AnchorStyles.Left;
+            kryptonPictureBox1.Image = Properties.Resources.catbook;
+            kryptonPictureBox1.Location = new Point(-37, -64);
+            kryptonPictureBox1.Name = "kryptonPictureBox1";
+            kryptonPictureBox1.Size = new Size(507, 708);
+            kryptonPictureBox1.TabIndex = 19;
+            kryptonPictureBox1.TabStop = false;
+            // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(755, 395);
+            ClientSize = new Size(860, 441);
+            Controls.Add(kryptonPictureBox1);
             Controls.Add(kryptonButton2);
             Controls.Add(kryptonTextBox2);
             Controls.Add(kryptonTextBox1);
@@ -305,12 +319,14 @@
             Controls.Add(chkRememberMe);
             Controls.Add(txtPassword);
             Controls.Add(txtUsernameOrEmail);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             LocalCustomPalette = kryptonCustomPaletteBase1;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "LoginForm";
             PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            ShowIcon = false;
             Text = "LoginForm";
             Load += LoginForm_Load;
+            ((System.ComponentModel.ISupportInitialize)kryptonPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -329,5 +345,6 @@
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
         private Krypton.Toolkit.KryptonButton kryptonButton2;
         private Krypton.Toolkit.KryptonCustomPaletteBase kryptonCustomPaletteBase1;
+        private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox1;
     }
 }

@@ -58,25 +58,27 @@
             // 
             lblBookTitle.AutoSize = true;
             lblBookTitle.Font = new Font("Calibri", 14F, FontStyle.Bold);
-            lblBookTitle.Location = new Point(34, 28);
+            lblBookTitle.Location = new Point(30, 21);
             lblBookTitle.Name = "lblBookTitle";
-            lblBookTitle.Size = new Size(108, 29);
+            lblBookTitle.Size = new Size(86, 23);
             lblBookTitle.TabIndex = 0;
             lblBookTitle.Text = "BookTitle";
             // 
             // txtComment
             // 
-            txtComment.Location = new Point(677, 65);
+            txtComment.Location = new Point(592, 49);
+            txtComment.Margin = new Padding(3, 2, 3, 2);
             txtComment.Name = "txtComment";
-            txtComment.Size = new Size(125, 27);
+            txtComment.Size = new Size(110, 23);
             txtComment.TabIndex = 3;
             txtComment.Visible = false;
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(662, 15);
+            btnSave.Location = new Point(579, 11);
+            btnSave.Margin = new Padding(3, 2, 3, 2);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(170, 45);
+            btnSave.Size = new Size(149, 34);
             btnSave.TabIndex = 4;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
@@ -85,9 +87,10 @@
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(677, 51);
+            btnCancel.Location = new Point(592, 38);
+            btnCancel.Margin = new Padding(3, 2, 3, 2);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(170, 45);
+            btnCancel.Size = new Size(149, 34);
             btnCancel.TabIndex = 5;
             btnCancel.Text = "btnCancel";
             btnCancel.UseVisualStyleBackColor = true;
@@ -96,18 +99,18 @@
             // 
             // numericUpDownRating
             // 
-            numericUpDownRating.Location = new Point(168, 15);
+            numericUpDownRating.Location = new Point(147, 11);
+            numericUpDownRating.Margin = new Padding(3, 2, 3, 2);
             numericUpDownRating.Name = "numericUpDownRating";
-            numericUpDownRating.Size = new Size(150, 27);
+            numericUpDownRating.Size = new Size(131, 23);
             numericUpDownRating.TabIndex = 6;
             numericUpDownRating.Visible = false;
             numericUpDownRating.ValueChanged += numericUpDownRating_ValueChanged;
             // 
             // kryptonButton1
             // 
-            kryptonButton1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            kryptonButton1.Location = new Point(34, 510);
-            kryptonButton1.Margin = new Padding(3, 4, 3, 4);
+            kryptonButton1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            kryptonButton1.Location = new Point(288, 330);
             kryptonButton1.Name = "kryptonButton1";
             kryptonButton1.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -119,7 +122,7 @@
             kryptonButton1.OverrideDefault.Border.Rounding = 20F;
             kryptonButton1.OverrideDefault.Border.Width = 1;
             kryptonButton1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButton1.Size = new Size(177, 57);
+            kryptonButton1.Size = new Size(155, 43);
             kryptonButton1.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButton1.StateCommon.Back.ColorAngle = 45F;
@@ -155,9 +158,8 @@
             // 
             // kryptonButton2
             // 
-            kryptonButton2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            kryptonButton2.Location = new Point(272, 510);
-            kryptonButton2.Margin = new Padding(3, 4, 3, 4);
+            kryptonButton2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            kryptonButton2.Location = new Point(472, 330);
             kryptonButton2.Name = "kryptonButton2";
             kryptonButton2.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton2.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -169,7 +171,7 @@
             kryptonButton2.OverrideDefault.Border.Rounding = 20F;
             kryptonButton2.OverrideDefault.Border.Width = 1;
             kryptonButton2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButton2.Size = new Size(177, 57);
+            kryptonButton2.Size = new Size(155, 43);
             kryptonButton2.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton2.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButton2.StateCommon.Back.ColorAngle = 45F;
@@ -206,10 +208,9 @@
             // kryptonRichTextBox1
             // 
             kryptonRichTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            kryptonRichTextBox1.Location = new Point(34, 195);
-            kryptonRichTextBox1.Margin = new Padding(3, 4, 3, 4);
+            kryptonRichTextBox1.Location = new Point(30, 146);
             kryptonRichTextBox1.Name = "kryptonRichTextBox1";
-            kryptonRichTextBox1.Size = new Size(699, 284);
+            kryptonRichTextBox1.Size = new Size(614, 158);
             kryptonRichTextBox1.StateCommon.Back.Color1 = Color.White;
             kryptonRichTextBox1.StateCommon.Border.Color1 = Color.FromArgb(242, 242, 242);
             kryptonRichTextBox1.StateCommon.Border.Color2 = Color.FromArgb(242, 242, 242);
@@ -220,7 +221,7 @@
             kryptonRichTextBox1.StateCommon.Content.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonRichTextBox1.StateCommon.Content.Padding = new Padding(10, 0, 10, 0);
             kryptonRichTextBox1.TabIndex = 14;
-            kryptonRichTextBox1.Text = "kryptonRichTextBox1";
+            kryptonRichTextBox1.Text = "";
             // 
             // kryptonCustomPaletteBase1
             // 
@@ -260,10 +261,9 @@
             kryptonPictureBox1.ErrorImage = null;
             kryptonPictureBox1.Image = Properties.Resources.icons8_smiling_face_with_heart_eyes_50;
             kryptonPictureBox1.InitialImage = null;
-            kryptonPictureBox1.Location = new Point(512, 65);
-            kryptonPictureBox1.Margin = new Padding(3, 4, 3, 4);
+            kryptonPictureBox1.Location = new Point(448, 49);
             kryptonPictureBox1.Name = "kryptonPictureBox1";
-            kryptonPictureBox1.Size = new Size(57, 67);
+            kryptonPictureBox1.Size = new Size(50, 50);
             kryptonPictureBox1.TabIndex = 15;
             kryptonPictureBox1.TabStop = false;
             kryptonPictureBox1.Click += kryptonPictureBox1_Click;
@@ -274,10 +274,9 @@
             kryptonPictureBox6.ErrorImage = null;
             kryptonPictureBox6.Image = Properties.Resources.icons8_disappointed_face_50;
             kryptonPictureBox6.InitialImage = null;
-            kryptonPictureBox6.Location = new Point(150, 65);
-            kryptonPictureBox6.Margin = new Padding(3, 4, 3, 4);
+            kryptonPictureBox6.Location = new Point(131, 49);
             kryptonPictureBox6.Name = "kryptonPictureBox6";
-            kryptonPictureBox6.Size = new Size(57, 67);
+            kryptonPictureBox6.Size = new Size(50, 50);
             kryptonPictureBox6.TabIndex = 16;
             kryptonPictureBox6.TabStop = false;
             kryptonPictureBox6.Click += kryptonPictureBox6_Click;
@@ -288,10 +287,9 @@
             kryptonPictureBox2.ErrorImage = null;
             kryptonPictureBox2.Image = Properties.Resources.icons8_slightly_frowning_face_50;
             kryptonPictureBox2.InitialImage = null;
-            kryptonPictureBox2.Location = new Point(234, 65);
-            kryptonPictureBox2.Margin = new Padding(3, 4, 3, 4);
+            kryptonPictureBox2.Location = new Point(205, 49);
             kryptonPictureBox2.Name = "kryptonPictureBox2";
-            kryptonPictureBox2.Size = new Size(57, 67);
+            kryptonPictureBox2.Size = new Size(50, 50);
             kryptonPictureBox2.TabIndex = 17;
             kryptonPictureBox2.TabStop = false;
             kryptonPictureBox2.Click += kryptonPictureBox2_Click;
@@ -302,10 +300,9 @@
             kryptonPictureBox3.ErrorImage = null;
             kryptonPictureBox3.Image = Properties.Resources.icons8_expressionless_face_50;
             kryptonPictureBox3.InitialImage = null;
-            kryptonPictureBox3.Location = new Point(329, 65);
-            kryptonPictureBox3.Margin = new Padding(3, 4, 3, 4);
+            kryptonPictureBox3.Location = new Point(288, 49);
             kryptonPictureBox3.Name = "kryptonPictureBox3";
-            kryptonPictureBox3.Size = new Size(57, 67);
+            kryptonPictureBox3.Size = new Size(50, 50);
             kryptonPictureBox3.TabIndex = 18;
             kryptonPictureBox3.TabStop = false;
             kryptonPictureBox3.Click += kryptonPictureBox3_Click;
@@ -316,10 +313,9 @@
             kryptonPictureBox4.ErrorImage = null;
             kryptonPictureBox4.Image = Properties.Resources.icons8_smiling_face_50;
             kryptonPictureBox4.InitialImage = null;
-            kryptonPictureBox4.Location = new Point(419, 65);
-            kryptonPictureBox4.Margin = new Padding(3, 4, 3, 4);
+            kryptonPictureBox4.Location = new Point(367, 49);
             kryptonPictureBox4.Name = "kryptonPictureBox4";
-            kryptonPictureBox4.Size = new Size(57, 67);
+            kryptonPictureBox4.Size = new Size(50, 50);
             kryptonPictureBox4.TabIndex = 19;
             kryptonPictureBox4.TabStop = false;
             kryptonPictureBox4.Click += kryptonPictureBox4_Click;
@@ -327,26 +323,24 @@
             // kryptonLabel1
             // 
             kryptonLabel1.Location = new Point(0, 0);
-            kryptonLabel1.Margin = new Padding(3, 4, 3, 4);
             kryptonLabel1.Name = "kryptonLabel1";
-            kryptonLabel1.Size = new Size(109, 24);
+            kryptonLabel1.Size = new Size(88, 20);
             kryptonLabel1.TabIndex = 20;
             kryptonLabel1.Values.Text = "kryptonLabel1";
             // 
             // kryptonLabel2
             // 
-            kryptonLabel2.Location = new Point(307, 140);
-            kryptonLabel2.Margin = new Padding(3, 4, 3, 4);
+            kryptonLabel2.Location = new Point(288, 120);
             kryptonLabel2.Name = "kryptonLabel2";
-            kryptonLabel2.Size = new Size(109, 24);
+            kryptonLabel2.Size = new Size(37, 20);
             kryptonLabel2.TabIndex = 21;
-            kryptonLabel2.Values.Text = "kryptonLabel2";
+            kryptonLabel2.Values.Text = "Stats";
             // 
             // ReviewForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(836, 593);
+            ClientSize = new Size(736, 379);
             Controls.Add(kryptonLabel2);
             Controls.Add(kryptonLabel1);
             Controls.Add(kryptonPictureBox4);
@@ -362,10 +356,11 @@
             Controls.Add(btnSave);
             Controls.Add(txtComment);
             Controls.Add(lblBookTitle);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             LocalCustomPalette = kryptonCustomPaletteBase1;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "ReviewForm";
             PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ReviewForm";
             Load += ReviewForm_Load;

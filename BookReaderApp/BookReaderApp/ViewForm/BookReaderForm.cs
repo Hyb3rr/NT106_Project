@@ -240,6 +240,22 @@ namespace BookReaderApp.ViewForm
 
         private void listBoxBookmarks_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //if (kryptonListBoxBookMark.SelectedItem != null)
+            //{
+            //    var selectedText = kryptonListBoxBookMark.SelectedItem.ToString();
+            //    if (int.TryParse(selectedText?.Replace("Trang ", ""), out int pageNumber))
+            //    {
+            //        if (pageNumber > 0 && pageNumber <= _pdfViewer.Document.PageCount)
+            //        {
+            //            _pdfViewer.Renderer.Page = pageNumber - 1;
+            //            UpdatePageLabel();
+            //        }
+            //    }
+            //}
+        }
+
+        private void KryptonlistBoxBookmarks_SelectedIndexChanged(object sender, EventArgs e)
+        {
             if (kryptonListBoxBookMark.SelectedItem != null)
             {
                 var selectedText = kryptonListBoxBookMark.SelectedItem.ToString();

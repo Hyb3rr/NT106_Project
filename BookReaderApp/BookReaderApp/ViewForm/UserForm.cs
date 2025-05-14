@@ -39,7 +39,7 @@ namespace BookReaderApp.ViewForm
         }
         private void LoadBooks()
         {
-            dgvBooks.DataSource = _context.Books
+            kryptonDataGridViewLibrary.DataSource = _context.Books
                 .Select(b => new
                 {
                     b.BookId,
@@ -59,7 +59,7 @@ namespace BookReaderApp.ViewForm
             if (string.IsNullOrEmpty(searchType))
             {
                 // If no search type is selected, do nothing or handle accordingly
-                dgvBooks.DataSource = null;
+                kryptonDataGridViewLibrary.DataSource = null;
                 return;
             }
 
@@ -78,7 +78,7 @@ namespace BookReaderApp.ViewForm
                     break;
             }
 
-            dgvBooks.DataSource = filteredBooks
+            kryptonDataGridViewLibrary.DataSource = filteredBooks
                 .Select(b => new
                 {
                     b.BookId,
@@ -167,9 +167,9 @@ namespace BookReaderApp.ViewForm
             //{
             //    MessageBox.Show("Vui lòng chọn một sách để đọc.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //}
-            if (dgvBooks.SelectedRows.Count > 0)
+            if (kryptonDataGridViewLibrary.SelectedRows.Count > 0)
             {
-                int bookId = (int)dgvBooks.SelectedRows[0].Cells["BookId"].Value;
+                int bookId = (int)kryptonDataGridViewLibrary.SelectedRows[0].Cells["BookId"].Value;
                 var book = _context.Books.Find(bookId);
 
                 if (book != null)
@@ -231,9 +231,9 @@ namespace BookReaderApp.ViewForm
 
         private void kryptonButtonAddToLib(object sender, EventArgs e)
         {
-            if (dgvBooks.SelectedRows.Count > 0)
+            if (kryptonDataGridViewLibrary.SelectedRows.Count > 0)
             {
-                int bookId = (int)dgvBooks.SelectedRows[0].Cells["BookId"].Value;
+                int bookId = (int)kryptonDataGridViewLibrary.SelectedRows[0].Cells["BookId"].Value;
 
                 // Kiểm tra xem UserId có hợp lệ không
                 if (!_context.Users.Any(u => u.UserId == _userId))
@@ -278,9 +278,9 @@ namespace BookReaderApp.ViewForm
 
         private void kryptonButtonViewDetailsClick(object sender, EventArgs e)
         {
-            if (dgvBooks.SelectedRows.Count > 0)
+            if (kryptonDataGridViewLibrary.SelectedRows.Count > 0)
             {
-                int bookId = (int)dgvBooks.SelectedRows[0].Cells["BookId"].Value;
+                int bookId = (int)kryptonDataGridViewLibrary.SelectedRows[0].Cells["BookId"].Value;
                 var book = _context.Books.Find(bookId);
 
                 if (book != null)
@@ -309,5 +309,21 @@ namespace BookReaderApp.ViewForm
         {
 
         }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private bool textCleared = false; // Step 1: Declare the flag
+
+        private void kryptonTextBox1_Enter(object sender, EventArgs e) // Step 2: Use Enter event
+        {
+            if (!textCleared)
+            {
+                kryptonTextBox1.Text = "";
+                textCleared = true; // Step 3: Set the flag to true
+            }
+        }
+
     }
 }

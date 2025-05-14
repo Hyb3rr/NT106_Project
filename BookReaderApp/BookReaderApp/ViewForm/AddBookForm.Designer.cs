@@ -63,7 +63,7 @@
             cmbCategory.Anchor = AnchorStyles.None;
             cmbCategory.FormattingEnabled = true;
             cmbCategory.Items.AddRange(new object[] { "1", "2", "3" });
-            cmbCategory.Location = new Point(608, 35);
+            cmbCategory.Location = new Point(648, 17);
             cmbCategory.Margin = new Padding(3, 2, 3, 2);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(133, 23);
@@ -73,7 +73,7 @@
             // btnCancel
             // 
             btnCancel.Anchor = AnchorStyles.None;
-            btnCancel.Location = new Point(246, 301);
+            btnCancel.Location = new Point(623, 263);
             btnCancel.Margin = new Padding(3, 2, 3, 2);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(158, 57);
@@ -86,7 +86,7 @@
             // btnSave
             // 
             btnSave.Anchor = AnchorStyles.None;
-            btnSave.Location = new Point(75, 301);
+            btnSave.Location = new Point(627, 269);
             btnSave.Margin = new Padding(3, 2, 3, 2);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(158, 57);
@@ -99,7 +99,7 @@
             // btnBrowseFile
             // 
             btnBrowseFile.Anchor = AnchorStyles.None;
-            btnBrowseFile.Location = new Point(416, 301);
+            btnBrowseFile.Location = new Point(602, 283);
             btnBrowseFile.Margin = new Padding(3, 2, 3, 2);
             btnBrowseFile.Name = "btnBrowseFile";
             btnBrowseFile.Size = new Size(158, 57);
@@ -112,7 +112,7 @@
             // txtTitle
             // 
             txtTitle.Anchor = AnchorStyles.None;
-            txtTitle.Location = new Point(631, 131);
+            txtTitle.Location = new Point(671, 113);
             txtTitle.Margin = new Padding(3, 2, 3, 2);
             txtTitle.Name = "txtTitle";
             txtTitle.Size = new Size(110, 23);
@@ -122,7 +122,7 @@
             // txtAuthor
             // 
             txtAuthor.Anchor = AnchorStyles.None;
-            txtAuthor.Location = new Point(631, 158);
+            txtAuthor.Location = new Point(671, 140);
             txtAuthor.Margin = new Padding(3, 2, 3, 2);
             txtAuthor.Name = "txtAuthor";
             txtAuthor.Size = new Size(110, 23);
@@ -132,7 +132,7 @@
             // txtFilePath
             // 
             txtFilePath.Anchor = AnchorStyles.None;
-            txtFilePath.Location = new Point(631, 187);
+            txtFilePath.Location = new Point(671, 169);
             txtFilePath.Margin = new Padding(3, 2, 3, 2);
             txtFilePath.Name = "txtFilePath";
             txtFilePath.Size = new Size(110, 23);
@@ -142,7 +142,7 @@
             // dtpPublishedDate
             // 
             dtpPublishedDate.Anchor = AnchorStyles.None;
-            dtpPublishedDate.Location = new Point(584, 301);
+            dtpPublishedDate.Location = new Point(682, 283);
             dtpPublishedDate.Margin = new Padding(3, 2, 3, 2);
             dtpPublishedDate.Name = "dtpPublishedDate";
             dtpPublishedDate.Size = new Size(219, 23);
@@ -154,7 +154,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label1.Location = new Point(211, 94);
+            label1.Location = new Point(221, 108);
             label1.Name = "label1";
             label1.Size = new Size(36, 17);
             label1.TabIndex = 28;
@@ -166,7 +166,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label2.Location = new Point(211, 139);
+            label2.Location = new Point(221, 153);
             label2.Name = "label2";
             label2.Size = new Size(50, 17);
             label2.TabIndex = 29;
@@ -177,7 +177,7 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label3.Location = new Point(211, 184);
+            label3.Location = new Point(221, 198);
             label3.Name = "label3";
             label3.Size = new Size(54, 17);
             label3.TabIndex = 30;
@@ -187,7 +187,7 @@
             // 
             cmbUploader.Anchor = AnchorStyles.None;
             cmbUploader.FormattingEnabled = true;
-            cmbUploader.Location = new Point(608, 8);
+            cmbUploader.Location = new Point(648, -10);
             cmbUploader.Margin = new Padding(3, 2, 3, 2);
             cmbUploader.Name = "cmbUploader";
             cmbUploader.Size = new Size(133, 23);
@@ -199,7 +199,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label4.Location = new Point(59, 35);
+            label4.Location = new Point(99, 17);
             label4.Name = "label4";
             label4.Size = new Size(63, 17);
             label4.TabIndex = 32;
@@ -210,7 +210,7 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label5.Location = new Point(325, 35);
+            label5.Location = new Point(365, 17);
             label5.Name = "label5";
             label5.Size = new Size(61, 17);
             label5.TabIndex = 33;
@@ -251,9 +251,9 @@
             // kryptonDateTimePicker1
             // 
             kryptonDateTimePicker1.Anchor = AnchorStyles.None;
-            kryptonDateTimePicker1.Location = new Point(491, 79);
+            kryptonDateTimePicker1.Location = new Point(501, 93);
             kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            kryptonDateTimePicker1.Size = new Size(137, 33);
+            kryptonDateTimePicker1.Size = new Size(183, 33);
             kryptonDateTimePicker1.StateCommon.Back.Color1 = Color.White;
             kryptonDateTimePicker1.StateCommon.Border.Color1 = Color.FromArgb(242, 242, 242);
             kryptonDateTimePicker1.StateCommon.Border.Color2 = Color.FromArgb(242, 242, 242);
@@ -262,12 +262,13 @@
             kryptonDateTimePicker1.StateCommon.Content.Color1 = Color.Gray;
             kryptonDateTimePicker1.StateCommon.Content.Padding = new Padding(10, 0, 10, 0);
             kryptonDateTimePicker1.TabIndex = 51;
+            kryptonDateTimePicker1.ValueNullable = new DateTime(2025, 5, 22, 0, 0, 0, 0);
             // 
             // kryptonComboBoxCategory
             // 
             kryptonComboBoxCategory.Anchor = AnchorStyles.None;
             kryptonComboBoxCategory.DropDownWidth = 138;
-            kryptonComboBoxCategory.Location = new Point(416, 24);
+            kryptonComboBoxCategory.Location = new Point(456, 6);
             kryptonComboBoxCategory.Name = "kryptonComboBoxCategory";
             kryptonComboBoxCategory.Size = new Size(150, 34);
             kryptonComboBoxCategory.StateCommon.ComboBox.Back.Color1 = Color.White;
@@ -294,13 +295,12 @@
             kryptonComboBoxCategory.StateTracking.Item.Content.ShortText.Color2 = Color.White;
             kryptonComboBoxCategory.StateTracking.Item.Content.ShortText.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonComboBoxCategory.TabIndex = 50;
-            kryptonComboBoxCategory.Text = "Category";
             // 
             // kryptonComboBoxUploader
             // 
             kryptonComboBoxUploader.Anchor = AnchorStyles.None;
             kryptonComboBoxUploader.DropDownWidth = 138;
-            kryptonComboBoxUploader.Location = new Point(144, 24);
+            kryptonComboBoxUploader.Location = new Point(184, 6);
             kryptonComboBoxUploader.Name = "kryptonComboBoxUploader";
             kryptonComboBoxUploader.Size = new Size(150, 34);
             kryptonComboBoxUploader.StateCommon.ComboBox.Back.Color1 = Color.White;
@@ -327,12 +327,11 @@
             kryptonComboBoxUploader.StateTracking.Item.Content.ShortText.Color2 = Color.White;
             kryptonComboBoxUploader.StateTracking.Item.Content.ShortText.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonComboBoxUploader.TabIndex = 52;
-            kryptonComboBoxUploader.Text = "Category";
             // 
             // kryptonTextBoxFilePath
             // 
             kryptonTextBoxFilePath.Anchor = AnchorStyles.None;
-            kryptonTextBoxFilePath.Location = new Point(295, 169);
+            kryptonTextBoxFilePath.Location = new Point(305, 183);
             kryptonTextBoxFilePath.Name = "kryptonTextBoxFilePath";
             kryptonTextBoxFilePath.Size = new Size(150, 30);
             kryptonTextBoxFilePath.StateCommon.Back.Color1 = Color.White;
@@ -345,12 +344,11 @@
             kryptonTextBoxFilePath.StateCommon.Content.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonTextBoxFilePath.StateCommon.Content.Padding = new Padding(10, 0, 10, 0);
             kryptonTextBoxFilePath.TabIndex = 55;
-            kryptonTextBoxFilePath.Text = "FilePath";
             // 
             // kryptonTextBoxTitle
             // 
             kryptonTextBoxTitle.Anchor = AnchorStyles.None;
-            kryptonTextBoxTitle.Location = new Point(295, 79);
+            kryptonTextBoxTitle.Location = new Point(305, 93);
             kryptonTextBoxTitle.Name = "kryptonTextBoxTitle";
             kryptonTextBoxTitle.Size = new Size(150, 30);
             kryptonTextBoxTitle.StateCommon.Back.Color1 = Color.White;
@@ -363,12 +361,11 @@
             kryptonTextBoxTitle.StateCommon.Content.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonTextBoxTitle.StateCommon.Content.Padding = new Padding(10, 0, 10, 0);
             kryptonTextBoxTitle.TabIndex = 53;
-            kryptonTextBoxTitle.Text = "Title";
             // 
             // kryptonTextBoxAuthor
             // 
             kryptonTextBoxAuthor.Anchor = AnchorStyles.None;
-            kryptonTextBoxAuthor.Location = new Point(295, 124);
+            kryptonTextBoxAuthor.Location = new Point(305, 138);
             kryptonTextBoxAuthor.Margin = new Padding(3, 2, 3, 2);
             kryptonTextBoxAuthor.Name = "kryptonTextBoxAuthor";
             kryptonTextBoxAuthor.Size = new Size(150, 30);
@@ -382,12 +379,11 @@
             kryptonTextBoxAuthor.StateCommon.Content.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonTextBoxAuthor.StateCommon.Content.Padding = new Padding(10, 0, 10, 0);
             kryptonTextBoxAuthor.TabIndex = 54;
-            kryptonTextBoxAuthor.Text = "Author";
             // 
             // kryptonButtonBrowse
             // 
             kryptonButtonBrowse.Anchor = AnchorStyles.None;
-            kryptonButtonBrowse.Location = new Point(417, 243);
+            kryptonButtonBrowse.Location = new Point(456, 263);
             kryptonButtonBrowse.Name = "kryptonButtonBrowse";
             kryptonButtonBrowse.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonBrowse.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -436,7 +432,7 @@
             // kryptonButtonCancel
             // 
             kryptonButtonCancel.Anchor = AnchorStyles.None;
-            kryptonButtonCancel.Location = new Point(249, 243);
+            kryptonButtonCancel.Location = new Point(285, 263);
             kryptonButtonCancel.Name = "kryptonButtonCancel";
             kryptonButtonCancel.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonCancel.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -485,7 +481,7 @@
             // kryptonButtonSave
             // 
             kryptonButtonSave.Anchor = AnchorStyles.None;
-            kryptonButtonSave.Location = new Point(73, 243);
+            kryptonButtonSave.Location = new Point(115, 263);
             kryptonButtonSave.Name = "kryptonButtonSave";
             kryptonButtonSave.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonSave.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -535,7 +531,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(749, 383);
+            ClientSize = new Size(764, 333);
             Controls.Add(kryptonButtonBrowse);
             Controls.Add(kryptonButtonCancel);
             Controls.Add(kryptonButtonSave);
@@ -559,11 +555,11 @@
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
             Controls.Add(cmbCategory);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             LocalCustomPalette = kryptonCustomPaletteBase1;
             Margin = new Padding(3, 2, 3, 2);
             Name = "AddBookForm";
             PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AddBookForm";
             Load += AddBookForm_Load;

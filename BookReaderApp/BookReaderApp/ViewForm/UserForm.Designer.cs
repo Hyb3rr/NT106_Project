@@ -44,13 +44,15 @@
             kryptonColorDialog1 = new Krypton.Toolkit.KryptonColorDialog();
             fontDialog1 = new FontDialog();
             printPreviewDialog1 = new PrintPreviewDialog();
+            kryptonDataGridViewLibrary = new Krypton.Toolkit.KryptonDataGridView();
             ((System.ComponentModel.ISupportInitialize)dgvBooks).BeginInit();
             ((System.ComponentModel.ISupportInitialize)kryptonComboBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)kryptonDataGridViewLibrary).BeginInit();
             SuspendLayout();
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(668, 92);
+            txtSearch.Location = new Point(739, 109);
             txtSearch.Margin = new Padding(3, 2, 3, 2);
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(110, 23);
@@ -60,20 +62,21 @@
             // 
             // dgvBooks
             // 
-            dgvBooks.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvBooks.Anchor = AnchorStyles.None;
             dgvBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBooks.Location = new Point(48, 55);
+            dgvBooks.Location = new Point(705, 59);
             dgvBooks.Margin = new Padding(3, 2, 3, 2);
             dgvBooks.Name = "dgvBooks";
             dgvBooks.RowHeadersWidth = 51;
-            dgvBooks.Size = new Size(557, 128);
+            dgvBooks.Size = new Size(57, 27);
             dgvBooks.TabIndex = 1;
+            dgvBooks.Visible = false;
             // 
             // cmbSearchType
             // 
             cmbSearchType.FormattingEnabled = true;
             cmbSearchType.Items.AddRange(new object[] { "Tiêu đề", "Tác giả", "Thể loại" });
-            cmbSearchType.Location = new Point(631, 55);
+            cmbSearchType.Location = new Point(739, 82);
             cmbSearchType.Margin = new Padding(3, 2, 3, 2);
             cmbSearchType.Name = "cmbSearchType";
             cmbSearchType.Size = new Size(133, 23);
@@ -82,7 +85,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(637, 135);
+            button1.Location = new Point(739, 136);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(82, 22);
@@ -126,7 +129,7 @@
             // kryptonButton1
             // 
             kryptonButton1.Anchor = AnchorStyles.Bottom;
-            kryptonButton1.Location = new Point(50, 197);
+            kryptonButton1.Location = new Point(33, 357);
             kryptonButton1.Name = "kryptonButton1";
             kryptonButton1.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -175,7 +178,7 @@
             // kryptonButton2
             // 
             kryptonButton2.Anchor = AnchorStyles.Bottom;
-            kryptonButton2.Location = new Point(215, 197);
+            kryptonButton2.Location = new Point(194, 357);
             kryptonButton2.Name = "kryptonButton2";
             kryptonButton2.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton2.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -224,7 +227,7 @@
             // kryptonButtonViewDetails
             // 
             kryptonButtonViewDetails.Anchor = AnchorStyles.Bottom;
-            kryptonButtonViewDetails.Location = new Point(379, 197);
+            kryptonButtonViewDetails.Location = new Point(355, 357);
             kryptonButtonViewDetails.Name = "kryptonButtonViewDetails";
             kryptonButtonViewDetails.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonViewDetails.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -273,7 +276,7 @@
             // kryptonButton3
             // 
             kryptonButton3.Anchor = AnchorStyles.Bottom;
-            kryptonButton3.Location = new Point(540, 197);
+            kryptonButton3.Location = new Point(519, 357);
             kryptonButton3.Name = "kryptonButton3";
             kryptonButton3.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton3.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -321,8 +324,8 @@
             // 
             // kryptonTextBox1
             // 
-            kryptonTextBox1.Anchor = AnchorStyles.Top;
-            kryptonTextBox1.Location = new Point(459, 20);
+            kryptonTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            kryptonTextBox1.Location = new Point(520, 16);
             kryptonTextBox1.Name = "kryptonTextBox1";
             kryptonTextBox1.Size = new Size(150, 30);
             kryptonTextBox1.StateCommon.Back.Color1 = Color.White;
@@ -335,13 +338,15 @@
             kryptonTextBox1.StateCommon.Content.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonTextBox1.StateCommon.Content.Padding = new Padding(10, 0, 10, 0);
             kryptonTextBox1.TabIndex = 12;
-            kryptonTextBox1.Text = "search";
+            kryptonTextBox1.Text = "Search";
+            kryptonTextBox1.TextChanged += kryptonTextBox1_TextChanged;
+            kryptonTextBox1.Enter += kryptonTextBox1_Enter;
             // 
             // kryptonComboBox1
             // 
-            kryptonComboBox1.Anchor = AnchorStyles.Top;
+            kryptonComboBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             kryptonComboBox1.DropDownWidth = 138;
-            kryptonComboBox1.Location = new Point(303, 16);
+            kryptonComboBox1.Location = new Point(351, 16);
             kryptonComboBox1.Name = "kryptonComboBox1";
             kryptonComboBox1.Size = new Size(150, 34);
             kryptonComboBox1.StateCommon.ComboBox.Back.Color1 = Color.White;
@@ -368,7 +373,6 @@
             kryptonComboBox1.StateTracking.Item.Content.ShortText.Color2 = Color.White;
             kryptonComboBox1.StateTracking.Item.Content.ShortText.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonComboBox1.TabIndex = 13;
-            kryptonComboBox1.Text = "kryptonComboBox1";
             // 
             // kryptonColorDialog1
             // 
@@ -387,11 +391,27 @@
             printPreviewDialog1.Visible = false;
             printPreviewDialog1.Load += printPreviewDialog1_Load;
             // 
+            // kryptonDataGridViewLibrary
+            // 
+            kryptonDataGridViewLibrary.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            kryptonDataGridViewLibrary.BorderStyle = BorderStyle.None;
+            kryptonDataGridViewLibrary.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            kryptonDataGridViewLibrary.Location = new Point(37, 56);
+            kryptonDataGridViewLibrary.Name = "kryptonDataGridViewLibrary";
+            kryptonDataGridViewLibrary.Size = new Size(633, 285);
+            kryptonDataGridViewLibrary.StateCommon.Background.Color1 = Color.White;
+            kryptonDataGridViewLibrary.StateCommon.Background.Color2 = Color.White;
+            kryptonDataGridViewLibrary.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            kryptonDataGridViewLibrary.StateCommon.DataCell.Border.Rounding = 20F;
+            kryptonDataGridViewLibrary.StateCommon.DataCell.Border.Width = 1;
+            kryptonDataGridViewLibrary.TabIndex = 14;
+            // 
             // UserForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(780, 316);
+            ClientSize = new Size(752, 403);
+            Controls.Add(kryptonDataGridViewLibrary);
             Controls.Add(kryptonComboBox1);
             Controls.Add(kryptonTextBox1);
             Controls.Add(kryptonButton3);
@@ -402,16 +422,17 @@
             Controls.Add(cmbSearchType);
             Controls.Add(dgvBooks);
             Controls.Add(txtSearch);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             LocalCustomPalette = kryptonCustomPaletteBase1;
             Margin = new Padding(3, 2, 3, 2);
             Name = "UserForm";
             PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UserForm";
             Load += UserForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvBooks).EndInit();
             ((System.ComponentModel.ISupportInitialize)kryptonComboBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)kryptonDataGridViewLibrary).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -432,5 +453,6 @@
         private Krypton.Toolkit.KryptonColorDialog kryptonColorDialog1;
         private FontDialog fontDialog1;
         private PrintPreviewDialog printPreviewDialog1;
+        private Krypton.Toolkit.KryptonDataGridView kryptonDataGridViewLibrary;
     }
 }

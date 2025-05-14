@@ -48,17 +48,17 @@
             // dgvLibrary
             // 
             dgvLibrary.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLibrary.Location = new Point(38, 54);
+            dgvLibrary.Location = new Point(703, 52);
             dgvLibrary.Margin = new Padding(3, 2, 3, 2);
             dgvLibrary.Name = "dgvLibrary";
             dgvLibrary.RowHeadersWidth = 51;
-            dgvLibrary.Size = new Size(603, 152);
+            dgvLibrary.Size = new Size(15, 22);
             dgvLibrary.TabIndex = 0;
             dgvLibrary.Visible = false;
             // 
             // btnReadBook
             // 
-            btnReadBook.Location = new Point(59, 284);
+            btnReadBook.Location = new Point(667, 92);
             btnReadBook.Margin = new Padding(3, 2, 3, 2);
             btnReadBook.Name = "btnReadBook";
             btnReadBook.Size = new Size(146, 29);
@@ -70,7 +70,7 @@
             // 
             // btnRemoveBook
             // 
-            btnRemoveBook.Location = new Point(211, 284);
+            btnRemoveBook.Location = new Point(667, 125);
             btnRemoveBook.Margin = new Padding(3, 2, 3, 2);
             btnRemoveBook.Name = "btnRemoveBook";
             btnRemoveBook.Size = new Size(146, 29);
@@ -82,7 +82,7 @@
             // 
             // btnSaveNote
             // 
-            btnSaveNote.Location = new Point(363, 284);
+            btnSaveNote.Location = new Point(667, 158);
             btnSaveNote.Margin = new Padding(3, 2, 3, 2);
             btnSaveNote.Name = "btnSaveNote";
             btnSaveNote.Size = new Size(146, 29);
@@ -94,7 +94,7 @@
             // 
             // btnReview
             // 
-            btnReview.Location = new Point(515, 284);
+            btnReview.Location = new Point(667, 191);
             btnReview.Margin = new Padding(3, 2, 3, 2);
             btnReview.Name = "btnReview";
             btnReview.Size = new Size(146, 29);
@@ -107,7 +107,7 @@
             // kryptonButton1
             // 
             kryptonButton1.Anchor = AnchorStyles.Bottom;
-            kryptonButton1.Location = new Point(22, 246);
+            kryptonButton1.Location = new Point(29, 321);
             kryptonButton1.Name = "kryptonButton1";
             kryptonButton1.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -156,7 +156,7 @@
             // kryptonButton2
             // 
             kryptonButton2.Anchor = AnchorStyles.Bottom;
-            kryptonButton2.Location = new Point(200, 246);
+            kryptonButton2.Location = new Point(207, 321);
             kryptonButton2.Name = "kryptonButton2";
             kryptonButton2.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton2.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -181,22 +181,24 @@
             kryptonButton2.StateCommon.Content.ShortText.Color1 = Color.White;
             kryptonButton2.StateCommon.Content.ShortText.Color2 = Color.White;
             kryptonButton2.StateCommon.Content.ShortText.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            kryptonButton2.StatePressed.Back.Color1 = Color.FromArgb(20, 145, 198);
-            kryptonButton2.StatePressed.Back.Color2 = Color.FromArgb(22, 121, 206);
+            kryptonButton2.StatePressed.Back.Color1 = Color.White;
+            kryptonButton2.StatePressed.Back.Color2 = Color.White;
             kryptonButton2.StatePressed.Back.ColorAngle = 135F;
-            kryptonButton2.StatePressed.Border.Color1 = Color.FromArgb(20, 145, 198);
-            kryptonButton2.StatePressed.Border.Color2 = Color.FromArgb(22, 121, 206);
+            kryptonButton2.StatePressed.Border.Color1 = Color.FromArgb(255, 71, 66);
+            kryptonButton2.StatePressed.Border.Color2 = Color.FromArgb(255, 71, 66);
             kryptonButton2.StatePressed.Border.ColorAngle = 135F;
             kryptonButton2.StatePressed.Border.Rounding = 20F;
             kryptonButton2.StatePressed.Border.Width = 1;
-            kryptonButton2.StateTracking.Back.Color1 = Color.FromArgb(8, 142, 254);
-            kryptonButton2.StateTracking.Back.Color2 = Color.FromArgb(6, 174, 244);
+            kryptonButton2.StatePressed.Content.ShortText.Color1 = Color.FromArgb(255, 71, 46);
+            kryptonButton2.StateTracking.Back.Color1 = Color.White;
+            kryptonButton2.StateTracking.Back.Color2 = Color.White;
             kryptonButton2.StateTracking.Back.ColorAngle = 45F;
-            kryptonButton2.StateTracking.Border.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButton2.StateTracking.Border.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButton2.StateTracking.Border.Color1 = Color.FromArgb(255, 71, 66);
+            kryptonButton2.StateTracking.Border.Color2 = Color.FromArgb(255, 71, 66);
             kryptonButton2.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButton2.StateTracking.Border.Rounding = 20F;
             kryptonButton2.StateTracking.Border.Width = 1;
+            kryptonButton2.StateTracking.Content.ShortText.Color1 = Color.FromArgb(255, 71, 66);
             kryptonButton2.TabIndex = 10;
             kryptonButton2.Values.DropDownArrowColor = Color.Empty;
             kryptonButton2.Values.Text = "Remove book";
@@ -205,7 +207,7 @@
             // kryptonButton3
             // 
             kryptonButton3.Anchor = AnchorStyles.Bottom;
-            kryptonButton3.Location = new Point(373, 246);
+            kryptonButton3.Location = new Point(380, 321);
             kryptonButton3.Name = "kryptonButton3";
             kryptonButton3.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton3.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -254,7 +256,7 @@
             // kryptonButton4
             // 
             kryptonButton4.Anchor = AnchorStyles.Bottom;
-            kryptonButton4.Location = new Point(534, 246);
+            kryptonButton4.Location = new Point(541, 321);
             kryptonButton4.Name = "kryptonButton4";
             kryptonButton4.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton4.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -337,9 +339,9 @@
             kryptonDataGridViewLibrary.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             kryptonDataGridViewLibrary.BorderStyle = BorderStyle.None;
             kryptonDataGridViewLibrary.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            kryptonDataGridViewLibrary.Location = new Point(38, 54);
+            kryptonDataGridViewLibrary.Location = new Point(35, 25);
             kryptonDataGridViewLibrary.Name = "kryptonDataGridViewLibrary";
-            kryptonDataGridViewLibrary.Size = new Size(624, 162);
+            kryptonDataGridViewLibrary.Size = new Size(628, 275);
             kryptonDataGridViewLibrary.StateCommon.Background.Color1 = Color.White;
             kryptonDataGridViewLibrary.StateCommon.Background.Color2 = Color.White;
             kryptonDataGridViewLibrary.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
@@ -351,7 +353,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(737, 300);
+            ClientSize = new Size(745, 383);
             Controls.Add(kryptonDataGridViewLibrary);
             Controls.Add(kryptonButton4);
             Controls.Add(kryptonButton3);
@@ -362,11 +364,11 @@
             Controls.Add(btnRemoveBook);
             Controls.Add(btnReadBook);
             Controls.Add(dgvLibrary);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             LocalCustomPalette = kryptonCustomPaletteBase1;
             Margin = new Padding(3, 2, 3, 2);
             Name = "UserLibraryForm";
             PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UserLibraryForm";
             Load += UserLibraryForm_Load;

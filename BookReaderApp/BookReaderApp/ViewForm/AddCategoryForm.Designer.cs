@@ -46,9 +46,10 @@
             // btnSave
             // 
             btnSave.Anchor = AnchorStyles.Bottom;
-            btnSave.Location = new Point(188, 432);
+            btnSave.Location = new Point(165, 404);
+            btnSave.Margin = new Padding(3, 2, 3, 2);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(181, 76);
+            btnSave.Size = new Size(158, 57);
             btnSave.TabIndex = 21;
             btnSave.Text = "btnSave";
             btnSave.UseVisualStyleBackColor = true;
@@ -58,9 +59,10 @@
             // btnCancel
             // 
             btnCancel.Anchor = AnchorStyles.Bottom;
-            btnCancel.Location = new Point(389, 432);
+            btnCancel.Location = new Point(341, 404);
+            btnCancel.Margin = new Padding(3, 2, 3, 2);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(181, 76);
+            btnCancel.Size = new Size(158, 57);
             btnCancel.TabIndex = 22;
             btnCancel.Text = "btnCancel";
             btnCancel.UseVisualStyleBackColor = true;
@@ -70,18 +72,20 @@
             // txtCategoryName
             // 
             txtCategoryName.Anchor = AnchorStyles.Top;
-            txtCategoryName.Location = new Point(680, 33);
+            txtCategoryName.Location = new Point(596, 25);
+            txtCategoryName.Margin = new Padding(3, 2, 3, 2);
             txtCategoryName.Name = "txtCategoryName";
-            txtCategoryName.Size = new Size(125, 27);
+            txtCategoryName.Size = new Size(110, 23);
             txtCategoryName.TabIndex = 23;
             txtCategoryName.Visible = false;
             // 
             // txtDescription
             // 
             txtDescription.Anchor = AnchorStyles.Top;
-            txtDescription.Location = new Point(680, 72);
+            txtDescription.Location = new Point(596, 54);
+            txtDescription.Margin = new Padding(3, 2, 3, 2);
             txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(125, 27);
+            txtDescription.Size = new Size(110, 23);
             txtDescription.TabIndex = 24;
             txtDescription.Visible = false;
             // 
@@ -90,9 +94,9 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label1.Location = new Point(165, 72);
+            label1.Location = new Point(144, 54);
             label1.Name = "label1";
-            label1.Size = new Size(115, 21);
+            label1.Size = new Size(95, 17);
             label1.TabIndex = 25;
             label1.Text = "CategoryName";
             // 
@@ -101,17 +105,16 @@
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label2.Location = new Point(165, 125);
+            label2.Location = new Point(144, 94);
             label2.Name = "label2";
-            label2.Size = new Size(91, 21);
+            label2.Size = new Size(76, 17);
             label2.TabIndex = 26;
             label2.Text = "Description";
             // 
             // kryptonButton2
             // 
             kryptonButton2.Anchor = AnchorStyles.Bottom;
-            kryptonButton2.Location = new Point(389, 361);
-            kryptonButton2.Margin = new Padding(3, 4, 3, 4);
+            kryptonButton2.Location = new Point(372, 335);
             kryptonButton2.Name = "kryptonButton2";
             kryptonButton2.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton2.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -123,7 +126,7 @@
             kryptonButton2.OverrideDefault.Border.Rounding = 20F;
             kryptonButton2.OverrideDefault.Border.Width = 1;
             kryptonButton2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButton2.Size = new Size(177, 57);
+            kryptonButton2.Size = new Size(155, 43);
             kryptonButton2.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton2.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButton2.StateCommon.Back.ColorAngle = 45F;
@@ -160,8 +163,7 @@
             // kryptonButton1
             // 
             kryptonButton1.Anchor = AnchorStyles.Bottom;
-            kryptonButton1.Location = new Point(188, 361);
-            kryptonButton1.Margin = new Padding(3, 4, 3, 4);
+            kryptonButton1.Location = new Point(179, 335);
             kryptonButton1.Name = "kryptonButton1";
             kryptonButton1.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -173,7 +175,7 @@
             kryptonButton1.OverrideDefault.Border.Rounding = 20F;
             kryptonButton1.OverrideDefault.Border.Width = 1;
             kryptonButton1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButton1.Size = new Size(177, 57);
+            kryptonButton1.Size = new Size(155, 43);
             kryptonButton1.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButton1.StateCommon.Back.ColorAngle = 45F;
@@ -210,10 +212,9 @@
             // kryptonTextBoxCategoryName
             // 
             kryptonTextBoxCategoryName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            kryptonTextBoxCategoryName.Location = new Point(287, 72);
-            kryptonTextBoxCategoryName.Margin = new Padding(3, 4, 3, 4);
+            kryptonTextBoxCategoryName.Location = new Point(251, 54);
             kryptonTextBoxCategoryName.Name = "kryptonTextBoxCategoryName";
-            kryptonTextBoxCategoryName.Size = new Size(163, 35);
+            kryptonTextBoxCategoryName.Size = new Size(145, 30);
             kryptonTextBoxCategoryName.StateCommon.Back.Color1 = Color.White;
             kryptonTextBoxCategoryName.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBoxCategoryName.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -224,7 +225,6 @@
             kryptonTextBoxCategoryName.StateCommon.Content.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonTextBoxCategoryName.StateCommon.Content.Padding = new Padding(10, 0, 10, 0);
             kryptonTextBoxCategoryName.TabIndex = 27;
-            kryptonTextBoxCategoryName.Text = "Category Name";
             // 
             // kryptonCustomPaletteBase1
             // 
@@ -261,10 +261,9 @@
             // kryptonRichTextBox1
             // 
             kryptonRichTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            kryptonRichTextBox1.Location = new Point(287, 125);
-            kryptonRichTextBox1.Margin = new Padding(3, 4, 3, 4);
+            kryptonRichTextBox1.Location = new Point(251, 94);
             kryptonRichTextBox1.Name = "kryptonRichTextBox1";
-            kryptonRichTextBox1.Size = new Size(336, 203);
+            kryptonRichTextBox1.Size = new Size(296, 213);
             kryptonRichTextBox1.StateCommon.Back.Color1 = Color.White;
             kryptonRichTextBox1.StateCommon.Border.Color1 = Color.FromArgb(242, 242, 242);
             kryptonRichTextBox1.StateCommon.Border.Color2 = Color.FromArgb(242, 242, 242);
@@ -275,13 +274,13 @@
             kryptonRichTextBox1.StateCommon.Content.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonRichTextBox1.StateCommon.Content.Padding = new Padding(10, 0, 10, 0);
             kryptonRichTextBox1.TabIndex = 30;
-            kryptonRichTextBox1.Text = "kryptonRichTextBox1";
+            kryptonRichTextBox1.Text = "";
             // 
             // AddCategoryForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(815, 422);
+            ClientSize = new Size(717, 390);
             Controls.Add(kryptonRichTextBox1);
             Controls.Add(kryptonButton2);
             Controls.Add(kryptonButton1);
@@ -292,10 +291,11 @@
             Controls.Add(txtCategoryName);
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             LocalCustomPalette = kryptonCustomPaletteBase1;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AddCategoryForm";
             PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AddCategoryForm";
             ResumeLayout(false);

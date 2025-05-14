@@ -51,7 +51,7 @@
             lblTitle.Anchor = AnchorStyles.None;
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            lblTitle.Location = new Point(24, 21);
+            lblTitle.Location = new Point(25, -8);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(33, 17);
             lblTitle.TabIndex = 0;
@@ -62,7 +62,7 @@
             lblAuthor.Anchor = AnchorStyles.None;
             lblAuthor.AutoSize = true;
             lblAuthor.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            lblAuthor.Location = new Point(24, 53);
+            lblAuthor.Location = new Point(25, 24);
             lblAuthor.Name = "lblAuthor";
             lblAuthor.Size = new Size(50, 17);
             lblAuthor.TabIndex = 1;
@@ -73,7 +73,7 @@
             lblCategory.Anchor = AnchorStyles.None;
             lblCategory.AutoSize = true;
             lblCategory.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            lblCategory.Location = new Point(24, 85);
+            lblCategory.Location = new Point(25, 56);
             lblCategory.Name = "lblCategory";
             lblCategory.Size = new Size(61, 17);
             lblCategory.TabIndex = 2;
@@ -93,7 +93,7 @@
             lblPublishedDate.Anchor = AnchorStyles.None;
             lblPublishedDate.AutoSize = true;
             lblPublishedDate.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            lblPublishedDate.Location = new Point(24, 117);
+            lblPublishedDate.Location = new Point(25, 88);
             lblPublishedDate.Name = "lblPublishedDate";
             lblPublishedDate.Size = new Size(97, 17);
             lblPublishedDate.TabIndex = 5;
@@ -140,7 +140,7 @@
             lblAverageRating.Anchor = AnchorStyles.None;
             lblAverageRating.AutoSize = true;
             lblAverageRating.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            lblAverageRating.Location = new Point(24, 149);
+            lblAverageRating.Location = new Point(25, 120);
             lblAverageRating.Name = "lblAverageRating";
             lblAverageRating.Size = new Size(97, 17);
             lblAverageRating.TabIndex = 9;
@@ -149,9 +149,9 @@
             // kryptonRichTextBox1
             // 
             kryptonRichTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            kryptonRichTextBox1.Location = new Point(24, 182);
+            kryptonRichTextBox1.Location = new Point(24, 160);
             kryptonRichTextBox1.Name = "kryptonRichTextBox1";
-            kryptonRichTextBox1.Size = new Size(650, 93);
+            kryptonRichTextBox1.Size = new Size(652, 118);
             kryptonRichTextBox1.StateCommon.Border.Rounding = 20F;
             kryptonRichTextBox1.StateCommon.Border.Width = 1;
             kryptonRichTextBox1.StateCommon.Content.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -162,7 +162,7 @@
             // kryptonButtonReadBook
             // 
             kryptonButtonReadBook.Anchor = AnchorStyles.Bottom;
-            kryptonButtonReadBook.Location = new Point(24, 304);
+            kryptonButtonReadBook.Location = new Point(25, 296);
             kryptonButtonReadBook.Name = "kryptonButtonReadBook";
             kryptonButtonReadBook.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonReadBook.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -211,7 +211,7 @@
             // kryptonButtonReview
             // 
             kryptonButtonReview.Anchor = AnchorStyles.Bottom;
-            kryptonButtonReview.Location = new Point(219, 304);
+            kryptonButtonReview.Location = new Point(214, 296);
             kryptonButtonReview.Name = "kryptonButtonReview";
             kryptonButtonReview.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonReview.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -260,7 +260,7 @@
             // kryptonButtonClose
             // 
             kryptonButtonClose.Anchor = AnchorStyles.Bottom;
-            kryptonButtonClose.Location = new Point(415, 304);
+            kryptonButtonClose.Location = new Point(416, 296);
             kryptonButtonClose.Name = "kryptonButtonClose";
             kryptonButtonClose.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonClose.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -342,7 +342,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(720, 427);
+            ClientSize = new Size(724, 362);
             Controls.Add(kryptonButtonClose);
             Controls.Add(kryptonButtonReview);
             Controls.Add(kryptonButtonReadBook);
@@ -356,11 +356,11 @@
             Controls.Add(lblCategory);
             Controls.Add(lblAuthor);
             Controls.Add(lblTitle);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             LocalCustomPalette = kryptonCustomPaletteBase1;
             Margin = new Padding(3, 2, 3, 2);
             Name = "BookDetailForm";
             PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "BookDetailForm";
             Load += BookDetailForm_Load;
