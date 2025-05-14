@@ -1,19 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace BookReaderApp.Models
 {
     public class Rating
     {
-        public int RatingID { get; set; }
-        public int UserID { get; set; }
-        public int BookID { get; set; }
-        public int Score { get; set; } // 1 đến 5
-        public string Comment { get; set; } = "";
-        public DateTime RatingDate { get; set; } = DateTime.Now;
+        public int RatingId { get; set; }
+
+        [Required]
+        public int UserId { get; set; }
+
+        [Required]
+        public int BookId { get; set; }
+
+        [Required]
+        [Range(1, 5)]
+        public int? Score { get; set; }
+        [MaxLength(1000)]
+        public string? Comment { get; set; }
+
+        public User User { get; set; } = null!;
+        public Book Book { get; set; } = null!;
     }
 }
