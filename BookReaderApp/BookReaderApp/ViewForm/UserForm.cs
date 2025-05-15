@@ -309,11 +309,6 @@ namespace BookReaderApp.ViewForm
         {
 
         }
-
-        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private bool textCleared = false; // Step 1: Declare the flag
 
         private void kryptonTextBox1_Enter(object sender, EventArgs e) // Step 2: Use Enter event

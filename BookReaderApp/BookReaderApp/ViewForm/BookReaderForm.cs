@@ -20,6 +20,9 @@ namespace BookReaderApp.ViewForm
         private readonly Book _book;
         private readonly int _userId;
         private PdfViewer _pdfViewer = null!; // Initialize with null-forgiving operator  
+        private int _lastKnownPage = -1;
+        private System.Windows.Forms.Timer _pageCheckTimer = null!;
+
 
         public BookReaderForm(string filePath, BookReaderDbContext context, Book book, int userId)
         {
@@ -43,12 +46,31 @@ namespace BookReaderApp.ViewForm
                 ZoomMode = PdfViewerZoomMode.FitWidth
             };
 
+            _pageCheckTimer = new System.Windows.Forms.Timer();
+            _pageCheckTimer.Interval = 200; // Check every 200 ms (adjust as needed)
+            _pageCheckTimer.Tick += PageCheckTimer_Tick;
+            _pageCheckTimer.Start();
+
             //this.Controls.Add(_pdfViewer);
             kryptonPanel1.Controls.Add(_pdfViewer); // Thay đổi từ this.Controls.Add sang panel1.Controls.Add
 
             // Mở file PDF  
             LoadPdf(filePath);
         }
+
+        private void PageCheckTimer_Tick(object? sender, EventArgs e)
+        {
+            if (_pdfViewer?.Document != null)
+            {
+                int currentPage = _pdfViewer.Renderer.Page;
+                if (currentPage != _lastKnownPage)
+                {
+                    _lastKnownPage = currentPage;
+                    UpdatePageLabel();
+                }
+            }
+        }
+
 
         private void LoadPdf(string filePath)
         {
@@ -105,7 +127,10 @@ namespace BookReaderApp.ViewForm
         private void BookReaderForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             // Giải phóng tài nguyên PDF khi form đóng  
+            _pageCheckTimer?.Stop();
+            _pageCheckTimer?.Dispose();
             _pdfViewer?.Dispose();
+
         }
         private void SaveBookmark(int page)
         {
@@ -137,6 +162,7 @@ namespace BookReaderApp.ViewForm
             _context.SaveChanges();
 
             MessageBox.Show($"Đã lưu đánh dấu trang: {page + 1}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            LoadBookmarks();
         }
 
         private int? GetSavedBookmark()
@@ -185,7 +211,14 @@ namespace BookReaderApp.ViewForm
 
         private void UpdatePageLabel()
         {
-            lblPageInfo.Text = $"Trang {_pdfViewer.Renderer.Page + 1}/{_pdfViewer.Document.PageCount}";
+            if (_pdfViewer?.Document != null)
+            {
+                lblPageInfo.Text = $"Trang {_pdfViewer.Renderer.Page + 1}/{_pdfViewer.Document.PageCount}";
+            }
+            else
+            {
+                lblPageInfo.Text = "Không có tài liệu.";
+            }
         }
 
         private void btnBookmark_Click(object sender, EventArgs e)
@@ -313,6 +346,28 @@ namespace BookReaderApp.ViewForm
         {
             int currentPage = _pdfViewer.Renderer.Page;
             SaveBookmark(currentPage);
+        }
+
+        private bool textCleared = false; // Step 1: Declare the flag
+
+        private void kryptonTextBox1_Enter(object sender, EventArgs e) // Step 2: Use Enter event
+        {
+            if (!textCleared)
+            {
+                kryptonTextBoxNote.Text = "";
+                textCleared = true; // Step 3: Set the flag to true
+            }
+        }
+
+        private bool textCleared1 = false; // Step 1: Declare the flag
+
+        private void kryptonTextBox2_Enter(object sender, EventArgs e) // Step 2: Use Enter event
+        {
+            if (!textCleared)
+            {
+                kryptonTextBoxPageNumber.Text = "";
+                textCleared1 = true; // Step 3: Set the flag to true
+            }
         }
     }
 }       
