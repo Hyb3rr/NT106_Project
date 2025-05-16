@@ -9,7 +9,7 @@
 |3|Nguyễn Bá Quân|23521260|Thành viên|
 
 ## Framework
-Cơ sở dữ liệu: Entity framework (Core/ Tool/ Design) tích hợp SQLServer
+Cơ sở dữ liệu: Entity framework (Core/ Tool/ Design) tích hợp SQLServer`<br>`.<br>
 Giao diện (UI): Krypton Toolkit
 API: Google.Apis.Drive.v3, Google.Apis.Auth
 Đọc sách offline: PdfiumViewer.Updated, PdfiumViewer.Native.x86_64.v8-xfa
