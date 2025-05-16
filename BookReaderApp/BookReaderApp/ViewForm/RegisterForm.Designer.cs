@@ -59,10 +59,10 @@
             lblMessage.Anchor = AnchorStyles.None;
             lblMessage.AutoSize = true;
             lblMessage.Font = new Font("Calibri", 10F);
-            lblMessage.Location = new Point(647, 341);
+            lblMessage.Location = new Point(648, 337);
             lblMessage.Margin = new Padding(4, 0, 4, 0);
             lblMessage.Name = "lblMessage";
-            lblMessage.Size = new Size(58, 17);
+            lblMessage.Size = new Size(71, 21);
             lblMessage.TabIndex = 0;
             lblMessage.Text = "Message";
             lblMessage.TextAlign = ContentAlignment.MiddleCenter;
@@ -70,7 +70,7 @@
             // btnRegister
             // 
             btnRegister.Anchor = AnchorStyles.None;
-            btnRegister.Location = new Point(779, 380);
+            btnRegister.Location = new Point(780, 376);
             btnRegister.Margin = new Padding(4, 2, 4, 2);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(133, 43);
@@ -83,40 +83,40 @@
             // txtUserName
             // 
             txtUserName.Anchor = AnchorStyles.None;
-            txtUserName.Location = new Point(779, 185);
+            txtUserName.Location = new Point(780, 181);
             txtUserName.Margin = new Padding(4, 2, 4, 2);
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(110, 24);
+            txtUserName.Size = new Size(110, 28);
             txtUserName.TabIndex = 2;
             txtUserName.Visible = false;
             // 
             // txtEmail
             // 
             txtEmail.Anchor = AnchorStyles.None;
-            txtEmail.Location = new Point(779, 212);
+            txtEmail.Location = new Point(780, 208);
             txtEmail.Margin = new Padding(4, 2, 4, 2);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(110, 24);
+            txtEmail.Size = new Size(110, 28);
             txtEmail.TabIndex = 3;
             txtEmail.Visible = false;
             // 
             // txtFullName
             // 
             txtFullName.Anchor = AnchorStyles.None;
-            txtFullName.Location = new Point(779, 252);
+            txtFullName.Location = new Point(780, 248);
             txtFullName.Margin = new Padding(4, 2, 4, 2);
             txtFullName.Name = "txtFullName";
-            txtFullName.Size = new Size(110, 24);
+            txtFullName.Size = new Size(110, 28);
             txtFullName.TabIndex = 4;
             txtFullName.Visible = false;
             // 
             // txtPassword
             // 
             txtPassword.Anchor = AnchorStyles.None;
-            txtPassword.Location = new Point(779, 293);
+            txtPassword.Location = new Point(780, 289);
             txtPassword.Margin = new Padding(4, 2, 4, 2);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(110, 24);
+            txtPassword.Size = new Size(110, 28);
             txtPassword.TabIndex = 5;
             txtPassword.Visible = false;
             txtPassword.TextChanged += txtPassword_TextChanged;
@@ -124,10 +124,10 @@
             // txtConfirmPassword
             // 
             txtConfirmPassword.Anchor = AnchorStyles.None;
-            txtConfirmPassword.Location = new Point(779, 329);
+            txtConfirmPassword.Location = new Point(780, 325);
             txtConfirmPassword.Margin = new Padding(4, 2, 4, 2);
             txtConfirmPassword.Name = "txtConfirmPassword";
-            txtConfirmPassword.Size = new Size(110, 24);
+            txtConfirmPassword.Size = new Size(110, 28);
             txtConfirmPassword.TabIndex = 6;
             txtConfirmPassword.Visible = false;
             txtConfirmPassword.TextChanged += txtConfirmPassword_TextChanged;
@@ -137,10 +137,10 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label1.Location = new Point(486, 164);
+            label1.Location = new Point(487, 160);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(69, 17);
+            label1.Size = new Size(85, 21);
             label1.TabIndex = 7;
             label1.Text = "UserName";
             // 
@@ -149,10 +149,10 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label2.Location = new Point(486, 199);
+            label2.Location = new Point(487, 195);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(39, 17);
+            label2.Size = new Size(48, 21);
             label2.TabIndex = 8;
             label2.Text = "Email";
             // 
@@ -161,10 +161,10 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label3.Location = new Point(486, 240);
+            label3.Location = new Point(487, 236);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(65, 17);
+            label3.Size = new Size(81, 21);
             label3.TabIndex = 9;
             label3.Text = "Full Name";
             // 
@@ -173,10 +173,10 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label4.Location = new Point(486, 272);
+            label4.Location = new Point(487, 268);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(65, 17);
+            label4.Size = new Size(78, 21);
             label4.TabIndex = 10;
             label4.Text = "Password";
             // 
@@ -185,10 +185,10 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label5.Location = new Point(486, 308);
+            label5.Location = new Point(487, 304);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(115, 17);
+            label5.Size = new Size(138, 21);
             label5.TabIndex = 11;
             label5.Text = "Confirm Password";
             label5.Click += label5_Click;
@@ -196,11 +196,11 @@
             // kryptonButton1
             // 
             kryptonButton1.Anchor = AnchorStyles.None;
-            kryptonButton1.Location = new Point(604, 360);
-            kryptonButton1.Margin = new Padding(4, 3, 4, 3);
+            kryptonButton1.Location = new Point(584, 376);
+            kryptonButton1.Margin = new Padding(3, 4, 3, 4);
             kryptonButton1.Name = "kryptonButton1";
-            kryptonButton1.OverrideDefault.Back.Color1 = Color.FromArgb(8, 142, 254);
-            kryptonButton1.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButton1.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButton1.OverrideDefault.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButton1.OverrideDefault.Back.ColorAngle = 45F;
             kryptonButton1.OverrideDefault.Border.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButton1.OverrideDefault.Border.Color2 = Color.FromArgb(8, 142, 254);
@@ -209,18 +209,17 @@
             kryptonButton1.OverrideDefault.Border.Rounding = 20F;
             kryptonButton1.OverrideDefault.Border.Width = 1;
             kryptonButton1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButton1.Size = new Size(155, 43);
+            kryptonButton1.Size = new Size(179, 65);
             kryptonButton1.StateCommon.Back.Color1 = Color.FromArgb(250, 252, 252);
             kryptonButton1.StateCommon.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButton1.StateCommon.Back.ColorAngle = 45F;
-            kryptonButton1.StateCommon.Border.Color1 = Color.FromArgb(8, 142, 254);
+            kryptonButton1.StateCommon.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.StateCommon.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButton1.StateCommon.Border.ColorAngle = 45F;
             kryptonButton1.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButton1.StateCommon.Border.Rounding = 20F;
             kryptonButton1.StateCommon.Border.Width = 1;
             kryptonButton1.StateCommon.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
-            kryptonButton1.StateCommon.Content.ShortText.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButton1.StateCommon.Content.ShortText.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             kryptonButton1.StatePressed.Back.Color1 = Color.FromArgb(224, 224, 224);
             kryptonButton1.StatePressed.Back.Color2 = Color.FromArgb(224, 224, 224);
@@ -230,7 +229,6 @@
             kryptonButton1.StatePressed.Border.ColorAngle = 135F;
             kryptonButton1.StatePressed.Border.Rounding = 20F;
             kryptonButton1.StatePressed.Border.Width = 1;
-            kryptonButton1.StatePressed.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButton1.StateTracking.Back.Color1 = SystemColors.ButtonFace;
             kryptonButton1.StateTracking.Back.Color2 = SystemColors.ButtonFace;
             kryptonButton1.StateTracking.Back.ColorAngle = 45F;
@@ -248,10 +246,10 @@
             // kryptonTextBox1
             // 
             kryptonTextBox1.Anchor = AnchorStyles.None;
-            kryptonTextBox1.Location = new Point(621, 153);
+            kryptonTextBox1.Location = new Point(622, 149);
             kryptonTextBox1.Margin = new Padding(4, 3, 4, 3);
             kryptonTextBox1.Name = "kryptonTextBox1";
-            kryptonTextBox1.Size = new Size(150, 30);
+            kryptonTextBox1.Size = new Size(150, 34);
             kryptonTextBox1.StateCommon.Back.Color1 = Color.White;
             kryptonTextBox1.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBox1.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -266,10 +264,10 @@
             // kryptonTextBox2
             // 
             kryptonTextBox2.Anchor = AnchorStyles.None;
-            kryptonTextBox2.Location = new Point(621, 189);
+            kryptonTextBox2.Location = new Point(622, 185);
             kryptonTextBox2.Margin = new Padding(4, 3, 4, 3);
             kryptonTextBox2.Name = "kryptonTextBox2";
-            kryptonTextBox2.Size = new Size(150, 30);
+            kryptonTextBox2.Size = new Size(150, 34);
             kryptonTextBox2.StateCommon.Back.Color1 = Color.White;
             kryptonTextBox2.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBox2.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -284,10 +282,10 @@
             // kryptonTextBox3
             // 
             kryptonTextBox3.Anchor = AnchorStyles.None;
-            kryptonTextBox3.Location = new Point(621, 225);
+            kryptonTextBox3.Location = new Point(622, 221);
             kryptonTextBox3.Margin = new Padding(4, 3, 4, 3);
             kryptonTextBox3.Name = "kryptonTextBox3";
-            kryptonTextBox3.Size = new Size(150, 30);
+            kryptonTextBox3.Size = new Size(150, 34);
             kryptonTextBox3.StateCommon.Back.Color1 = Color.White;
             kryptonTextBox3.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBox3.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -302,11 +300,11 @@
             // kryptonTextBox4
             // 
             kryptonTextBox4.Anchor = AnchorStyles.None;
-            kryptonTextBox4.Location = new Point(621, 261);
+            kryptonTextBox4.Location = new Point(622, 257);
             kryptonTextBox4.Margin = new Padding(4, 3, 4, 3);
             kryptonTextBox4.Name = "kryptonTextBox4";
             kryptonTextBox4.PasswordChar = '*';
-            kryptonTextBox4.Size = new Size(150, 30);
+            kryptonTextBox4.Size = new Size(150, 34);
             kryptonTextBox4.StateCommon.Back.Color1 = Color.White;
             kryptonTextBox4.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBox4.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -321,11 +319,11 @@
             // kryptonTextBox5
             // 
             kryptonTextBox5.Anchor = AnchorStyles.None;
-            kryptonTextBox5.Location = new Point(621, 297);
+            kryptonTextBox5.Location = new Point(622, 293);
             kryptonTextBox5.Margin = new Padding(4, 3, 4, 3);
             kryptonTextBox5.Name = "kryptonTextBox5";
             kryptonTextBox5.PasswordChar = '*';
-            kryptonTextBox5.Size = new Size(150, 30);
+            kryptonTextBox5.Size = new Size(150, 34);
             kryptonTextBox5.StateCommon.Back.Color1 = Color.White;
             kryptonTextBox5.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBox5.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -373,7 +371,7 @@
             // 
             kryptonPictureBox1.Anchor = AnchorStyles.Left;
             kryptonPictureBox1.Image = Properties.Resources.catbook;
-            kryptonPictureBox1.Location = new Point(-47, -83);
+            kryptonPictureBox1.Location = new Point(-47, -87);
             kryptonPictureBox1.Name = "kryptonPictureBox1";
             kryptonPictureBox1.Size = new Size(506, 703);
             kryptonPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -384,16 +382,16 @@
             // 
             kryptonLabel1.Location = new Point(541, 25);
             kryptonLabel1.Name = "kryptonLabel1";
-            kryptonLabel1.Size = new Size(267, 93);
+            kryptonLabel1.Size = new Size(333, 116);
             kryptonLabel1.StateCommon.ShortText.Font = new Font("Segoe Script", 39.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonLabel1.TabIndex = 21;
             kryptonLabel1.Values.Text = "Purread";
             // 
             // RegisterForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(866, 531);
+            ClientSize = new Size(870, 517);
             Controls.Add(kryptonLabel1);
             Controls.Add(kryptonPictureBox1);
             Controls.Add(kryptonTextBox5);

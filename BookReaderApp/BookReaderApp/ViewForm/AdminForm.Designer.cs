@@ -105,8 +105,8 @@
             menuStripAdmin.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, quảnLýToolStripMenuItem, thốngKêToolStripMenuItem, cấuHìnhToolStripMenuItem });
             menuStripAdmin.Location = new Point(0, 0);
             menuStripAdmin.Name = "menuStripAdmin";
-            menuStripAdmin.Padding = new Padding(5, 2, 0, 2);
-            menuStripAdmin.Size = new Size(779, 24);
+            menuStripAdmin.Padding = new Padding(6, 3, 0, 3);
+            menuStripAdmin.Size = new Size(982, 30);
             menuStripAdmin.TabIndex = 0;
             menuStripAdmin.Text = "menuStrip1";
             // 
@@ -114,20 +114,20 @@
             // 
             fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuLogoutToolStripMenuItem, menuExitToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            fileToolStripMenuItem.Size = new Size(37, 20);
+            fileToolStripMenuItem.Size = new Size(46, 24);
             fileToolStripMenuItem.Text = "File";
             // 
             // menuLogoutToolStripMenuItem
             // 
             menuLogoutToolStripMenuItem.Name = "menuLogoutToolStripMenuItem";
-            menuLogoutToolStripMenuItem.Size = new Size(143, 22);
+            menuLogoutToolStripMenuItem.Size = new Size(176, 26);
             menuLogoutToolStripMenuItem.Text = "menuLogout";
             menuLogoutToolStripMenuItem.Click += menuLogoutToolStripMenuItem_Click;
             // 
             // menuExitToolStripMenuItem
             // 
             menuExitToolStripMenuItem.Name = "menuExitToolStripMenuItem";
-            menuExitToolStripMenuItem.Size = new Size(143, 22);
+            menuExitToolStripMenuItem.Size = new Size(176, 26);
             menuExitToolStripMenuItem.Text = "menuExit";
             menuExitToolStripMenuItem.Click += menuExitToolStripMenuItem_Click;
             // 
@@ -135,51 +135,51 @@
             // 
             quảnLýToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuManageUsersToolStripMenuItem, menuManageBooksToolStripMenuItem, menuManageCategoriesToolStripMenuItem });
             quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
-            quảnLýToolStripMenuItem.Size = new Size(62, 20);
+            quảnLýToolStripMenuItem.Size = new Size(75, 24);
             quảnLýToolStripMenuItem.Text = "Quản Lý";
             // 
             // menuManageUsersToolStripMenuItem
             // 
             menuManageUsersToolStripMenuItem.Name = "menuManageUsersToolStripMenuItem";
-            menuManageUsersToolStripMenuItem.Size = new Size(204, 22);
+            menuManageUsersToolStripMenuItem.Size = new Size(254, 26);
             menuManageUsersToolStripMenuItem.Text = "menuManageUsers";
             // 
             // menuManageBooksToolStripMenuItem
             // 
             menuManageBooksToolStripMenuItem.Name = "menuManageBooksToolStripMenuItem";
-            menuManageBooksToolStripMenuItem.Size = new Size(204, 22);
+            menuManageBooksToolStripMenuItem.Size = new Size(254, 26);
             menuManageBooksToolStripMenuItem.Text = "menuManageBooks";
             // 
             // menuManageCategoriesToolStripMenuItem
             // 
             menuManageCategoriesToolStripMenuItem.Name = "menuManageCategoriesToolStripMenuItem";
-            menuManageCategoriesToolStripMenuItem.Size = new Size(204, 22);
+            menuManageCategoriesToolStripMenuItem.Size = new Size(254, 26);
             menuManageCategoriesToolStripMenuItem.Text = "menuManageCategories";
             // 
             // thốngKêToolStripMenuItem
             // 
             thốngKêToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuStatisticsToolStripMenuItem });
             thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
-            thốngKêToolStripMenuItem.Size = new Size(68, 20);
+            thốngKêToolStripMenuItem.Size = new Size(84, 24);
             thốngKêToolStripMenuItem.Text = "Thống kê";
             // 
             // menuStatisticsToolStripMenuItem
             // 
             menuStatisticsToolStripMenuItem.Name = "menuStatisticsToolStripMenuItem";
-            menuStatisticsToolStripMenuItem.Size = new Size(151, 22);
+            menuStatisticsToolStripMenuItem.Size = new Size(187, 26);
             menuStatisticsToolStripMenuItem.Text = "menuStatistics";
             // 
             // cấuHìnhToolStripMenuItem
             // 
             cấuHìnhToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuSettingsToolStripMenuItem });
             cấuHìnhToolStripMenuItem.Name = "cấuHìnhToolStripMenuItem";
-            cấuHìnhToolStripMenuItem.Size = new Size(67, 20);
+            cấuHìnhToolStripMenuItem.Size = new Size(80, 24);
             cấuHìnhToolStripMenuItem.Text = "Cấu hình";
             // 
             // menuSettingsToolStripMenuItem
             // 
             menuSettingsToolStripMenuItem.Name = "menuSettingsToolStripMenuItem";
-            menuSettingsToolStripMenuItem.Size = new Size(147, 22);
+            menuSettingsToolStripMenuItem.Size = new Size(182, 26);
             menuSettingsToolStripMenuItem.Text = "menuSettings";
             // 
             // tabControlAdmin
@@ -188,11 +188,10 @@
             tabControlAdmin.Controls.Add(tabPage1);
             tabControlAdmin.Controls.Add(tabPage2);
             tabControlAdmin.Controls.Add(tabPage3);
-            tabControlAdmin.Location = new Point(12, 56);
-            tabControlAdmin.Margin = new Padding(3, 2, 3, 2);
+            tabControlAdmin.Location = new Point(14, 66);
             tabControlAdmin.Name = "tabControlAdmin";
             tabControlAdmin.SelectedIndex = 0;
-            tabControlAdmin.Size = new Size(737, 279);
+            tabControlAdmin.Size = new Size(934, 229);
             tabControlAdmin.TabIndex = 1;
             tabControlAdmin.SelectedIndexChanged += tabControlAdmin_SelectedIndexChanged;
             // 
@@ -207,11 +206,10 @@
             tabPage1.Controls.Add(btnEditUser);
             tabPage1.Controls.Add(btnAddUser);
             tabPage1.Controls.Add(dgvUsers);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Margin = new Padding(3, 2, 3, 2);
+            tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 2, 3, 2);
-            tabPage1.Size = new Size(729, 251);
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(926, 196);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "tabUsers";
             tabPage1.UseVisualStyleBackColor = true;
@@ -219,9 +217,10 @@
             // kryptonTextBoxSearchUser
             // 
             kryptonTextBoxSearchUser.Anchor = AnchorStyles.Top;
-            kryptonTextBoxSearchUser.Location = new Point(531, 11);
+            kryptonTextBoxSearchUser.Location = new Point(682, 13);
+            kryptonTextBoxSearchUser.Margin = new Padding(3, 4, 3, 4);
             kryptonTextBoxSearchUser.Name = "kryptonTextBoxSearchUser";
-            kryptonTextBoxSearchUser.Size = new Size(150, 30);
+            kryptonTextBoxSearchUser.Size = new Size(171, 34);
             kryptonTextBoxSearchUser.StateCommon.Back.Color1 = Color.White;
             kryptonTextBoxSearchUser.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBoxSearchUser.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -237,21 +236,22 @@
             // kryptonButtonDeleteUser
             // 
             kryptonButtonDeleteUser.Anchor = AnchorStyles.Bottom;
-            kryptonButtonDeleteUser.Location = new Point(443, 196);
+            kryptonButtonDeleteUser.Location = new Point(357, 132);
+            kryptonButtonDeleteUser.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonDeleteUser.Name = "kryptonButtonDeleteUser";
-            kryptonButtonDeleteUser.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButtonDeleteUser.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonDeleteUser.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButtonDeleteUser.OverrideDefault.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButtonDeleteUser.OverrideDefault.Back.ColorAngle = 45F;
-            kryptonButtonDeleteUser.OverrideDefault.Border.Color1 = Color.FromArgb(6, 174, 244);
+            kryptonButtonDeleteUser.OverrideDefault.Border.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteUser.OverrideDefault.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteUser.OverrideDefault.Border.ColorAngle = 45F;
             kryptonButtonDeleteUser.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonDeleteUser.OverrideDefault.Border.Rounding = 20F;
             kryptonButtonDeleteUser.OverrideDefault.Border.Width = 1;
             kryptonButtonDeleteUser.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButtonDeleteUser.Size = new Size(155, 43);
-            kryptonButtonDeleteUser.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButtonDeleteUser.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonDeleteUser.Size = new Size(177, 57);
+            kryptonButtonDeleteUser.StateCommon.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButtonDeleteUser.StateCommon.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButtonDeleteUser.StateCommon.Back.ColorAngle = 45F;
             kryptonButtonDeleteUser.StateCommon.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonDeleteUser.StateCommon.Border.Color2 = Color.FromArgb(8, 142, 254);
@@ -259,25 +259,25 @@
             kryptonButtonDeleteUser.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonDeleteUser.StateCommon.Border.Rounding = 20F;
             kryptonButtonDeleteUser.StateCommon.Border.Width = 1;
-            kryptonButtonDeleteUser.StateCommon.Content.ShortText.Color1 = Color.White;
-            kryptonButtonDeleteUser.StateCommon.Content.ShortText.Color2 = Color.White;
+            kryptonButtonDeleteUser.StateCommon.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteUser.StateCommon.Content.ShortText.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            kryptonButtonDeleteUser.StatePressed.Back.Color1 = Color.FromArgb(20, 145, 198);
-            kryptonButtonDeleteUser.StatePressed.Back.Color2 = Color.FromArgb(22, 121, 206);
+            kryptonButtonDeleteUser.StatePressed.Back.Color1 = Color.FromArgb(224, 224, 224);
+            kryptonButtonDeleteUser.StatePressed.Back.Color2 = Color.FromArgb(224, 224, 224);
             kryptonButtonDeleteUser.StatePressed.Back.ColorAngle = 135F;
             kryptonButtonDeleteUser.StatePressed.Border.Color1 = Color.FromArgb(20, 145, 198);
             kryptonButtonDeleteUser.StatePressed.Border.Color2 = Color.FromArgb(22, 121, 206);
             kryptonButtonDeleteUser.StatePressed.Border.ColorAngle = 135F;
             kryptonButtonDeleteUser.StatePressed.Border.Rounding = 20F;
             kryptonButtonDeleteUser.StatePressed.Border.Width = 1;
-            kryptonButtonDeleteUser.StateTracking.Back.Color1 = Color.FromArgb(8, 142, 254);
-            kryptonButtonDeleteUser.StateTracking.Back.Color2 = Color.FromArgb(6, 174, 244);
+            kryptonButtonDeleteUser.StateTracking.Back.Color1 = SystemColors.ButtonFace;
+            kryptonButtonDeleteUser.StateTracking.Back.Color2 = SystemColors.ButtonFace;
             kryptonButtonDeleteUser.StateTracking.Back.ColorAngle = 45F;
             kryptonButtonDeleteUser.StateTracking.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonDeleteUser.StateTracking.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteUser.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonDeleteUser.StateTracking.Border.Rounding = 20F;
             kryptonButtonDeleteUser.StateTracking.Border.Width = 1;
+            kryptonButtonDeleteUser.StateTracking.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteUser.TabIndex = 16;
             kryptonButtonDeleteUser.Values.DropDownArrowColor = Color.Empty;
             kryptonButtonDeleteUser.Values.Text = "Delete User";
@@ -286,7 +286,8 @@
             // kryptonButtonEditUser
             // 
             kryptonButtonEditUser.Anchor = AnchorStyles.Bottom;
-            kryptonButtonEditUser.Location = new Point(283, 196);
+            kryptonButtonEditUser.Location = new Point(541, 132);
+            kryptonButtonEditUser.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonEditUser.Name = "kryptonButtonEditUser";
             kryptonButtonEditUser.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonEditUser.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -298,7 +299,7 @@
             kryptonButtonEditUser.OverrideDefault.Border.Rounding = 20F;
             kryptonButtonEditUser.OverrideDefault.Border.Width = 1;
             kryptonButtonEditUser.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButtonEditUser.Size = new Size(155, 43);
+            kryptonButtonEditUser.Size = new Size(177, 57);
             kryptonButtonEditUser.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonEditUser.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonEditUser.StateCommon.Back.ColorAngle = 45F;
@@ -334,19 +335,17 @@
             // 
             // txtSearchUser
             // 
-            txtSearchUser.Location = new Point(369, 14);
-            txtSearchUser.Margin = new Padding(3, 2, 3, 2);
+            txtSearchUser.Location = new Point(523, 21);
             txtSearchUser.Name = "txtSearchUser";
-            txtSearchUser.Size = new Size(110, 23);
+            txtSearchUser.Size = new Size(125, 27);
             txtSearchUser.TabIndex = 4;
             txtSearchUser.Visible = false;
             // 
             // btnDeleteUser
             // 
-            btnDeleteUser.Location = new Point(437, 205);
-            btnDeleteUser.Margin = new Padding(3, 2, 3, 2);
+            btnDeleteUser.Location = new Point(499, 273);
             btnDeleteUser.Name = "btnDeleteUser";
-            btnDeleteUser.Size = new Size(162, 26);
+            btnDeleteUser.Size = new Size(185, 35);
             btnDeleteUser.TabIndex = 3;
             btnDeleteUser.Text = "btnDeleteUser";
             btnDeleteUser.UseVisualStyleBackColor = true;
@@ -356,7 +355,8 @@
             // kryptonButtonAddUser
             // 
             kryptonButtonAddUser.Anchor = AnchorStyles.Bottom;
-            kryptonButtonAddUser.Location = new Point(114, 196);
+            kryptonButtonAddUser.Location = new Point(174, 132);
+            kryptonButtonAddUser.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonAddUser.Name = "kryptonButtonAddUser";
             kryptonButtonAddUser.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonAddUser.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -368,7 +368,7 @@
             kryptonButtonAddUser.OverrideDefault.Border.Rounding = 20F;
             kryptonButtonAddUser.OverrideDefault.Border.Width = 1;
             kryptonButtonAddUser.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButtonAddUser.Size = new Size(155, 43);
+            kryptonButtonAddUser.Size = new Size(177, 57);
             kryptonButtonAddUser.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonAddUser.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonAddUser.StateCommon.Back.ColorAngle = 45F;
@@ -404,10 +404,9 @@
             // 
             // btnEditUser
             // 
-            btnEditUser.Location = new Point(269, 205);
-            btnEditUser.Margin = new Padding(3, 2, 3, 2);
+            btnEditUser.Location = new Point(307, 273);
             btnEditUser.Name = "btnEditUser";
-            btnEditUser.Size = new Size(162, 26);
+            btnEditUser.Size = new Size(185, 35);
             btnEditUser.TabIndex = 2;
             btnEditUser.Text = "btnEditUser";
             btnEditUser.UseVisualStyleBackColor = true;
@@ -416,10 +415,9 @@
             // 
             // btnAddUser
             // 
-            btnAddUser.Location = new Point(101, 205);
-            btnAddUser.Margin = new Padding(3, 2, 3, 2);
+            btnAddUser.Location = new Point(115, 273);
             btnAddUser.Name = "btnAddUser";
-            btnAddUser.Size = new Size(162, 26);
+            btnAddUser.Size = new Size(185, 35);
             btnAddUser.TabIndex = 1;
             btnAddUser.Text = "btnAddUser";
             btnAddUser.UseVisualStyleBackColor = true;
@@ -429,12 +427,12 @@
             // dgvUsers
             // 
             dgvUsers.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvUsers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsers.Location = new Point(33, 46);
-            dgvUsers.Margin = new Padding(3, 2, 3, 2);
+            dgvUsers.Location = new Point(46, 54);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.RowHeadersWidth = 51;
-            dgvUsers.Size = new Size(652, 89);
+            dgvUsers.Size = new Size(835, 71);
             dgvUsers.TabIndex = 0;
             // 
             // tabPage2
@@ -450,11 +448,10 @@
             tabPage2.Controls.Add(btnEditBook);
             tabPage2.Controls.Add(btnAddBook);
             tabPage2.Controls.Add(dgvBooks);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Margin = new Padding(3, 2, 3, 2);
+            tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 2, 3, 2);
-            tabPage2.Size = new Size(729, 251);
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(922, 210);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabBooks";
             tabPage2.UseVisualStyleBackColor = true;
@@ -462,9 +459,10 @@
             // kryptonTextBoxSearch
             // 
             kryptonTextBoxSearch.Anchor = AnchorStyles.Top;
-            kryptonTextBoxSearch.Location = new Point(534, 6);
+            kryptonTextBoxSearch.Location = new Point(673, 8);
+            kryptonTextBoxSearch.Margin = new Padding(3, 4, 3, 4);
             kryptonTextBoxSearch.Name = "kryptonTextBoxSearch";
-            kryptonTextBoxSearch.Size = new Size(150, 30);
+            kryptonTextBoxSearch.Size = new Size(171, 34);
             kryptonTextBoxSearch.StateCommon.Back.Color1 = Color.White;
             kryptonTextBoxSearch.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBoxSearch.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -479,21 +477,22 @@
             // kryptonButtonUploadToDrive
             // 
             kryptonButtonUploadToDrive.Anchor = AnchorStyles.Bottom;
-            kryptonButtonUploadToDrive.Location = new Point(522, 177);
+            kryptonButtonUploadToDrive.Location = new Point(638, 146);
+            kryptonButtonUploadToDrive.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonUploadToDrive.Name = "kryptonButtonUploadToDrive";
-            kryptonButtonUploadToDrive.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButtonUploadToDrive.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonUploadToDrive.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButtonUploadToDrive.OverrideDefault.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButtonUploadToDrive.OverrideDefault.Back.ColorAngle = 45F;
-            kryptonButtonUploadToDrive.OverrideDefault.Border.Color1 = Color.FromArgb(6, 174, 244);
+            kryptonButtonUploadToDrive.OverrideDefault.Border.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonUploadToDrive.OverrideDefault.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonUploadToDrive.OverrideDefault.Border.ColorAngle = 45F;
             kryptonButtonUploadToDrive.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonUploadToDrive.OverrideDefault.Border.Rounding = 20F;
             kryptonButtonUploadToDrive.OverrideDefault.Border.Width = 1;
             kryptonButtonUploadToDrive.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButtonUploadToDrive.Size = new Size(163, 43);
-            kryptonButtonUploadToDrive.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButtonUploadToDrive.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonUploadToDrive.Size = new Size(186, 57);
+            kryptonButtonUploadToDrive.StateCommon.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButtonUploadToDrive.StateCommon.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButtonUploadToDrive.StateCommon.Back.ColorAngle = 45F;
             kryptonButtonUploadToDrive.StateCommon.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonUploadToDrive.StateCommon.Border.Color2 = Color.FromArgb(8, 142, 254);
@@ -501,25 +500,25 @@
             kryptonButtonUploadToDrive.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonUploadToDrive.StateCommon.Border.Rounding = 20F;
             kryptonButtonUploadToDrive.StateCommon.Border.Width = 1;
-            kryptonButtonUploadToDrive.StateCommon.Content.ShortText.Color1 = Color.White;
-            kryptonButtonUploadToDrive.StateCommon.Content.ShortText.Color2 = Color.White;
+            kryptonButtonUploadToDrive.StateCommon.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonUploadToDrive.StateCommon.Content.ShortText.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            kryptonButtonUploadToDrive.StatePressed.Back.Color1 = Color.FromArgb(20, 145, 198);
-            kryptonButtonUploadToDrive.StatePressed.Back.Color2 = Color.FromArgb(22, 121, 206);
+            kryptonButtonUploadToDrive.StatePressed.Back.Color1 = Color.FromArgb(224, 224, 224);
+            kryptonButtonUploadToDrive.StatePressed.Back.Color2 = Color.FromArgb(224, 224, 224);
             kryptonButtonUploadToDrive.StatePressed.Back.ColorAngle = 135F;
             kryptonButtonUploadToDrive.StatePressed.Border.Color1 = Color.FromArgb(20, 145, 198);
             kryptonButtonUploadToDrive.StatePressed.Border.Color2 = Color.FromArgb(22, 121, 206);
             kryptonButtonUploadToDrive.StatePressed.Border.ColorAngle = 135F;
             kryptonButtonUploadToDrive.StatePressed.Border.Rounding = 20F;
             kryptonButtonUploadToDrive.StatePressed.Border.Width = 1;
-            kryptonButtonUploadToDrive.StateTracking.Back.Color1 = Color.FromArgb(8, 142, 254);
-            kryptonButtonUploadToDrive.StateTracking.Back.Color2 = Color.FromArgb(6, 174, 244);
+            kryptonButtonUploadToDrive.StateTracking.Back.Color1 = SystemColors.ButtonFace;
+            kryptonButtonUploadToDrive.StateTracking.Back.Color2 = SystemColors.ButtonFace;
             kryptonButtonUploadToDrive.StateTracking.Back.ColorAngle = 45F;
             kryptonButtonUploadToDrive.StateTracking.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonUploadToDrive.StateTracking.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonUploadToDrive.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonUploadToDrive.StateTracking.Border.Rounding = 20F;
             kryptonButtonUploadToDrive.StateTracking.Border.Width = 1;
+            kryptonButtonUploadToDrive.StateTracking.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonUploadToDrive.TabIndex = 18;
             kryptonButtonUploadToDrive.Values.DropDownArrowColor = Color.Empty;
             kryptonButtonUploadToDrive.Values.Text = "Upload to drive";
@@ -528,21 +527,22 @@
             // kryptonButtonDeleteBook
             // 
             kryptonButtonDeleteBook.Anchor = AnchorStyles.Bottom;
-            kryptonButtonDeleteBook.Location = new Point(363, 177);
+            kryptonButtonDeleteBook.Location = new Point(270, 146);
+            kryptonButtonDeleteBook.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonDeleteBook.Name = "kryptonButtonDeleteBook";
-            kryptonButtonDeleteBook.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButtonDeleteBook.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonDeleteBook.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButtonDeleteBook.OverrideDefault.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButtonDeleteBook.OverrideDefault.Back.ColorAngle = 45F;
-            kryptonButtonDeleteBook.OverrideDefault.Border.Color1 = Color.FromArgb(6, 174, 244);
+            kryptonButtonDeleteBook.OverrideDefault.Border.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteBook.OverrideDefault.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteBook.OverrideDefault.Border.ColorAngle = 45F;
             kryptonButtonDeleteBook.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonDeleteBook.OverrideDefault.Border.Rounding = 20F;
             kryptonButtonDeleteBook.OverrideDefault.Border.Width = 1;
             kryptonButtonDeleteBook.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButtonDeleteBook.Size = new Size(155, 43);
-            kryptonButtonDeleteBook.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButtonDeleteBook.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonDeleteBook.Size = new Size(177, 57);
+            kryptonButtonDeleteBook.StateCommon.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButtonDeleteBook.StateCommon.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButtonDeleteBook.StateCommon.Back.ColorAngle = 45F;
             kryptonButtonDeleteBook.StateCommon.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonDeleteBook.StateCommon.Border.Color2 = Color.FromArgb(8, 142, 254);
@@ -550,25 +550,25 @@
             kryptonButtonDeleteBook.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonDeleteBook.StateCommon.Border.Rounding = 20F;
             kryptonButtonDeleteBook.StateCommon.Border.Width = 1;
-            kryptonButtonDeleteBook.StateCommon.Content.ShortText.Color1 = Color.White;
-            kryptonButtonDeleteBook.StateCommon.Content.ShortText.Color2 = Color.White;
+            kryptonButtonDeleteBook.StateCommon.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteBook.StateCommon.Content.ShortText.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            kryptonButtonDeleteBook.StatePressed.Back.Color1 = Color.FromArgb(20, 145, 198);
-            kryptonButtonDeleteBook.StatePressed.Back.Color2 = Color.FromArgb(22, 121, 206);
+            kryptonButtonDeleteBook.StatePressed.Back.Color1 = Color.FromArgb(224, 224, 224);
+            kryptonButtonDeleteBook.StatePressed.Back.Color2 = Color.FromArgb(224, 224, 224);
             kryptonButtonDeleteBook.StatePressed.Back.ColorAngle = 135F;
             kryptonButtonDeleteBook.StatePressed.Border.Color1 = Color.FromArgb(20, 145, 198);
             kryptonButtonDeleteBook.StatePressed.Border.Color2 = Color.FromArgb(22, 121, 206);
             kryptonButtonDeleteBook.StatePressed.Border.ColorAngle = 135F;
             kryptonButtonDeleteBook.StatePressed.Border.Rounding = 20F;
             kryptonButtonDeleteBook.StatePressed.Border.Width = 1;
-            kryptonButtonDeleteBook.StateTracking.Back.Color1 = Color.FromArgb(8, 142, 254);
-            kryptonButtonDeleteBook.StateTracking.Back.Color2 = Color.FromArgb(6, 174, 244);
+            kryptonButtonDeleteBook.StateTracking.Back.Color1 = SystemColors.ButtonFace;
+            kryptonButtonDeleteBook.StateTracking.Back.Color2 = SystemColors.ButtonFace;
             kryptonButtonDeleteBook.StateTracking.Back.ColorAngle = 45F;
             kryptonButtonDeleteBook.StateTracking.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonDeleteBook.StateTracking.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteBook.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonDeleteBook.StateTracking.Border.Rounding = 20F;
             kryptonButtonDeleteBook.StateTracking.Border.Width = 1;
+            kryptonButtonDeleteBook.StateTracking.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteBook.TabIndex = 17;
             kryptonButtonDeleteBook.Values.DropDownArrowColor = Color.Empty;
             kryptonButtonDeleteBook.Values.Text = "Delete Book";
@@ -577,7 +577,8 @@
             // kryptonButtonEditBook
             // 
             kryptonButtonEditBook.Anchor = AnchorStyles.Bottom;
-            kryptonButtonEditBook.Location = new Point(202, 177);
+            kryptonButtonEditBook.Location = new Point(455, 146);
+            kryptonButtonEditBook.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonEditBook.Name = "kryptonButtonEditBook";
             kryptonButtonEditBook.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonEditBook.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -589,7 +590,7 @@
             kryptonButtonEditBook.OverrideDefault.Border.Rounding = 20F;
             kryptonButtonEditBook.OverrideDefault.Border.Width = 1;
             kryptonButtonEditBook.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButtonEditBook.Size = new Size(155, 43);
+            kryptonButtonEditBook.Size = new Size(177, 57);
             kryptonButtonEditBook.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonEditBook.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonEditBook.StateCommon.Back.ColorAngle = 45F;
@@ -626,7 +627,8 @@
             // kryptonButtonAddBook
             // 
             kryptonButtonAddBook.Anchor = AnchorStyles.Bottom;
-            kryptonButtonAddBook.Location = new Point(41, 177);
+            kryptonButtonAddBook.Location = new Point(87, 146);
+            kryptonButtonAddBook.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonAddBook.Name = "kryptonButtonAddBook";
             kryptonButtonAddBook.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonAddBook.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -638,7 +640,7 @@
             kryptonButtonAddBook.OverrideDefault.Border.Rounding = 20F;
             kryptonButtonAddBook.OverrideDefault.Border.Width = 1;
             kryptonButtonAddBook.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButtonAddBook.Size = new Size(155, 43);
+            kryptonButtonAddBook.Size = new Size(177, 57);
             kryptonButtonAddBook.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonAddBook.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonAddBook.StateCommon.Back.ColorAngle = 45F;
@@ -674,20 +676,18 @@
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(275, 11);
-            txtSearch.Margin = new Padding(3, 2, 3, 2);
+            txtSearch.Location = new Point(516, 15);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(110, 23);
+            txtSearch.Size = new Size(125, 27);
             txtSearch.TabIndex = 5;
             txtSearch.Visible = false;
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // btnUploadToDrive
             // 
-            btnUploadToDrive.Location = new Point(523, 208);
-            btnUploadToDrive.Margin = new Padding(3, 2, 3, 2);
+            btnUploadToDrive.Location = new Point(598, 277);
             btnUploadToDrive.Name = "btnUploadToDrive";
-            btnUploadToDrive.Size = new Size(164, 26);
+            btnUploadToDrive.Size = new Size(187, 35);
             btnUploadToDrive.TabIndex = 4;
             btnUploadToDrive.Text = "btnUploadToDrive";
             btnUploadToDrive.UseVisualStyleBackColor = true;
@@ -696,10 +696,9 @@
             // 
             // btnDeleteBook
             // 
-            btnDeleteBook.Location = new Point(358, 208);
-            btnDeleteBook.Margin = new Padding(3, 2, 3, 2);
+            btnDeleteBook.Location = new Point(409, 277);
             btnDeleteBook.Name = "btnDeleteBook";
-            btnDeleteBook.Size = new Size(164, 26);
+            btnDeleteBook.Size = new Size(187, 35);
             btnDeleteBook.TabIndex = 3;
             btnDeleteBook.Text = "btnDeleteBook";
             btnDeleteBook.UseVisualStyleBackColor = true;
@@ -708,10 +707,9 @@
             // 
             // btnEditBook
             // 
-            btnEditBook.Location = new Point(194, 208);
-            btnEditBook.Margin = new Padding(3, 2, 3, 2);
+            btnEditBook.Location = new Point(222, 277);
             btnEditBook.Name = "btnEditBook";
-            btnEditBook.Size = new Size(164, 26);
+            btnEditBook.Size = new Size(187, 35);
             btnEditBook.TabIndex = 2;
             btnEditBook.Text = "btnEditBook";
             btnEditBook.UseVisualStyleBackColor = true;
@@ -720,10 +718,9 @@
             // 
             // btnAddBook
             // 
-            btnAddBook.Location = new Point(30, 208);
-            btnAddBook.Margin = new Padding(3, 2, 3, 2);
+            btnAddBook.Location = new Point(34, 277);
             btnAddBook.Name = "btnAddBook";
-            btnAddBook.Size = new Size(164, 26);
+            btnAddBook.Size = new Size(187, 35);
             btnAddBook.TabIndex = 1;
             btnAddBook.Text = "btnAddBook";
             btnAddBook.UseVisualStyleBackColor = true;
@@ -732,12 +729,13 @@
             // 
             // dgvBooks
             // 
+            dgvBooks.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvBooks.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBooks.Location = new Point(21, 43);
-            dgvBooks.Margin = new Padding(3, 2, 3, 2);
+            dgvBooks.Location = new Point(34, 48);
             dgvBooks.Name = "dgvBooks";
             dgvBooks.RowHeadersWidth = 51;
-            dgvBooks.Size = new Size(658, 132);
+            dgvBooks.Size = new Size(836, 89);
             dgvBooks.TabIndex = 0;
             // 
             // tabPage3
@@ -751,11 +749,10 @@
             tabPage3.Controls.Add(btnDeleteCategory);
             tabPage3.Controls.Add(btnEditCategory);
             tabPage3.Controls.Add(btnAddCategory);
-            tabPage3.Location = new Point(4, 24);
-            tabPage3.Margin = new Padding(3, 2, 3, 2);
+            tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3, 2, 3, 2);
-            tabPage3.Size = new Size(729, 251);
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(922, 210);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "tabCategories";
             tabPage3.UseVisualStyleBackColor = true;
@@ -763,21 +760,22 @@
             // kryptonButtonDeleteCategory
             // 
             kryptonButtonDeleteCategory.Anchor = AnchorStyles.Bottom;
-            kryptonButtonDeleteCategory.Location = new Point(431, 158);
+            kryptonButtonDeleteCategory.Location = new Point(340, 146);
+            kryptonButtonDeleteCategory.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonDeleteCategory.Name = "kryptonButtonDeleteCategory";
-            kryptonButtonDeleteCategory.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButtonDeleteCategory.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonDeleteCategory.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButtonDeleteCategory.OverrideDefault.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButtonDeleteCategory.OverrideDefault.Back.ColorAngle = 45F;
-            kryptonButtonDeleteCategory.OverrideDefault.Border.Color1 = Color.FromArgb(6, 174, 244);
+            kryptonButtonDeleteCategory.OverrideDefault.Border.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteCategory.OverrideDefault.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteCategory.OverrideDefault.Border.ColorAngle = 45F;
             kryptonButtonDeleteCategory.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonDeleteCategory.OverrideDefault.Border.Rounding = 20F;
             kryptonButtonDeleteCategory.OverrideDefault.Border.Width = 1;
             kryptonButtonDeleteCategory.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButtonDeleteCategory.Size = new Size(166, 43);
-            kryptonButtonDeleteCategory.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
-            kryptonButtonDeleteCategory.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonDeleteCategory.Size = new Size(190, 57);
+            kryptonButtonDeleteCategory.StateCommon.Back.Color1 = Color.FromArgb(250, 252, 252);
+            kryptonButtonDeleteCategory.StateCommon.Back.Color2 = Color.FromArgb(250, 252, 252);
             kryptonButtonDeleteCategory.StateCommon.Back.ColorAngle = 45F;
             kryptonButtonDeleteCategory.StateCommon.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonDeleteCategory.StateCommon.Border.Color2 = Color.FromArgb(8, 142, 254);
@@ -785,25 +783,25 @@
             kryptonButtonDeleteCategory.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonDeleteCategory.StateCommon.Border.Rounding = 20F;
             kryptonButtonDeleteCategory.StateCommon.Border.Width = 1;
-            kryptonButtonDeleteCategory.StateCommon.Content.ShortText.Color1 = Color.White;
-            kryptonButtonDeleteCategory.StateCommon.Content.ShortText.Color2 = Color.White;
+            kryptonButtonDeleteCategory.StateCommon.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteCategory.StateCommon.Content.ShortText.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            kryptonButtonDeleteCategory.StatePressed.Back.Color1 = Color.FromArgb(20, 145, 198);
-            kryptonButtonDeleteCategory.StatePressed.Back.Color2 = Color.FromArgb(22, 121, 206);
+            kryptonButtonDeleteCategory.StatePressed.Back.Color1 = Color.FromArgb(224, 224, 224);
+            kryptonButtonDeleteCategory.StatePressed.Back.Color2 = Color.FromArgb(224, 224, 224);
             kryptonButtonDeleteCategory.StatePressed.Back.ColorAngle = 135F;
             kryptonButtonDeleteCategory.StatePressed.Border.Color1 = Color.FromArgb(20, 145, 198);
             kryptonButtonDeleteCategory.StatePressed.Border.Color2 = Color.FromArgb(22, 121, 206);
             kryptonButtonDeleteCategory.StatePressed.Border.ColorAngle = 135F;
             kryptonButtonDeleteCategory.StatePressed.Border.Rounding = 20F;
             kryptonButtonDeleteCategory.StatePressed.Border.Width = 1;
-            kryptonButtonDeleteCategory.StateTracking.Back.Color1 = Color.FromArgb(8, 142, 254);
-            kryptonButtonDeleteCategory.StateTracking.Back.Color2 = Color.FromArgb(6, 174, 244);
+            kryptonButtonDeleteCategory.StateTracking.Back.Color1 = SystemColors.ButtonFace;
+            kryptonButtonDeleteCategory.StateTracking.Back.Color2 = SystemColors.ButtonFace;
             kryptonButtonDeleteCategory.StateTracking.Back.ColorAngle = 45F;
             kryptonButtonDeleteCategory.StateTracking.Border.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonDeleteCategory.StateTracking.Border.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteCategory.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             kryptonButtonDeleteCategory.StateTracking.Border.Rounding = 20F;
             kryptonButtonDeleteCategory.StateTracking.Border.Width = 1;
+            kryptonButtonDeleteCategory.StateTracking.Content.ShortText.Color1 = Color.FromArgb(8, 142, 254);
             kryptonButtonDeleteCategory.TabIndex = 19;
             kryptonButtonDeleteCategory.Values.DropDownArrowColor = Color.Empty;
             kryptonButtonDeleteCategory.Values.Text = "Delete category";
@@ -812,7 +810,8 @@
             // kryptonButtonEditCategory
             // 
             kryptonButtonEditCategory.Anchor = AnchorStyles.Bottom;
-            kryptonButtonEditCategory.Location = new Point(264, 158);
+            kryptonButtonEditCategory.Location = new Point(536, 146);
+            kryptonButtonEditCategory.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonEditCategory.Name = "kryptonButtonEditCategory";
             kryptonButtonEditCategory.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonEditCategory.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -824,7 +823,7 @@
             kryptonButtonEditCategory.OverrideDefault.Border.Rounding = 20F;
             kryptonButtonEditCategory.OverrideDefault.Border.Width = 1;
             kryptonButtonEditCategory.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButtonEditCategory.Size = new Size(155, 43);
+            kryptonButtonEditCategory.Size = new Size(177, 57);
             kryptonButtonEditCategory.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonEditCategory.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonEditCategory.StateCommon.Back.ColorAngle = 45F;
@@ -861,9 +860,10 @@
             // kryptonTextBoxSearchCate
             // 
             kryptonTextBoxSearchCate.Anchor = AnchorStyles.Top;
-            kryptonTextBoxSearchCate.Location = new Point(523, 3);
+            kryptonTextBoxSearchCate.Location = new Point(636, 10);
+            kryptonTextBoxSearchCate.Margin = new Padding(3, 4, 3, 4);
             kryptonTextBoxSearchCate.Name = "kryptonTextBoxSearchCate";
-            kryptonTextBoxSearchCate.Size = new Size(150, 30);
+            kryptonTextBoxSearchCate.Size = new Size(171, 34);
             kryptonTextBoxSearchCate.StateCommon.Back.Color1 = Color.White;
             kryptonTextBoxSearchCate.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBoxSearchCate.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -878,7 +878,8 @@
             // kryptonButtonAddCategory
             // 
             kryptonButtonAddCategory.Anchor = AnchorStyles.Bottom;
-            kryptonButtonAddCategory.Location = new Point(98, 158);
+            kryptonButtonAddCategory.Location = new Point(157, 146);
+            kryptonButtonAddCategory.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonAddCategory.Name = "kryptonButtonAddCategory";
             kryptonButtonAddCategory.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonAddCategory.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -890,7 +891,7 @@
             kryptonButtonAddCategory.OverrideDefault.Border.Rounding = 20F;
             kryptonButtonAddCategory.OverrideDefault.Border.Width = 1;
             kryptonButtonAddCategory.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            kryptonButtonAddCategory.Size = new Size(155, 43);
+            kryptonButtonAddCategory.Size = new Size(177, 57);
             kryptonButtonAddCategory.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonAddCategory.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
             kryptonButtonAddCategory.StateCommon.Back.ColorAngle = 45F;
@@ -926,30 +927,29 @@
             // 
             // SearchCate
             // 
-            SearchCate.Location = new Point(401, 10);
-            SearchCate.Margin = new Padding(3, 2, 3, 2);
+            SearchCate.Location = new Point(479, 18);
             SearchCate.Name = "SearchCate";
-            SearchCate.Size = new Size(110, 23);
+            SearchCate.Size = new Size(125, 27);
             SearchCate.TabIndex = 4;
             SearchCate.Visible = false;
             SearchCate.TextChanged += SearchCate_TextChanged;
             // 
             // dgvCategories
             // 
+            dgvCategories.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvCategories.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvCategories.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCategories.Location = new Point(26, 38);
-            dgvCategories.Margin = new Padding(3, 2, 3, 2);
+            dgvCategories.Location = new Point(26, 51);
             dgvCategories.Name = "dgvCategories";
             dgvCategories.RowHeadersWidth = 51;
-            dgvCategories.Size = new Size(641, 116);
+            dgvCategories.Size = new Size(807, 88);
             dgvCategories.TabIndex = 3;
             // 
             // btnDeleteCategory
             // 
-            btnDeleteCategory.Location = new Point(427, 210);
-            btnDeleteCategory.Margin = new Padding(3, 2, 3, 2);
+            btnDeleteCategory.Location = new Point(488, 280);
             btnDeleteCategory.Name = "btnDeleteCategory";
-            btnDeleteCategory.Size = new Size(166, 24);
+            btnDeleteCategory.Size = new Size(190, 32);
             btnDeleteCategory.TabIndex = 2;
             btnDeleteCategory.Text = "btnDeleteCategory";
             btnDeleteCategory.UseVisualStyleBackColor = true;
@@ -958,10 +958,9 @@
             // 
             // btnEditCategory
             // 
-            btnEditCategory.Location = new Point(261, 210);
-            btnEditCategory.Margin = new Padding(3, 2, 3, 2);
+            btnEditCategory.Location = new Point(298, 280);
             btnEditCategory.Name = "btnEditCategory";
-            btnEditCategory.Size = new Size(166, 24);
+            btnEditCategory.Size = new Size(190, 32);
             btnEditCategory.TabIndex = 1;
             btnEditCategory.Text = "btnEditCategory";
             btnEditCategory.UseVisualStyleBackColor = true;
@@ -970,10 +969,9 @@
             // 
             // btnAddCategory
             // 
-            btnAddCategory.Location = new Point(95, 210);
-            btnAddCategory.Margin = new Padding(3, 2, 3, 2);
+            btnAddCategory.Location = new Point(109, 280);
             btnAddCategory.Name = "btnAddCategory";
-            btnAddCategory.Size = new Size(166, 24);
+            btnAddCategory.Size = new Size(190, 32);
             btnAddCategory.TabIndex = 0;
             btnAddCategory.Text = "btnAddCategory";
             btnAddCategory.UseVisualStyleBackColor = true;
@@ -983,20 +981,18 @@
             // ChooseTag
             // 
             ChooseTag.FormattingEnabled = true;
-            ChooseTag.Location = new Point(123, 25);
-            ChooseTag.Margin = new Padding(3, 2, 3, 2);
+            ChooseTag.Location = new Point(141, 33);
             ChooseTag.Name = "ChooseTag";
-            ChooseTag.Size = new Size(133, 23);
+            ChooseTag.Size = new Size(151, 28);
             ChooseTag.TabIndex = 2;
             ChooseTag.Visible = false;
             ChooseTag.SelectedIndexChanged += ChooseTag_SelectedIndexChanged;
             // 
             // SearchAll
             // 
-            SearchAll.Location = new Point(270, 25);
-            SearchAll.Margin = new Padding(3, 2, 3, 2);
+            SearchAll.Location = new Point(309, 33);
             SearchAll.Name = "SearchAll";
-            SearchAll.Size = new Size(110, 23);
+            SearchAll.Size = new Size(125, 27);
             SearchAll.TabIndex = 3;
             SearchAll.Visible = false;
             // 
@@ -1037,10 +1033,10 @@
             kryptonToolStrip1.Font = new Font("Segoe UI", 9F);
             kryptonToolStrip1.ImageScalingSize = new Size(20, 20);
             kryptonToolStrip1.Items.AddRange(new ToolStripItem[] { toolStripSplitButton1, toolStripSplitButton2, toolStripButton1, toolStripButton2 });
-            kryptonToolStrip1.Location = new Point(0, 24);
-            kryptonToolStrip1.Margin = new Padding(10, 0, 10, 0);
+            kryptonToolStrip1.Location = new Point(0, 32);
+            kryptonToolStrip1.Margin = new Padding(11, 0, 11, 0);
             kryptonToolStrip1.Name = "kryptonToolStrip1";
-            kryptonToolStrip1.Size = new Size(812, 25);
+            kryptonToolStrip1.Size = new Size(928, 33);
             kryptonToolStrip1.TabIndex = 5;
             kryptonToolStrip1.Text = "kryptonToolStrip1";
             kryptonToolStrip1.Visible = false;
@@ -1054,13 +1050,13 @@
             toolStripSplitButton1.ImageTransparentColor = Color.Magenta;
             toolStripSplitButton1.Margin = new Padding(10, 0, 10, 0);
             toolStripSplitButton1.Name = "toolStripSplitButton1";
-            toolStripSplitButton1.Size = new Size(25, 25);
+            toolStripSplitButton1.Size = new Size(25, 33);
             toolStripSplitButton1.Text = "File";
             // 
             // fileToolStripMenuItem1
             // 
             fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            fileToolStripMenuItem1.Size = new Size(92, 22);
+            fileToolStripMenuItem1.Size = new Size(115, 26);
             fileToolStripMenuItem1.Text = "File";
             // 
             // toolStripSplitButton2
@@ -1071,7 +1067,7 @@
             toolStripSplitButton2.ImageTransparentColor = Color.Magenta;
             toolStripSplitButton2.Margin = new Padding(10, 0, 10, 0);
             toolStripSplitButton2.Name = "toolStripSplitButton2";
-            toolStripSplitButton2.Size = new Size(25, 25);
+            toolStripSplitButton2.Size = new Size(25, 33);
             toolStripSplitButton2.Text = "Management";
             // 
             // toolStripButton1
@@ -1081,7 +1077,7 @@
             toolStripButton1.ImageTransparentColor = Color.Magenta;
             toolStripButton1.Margin = new Padding(10, 0, 10, 0);
             toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(24, 25);
+            toolStripButton1.Size = new Size(29, 33);
             toolStripButton1.Text = "statistic";
             // 
             // toolStripButton2
@@ -1091,16 +1087,17 @@
             toolStripButton2.ImageTransparentColor = Color.Magenta;
             toolStripButton2.Margin = new Padding(10, 0, 10, 0);
             toolStripButton2.Name = "toolStripButton2";
-            toolStripButton2.Size = new Size(24, 25);
+            toolStripButton2.Size = new Size(29, 33);
             toolStripButton2.Text = "Configuration";
             // 
             // kryptonComboBoxChooseTag
             // 
             kryptonComboBoxChooseTag.Anchor = AnchorStyles.None;
             kryptonComboBoxChooseTag.DropDownWidth = 138;
-            kryptonComboBoxChooseTag.Location = new Point(417, 23);
+            kryptonComboBoxChooseTag.Location = new Point(523, -37);
+            kryptonComboBoxChooseTag.Margin = new Padding(3, 4, 3, 4);
             kryptonComboBoxChooseTag.Name = "kryptonComboBoxChooseTag";
-            kryptonComboBoxChooseTag.Size = new Size(150, 34);
+            kryptonComboBoxChooseTag.Size = new Size(171, 38);
             kryptonComboBoxChooseTag.StateCommon.ComboBox.Back.Color1 = Color.White;
             kryptonComboBoxChooseTag.StateCommon.ComboBox.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonComboBoxChooseTag.StateCommon.ComboBox.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -1129,10 +1126,9 @@
             // kryptonTextBoxSearchAll
             // 
             kryptonTextBoxSearchAll.Anchor = AnchorStyles.None;
-            kryptonTextBoxSearchAll.Location = new Point(572, 25);
-            kryptonTextBoxSearchAll.Margin = new Padding(3, 2, 3, 2);
+            kryptonTextBoxSearchAll.Location = new Point(700, -35);
             kryptonTextBoxSearchAll.Name = "kryptonTextBoxSearchAll";
-            kryptonTextBoxSearchAll.Size = new Size(150, 30);
+            kryptonTextBoxSearchAll.Size = new Size(171, 34);
             kryptonTextBoxSearchAll.StateCommon.Back.Color1 = Color.White;
             kryptonTextBoxSearchAll.StateCommon.Border.Color1 = Color.FromArgb(224, 224, 224);
             kryptonTextBoxSearchAll.StateCommon.Border.Color2 = Color.FromArgb(224, 224, 224);
@@ -1147,9 +1143,9 @@
             // 
             // AdminForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(779, 332);
+            ClientSize = new Size(982, 309);
             Controls.Add(kryptonComboBoxChooseTag);
             Controls.Add(kryptonTextBoxSearchAll);
             Controls.Add(SearchAll);
@@ -1160,7 +1156,6 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             LocalCustomPalette = kryptonCustomPaletteBase1;
             MainMenuStrip = menuStripAdmin;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "AdminForm";
             PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             StartPosition = FormStartPosition.CenterScreen;

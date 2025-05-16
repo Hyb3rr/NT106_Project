@@ -1,25 +1,56 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\",
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\lenovo\\documents\\github\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\lenovo\\documents\\github\\nt106_project\\bookreaderapp\\bookreaderapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\lenovo\\documents\\github\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\lenovo\\documents\\github\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/LAPTOP_9OHA4A21_GL/BookReaderDb/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\lenovo\\documents\\github\\nt106_project\\bookreaderapp\\bookreaderapp\\data\\bookreaderdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\data\\bookreaderdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\lenovo\\documents\\github\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\lenovo\\documents\\github\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\lenovo\\documents\\github\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\bookreaderapp\\viewform\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\bookreaderapp\\viewform\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\bookreaderapp\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -34,38 +65,139 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs",
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs",
               "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs [Design]",
-              "RelativeToolTip": "BookReaderApp\\ViewForm\\LoginForm.cs [Design]",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\LoginForm.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4BAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T07:57:55.003Z"
+              "WhenOpened": "2025-05-16T18:49:54.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BookReaderForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs",
-              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\BookReaderForm.cs",
-              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs [Design]",
-              "RelativeToolTip": "BookReaderApp\\ViewForm\\BookReaderForm.cs [Design]",
+              "Title": "AdminForm.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\AdminForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\AdminForm.cs",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\AdminForm.cs",
+              "ViewState": "AQIAAO4AAAAAAAAAAAAawPwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T07:52:32.802Z",
+              "WhenOpened": "2025-05-16T18:42:03.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\AdminForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\AdminForm.cs [Design]",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\AdminForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:20:04.775Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/LAPTOP_9OHA4A21_GL/BookReaderDb/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-16T18:18:37.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\Program.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\Program.cs",
+              "RelativeToolTip": "BookReaderApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:17:04.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookReaderDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\Data\\BookReaderDbContextFactory.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\Data\\BookReaderDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\Data\\BookReaderDbContextFactory.cs",
+              "RelativeToolTip": "BookReaderApp\\Data\\BookReaderDbContextFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:15:18.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.Designer.cs",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\LoginForm.Designer.cs",
+              "ViewState": "AQIAAPYAAAAAAAAAAAAYwAYBAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:08:48.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\RegisterForm.Designer.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\RegisterForm.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\RegisterForm.Designer.cs",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\RegisterForm.Designer.cs",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAQwOwAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:08:29.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:05:58.547Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs [Design]",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T07:57:55.003Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "BookReaderForm.cs",
-              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs",
               "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\BookReaderForm.cs",
-              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs",
               "RelativeToolTip": "BookReaderApp\\ViewForm\\BookReaderForm.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAkwE4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -73,11 +205,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\Properties\\Resources.resx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "BookReaderApp\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\Properties\\Resources.resx",
               "RelativeToolTip": "BookReaderApp\\Properties\\Resources.resx",
               "ViewState": "AgIAAHsAAAAAAAAAAAAAAIIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
@@ -85,12 +217,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "UserForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\UserForm.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\UserForm.cs",
               "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\UserForm.cs",
               "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\UserForm.cs [Design]",
-              "RelativeToolTip": "BookReaderApp\\ViewForm\\UserForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\UserForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T12:03:05.982Z"
             }

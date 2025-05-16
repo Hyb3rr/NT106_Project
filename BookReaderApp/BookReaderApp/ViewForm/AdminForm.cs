@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BookReaderApp.ViewForm
 {
@@ -247,7 +248,7 @@ namespace BookReaderApp.ViewForm
 
         private void menuLogoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close(); // Đăng xuất
+            this.Close(); // Đăng xuất (chưa xong)
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
