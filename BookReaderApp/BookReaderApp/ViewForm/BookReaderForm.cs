@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
+using System.Drawing.Drawing2D;
 
 namespace BookReaderApp.ViewForm
 {
@@ -56,6 +57,38 @@ namespace BookReaderApp.ViewForm
 
             // Mở file PDF  
             LoadPdf(filePath);
+            ShowRandomImage();
+            MakeRoundedPictureBox(kryptonPictureBox1);
+        }
+
+
+        private void MakeRoundedPictureBox(KryptonPictureBox picBox)
+        {
+            GraphicsPath path = new GraphicsPath();
+            path.AddEllipse(0, 0, picBox.Width - 1, picBox.Height - 1);
+            picBox.Region = new Region(path);
+        }
+
+        private void ShowRandomImage()
+        {
+            // Create an array of only the specific images you want
+            Image[] bannerImages = new Image[]
+            {
+                Properties.Resources.catread1,
+                Properties.Resources.catread2,
+                Properties.Resources.catread3,
+                Properties.Resources.catread4,
+                Properties.Resources.catread5,
+                Properties.Resources.catread6,
+                Properties.Resources.catread7
+            };
+
+            // Pick one at random
+            Random rand = new Random();
+            int index = rand.Next(bannerImages.Length);
+
+            // Assign it to the PictureBox
+            kryptonPictureBox1.Image = bannerImages[index];
         }
 
         private void PageCheckTimer_Tick(object? sender, EventArgs e)
@@ -368,6 +401,11 @@ namespace BookReaderApp.ViewForm
                 kryptonTextBoxPageNumber.Text = "";
                 textCleared1 = true; // Step 3: Set the flag to true
             }
+        }
+
+        private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }       

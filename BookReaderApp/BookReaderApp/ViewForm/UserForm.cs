@@ -90,6 +90,41 @@ namespace BookReaderApp.ViewForm
                 .ToList();
         }
 
+        private void kryptonSearch_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = kryptonTextBox1.Text.Trim().ToLower();
+            string searchType = kryptonComboBox1.SelectedItem?.ToString() ?? "Tiêu đề";
+
+            var filteredBooks = _context.Books.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                switch (searchType)
+                {
+                    case "Tiêu đề":
+                        filteredBooks = filteredBooks.Where(b => b.Title.ToLower().Contains(keyword));
+                        break;
+                    case "Tác giả":
+                        filteredBooks = filteredBooks.Where(b => b.Author.ToLower().Contains(keyword));
+                        break;
+                    case "Thể loại":
+                        filteredBooks = filteredBooks.Where(b => b.Category != null && b.Category.CategoryName.ToLower().Contains(keyword));
+                        break;
+                }
+            }
+
+            kryptonDataGridViewLibrary.DataSource = filteredBooks
+                .Select(b => new
+                {
+                    b.BookId,
+                    b.Title,
+                    b.Author,
+                    Category = b.Category != null ? b.Category.CategoryName : "Unknown",
+                    b.PublishedDate
+                })
+                .ToList();
+        }
+
 
         private string DownloadBookFromGoogleDrive(string driveUrl, string bookTitle)
         {
@@ -309,6 +344,8 @@ namespace BookReaderApp.ViewForm
         {
 
         }
+
+
         private bool textCleared = false; // Step 1: Declare the flag
 
         private void kryptonTextBox1_Enter(object sender, EventArgs e) // Step 2: Use Enter event
