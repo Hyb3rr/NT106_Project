@@ -1,0 +1,11 @@
+# Ignore token và credentials
+**/token*.json
+**/credentials*.json
+
+# Ngoài ra ignore thư mục build
+bin/
+obj/
+*.user
+*.suo
+*.pdb
+*.log
