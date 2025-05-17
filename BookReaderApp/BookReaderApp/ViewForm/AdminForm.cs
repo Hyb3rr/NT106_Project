@@ -249,6 +249,7 @@ namespace BookReaderApp.ViewForm
         private void menuLogoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close(); // Đăng xuất (chưa xong)
+
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)

@@ -382,7 +382,6 @@ namespace BookReaderApp.ViewForm
         }
 
         private bool textCleared = false; // Step 1: Declare the flag
-
         private void kryptonTextBox1_Enter(object sender, EventArgs e) // Step 2: Use Enter event
         {
             if (!textCleared)
@@ -393,10 +392,9 @@ namespace BookReaderApp.ViewForm
         }
 
         private bool textCleared1 = false; // Step 1: Declare the flag
-
         private void kryptonTextBox2_Enter(object sender, EventArgs e) // Step 2: Use Enter event
         {
-            if (!textCleared)
+            if (!textCleared1)
             {
                 kryptonTextBoxPageNumber.Text = "";
                 textCleared1 = true; // Step 3: Set the flag to true

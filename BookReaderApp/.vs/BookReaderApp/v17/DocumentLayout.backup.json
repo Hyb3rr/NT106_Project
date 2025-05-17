@@ -3,20 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\bookreaderapp\\viewform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\bookreaderapp\\viewform\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\data\\bookreaderdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\data\\bookreaderdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\bookreaderapp\\viewform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\viewform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|c:\\users\\rinch\\onedrive\\m\u00E1y t\u00EDnh\\nt106\\nt106_project\\bookreaderapp\\bookreaderapp\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -39,24 +71,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs",
-              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs [Design]",
-              "RelativeToolTip": "BookReaderApp\\ViewForm\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T07:57:55.003Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "BookReaderForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs",
               "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\BookReaderForm.cs",
               "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs [Design]",
               "RelativeToolTip": "BookReaderApp\\ViewForm\\BookReaderForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T07:52:32.802Z",
+              "WhenOpened": "2025-05-17T01:52:22.092Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\AdminForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\AdminForm.cs [Design]*",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\AdminForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:20:04.775Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -67,21 +100,23 @@
               "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\BookReaderForm.cs",
               "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs",
               "RelativeToolTip": "BookReaderApp\\ViewForm\\BookReaderForm.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAkwE4AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAowIgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T11:05:05.077Z"
+              "WhenOpened": "2025-05-15T11:05:05.077Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "BookReaderApp\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\Properties\\Resources.resx",
-              "RelativeToolTip": "BookReaderApp\\Properties\\Resources.resx",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAIIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-16T07:30:55.302Z"
+              "Title": "AdminForm.cs",
+              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\AdminForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\AdminForm.cs*",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\AdminForm.cs*",
+              "ViewState": "AgIAAFUAAAAAAAAAAIAwwGEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:42:03.217Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -92,7 +127,105 @@
               "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\UserForm.cs [Design]",
               "RelativeToolTip": "BookReaderApp\\ViewForm\\UserForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T12:03:05.982Z"
+              "WhenOpened": "2025-05-15T12:03:05.982Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookReaderDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\Data\\BookReaderDbContextFactory.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\Data\\BookReaderDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\Data\\BookReaderDbContextFactory.cs",
+              "RelativeToolTip": "BookReaderApp\\Data\\BookReaderDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:15:18.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\Program.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\Program.cs",
+              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\Program.cs",
+              "RelativeToolTip": "BookReaderApp\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAqwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:17:04.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\LoginForm.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4BAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:49:54.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.Designer.cs",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\LoginForm.Designer.cs",
+              "ViewState": "AQIAAPYAAAAAAAAAAAAYwAYBAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:08:48.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\RegisterForm.Designer.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\RegisterForm.Designer.cs",
+              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\RegisterForm.Designer.cs",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\RegisterForm.Designer.cs",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAQwOwAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:08:29.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:05:58.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\LENOVO\\Documents\\GitHub\\NT106_Project\\BookReaderApp\\BookReaderApp\\ViewForm\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T07:57:55.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "BookReaderApp\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\rinch\\OneDrive\\M\u00E1y t\u00EDnh\\nt106\\NT106_Project\\BookReaderApp\\BookReaderApp\\Properties\\Resources.resx",
+              "RelativeToolTip": "BookReaderApp\\Properties\\Resources.resx",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAIIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-16T07:30:55.302Z"
             }
           ]
         }
