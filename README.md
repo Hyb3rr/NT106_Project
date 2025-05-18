@@ -1,4 +1,4 @@
-# Ứng dụng đọc sách: BookReaderApp
+# Ứng dụng đọc sách: Purread
 
 ## Nhóm 15
 
