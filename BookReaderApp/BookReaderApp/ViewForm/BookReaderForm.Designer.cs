@@ -48,14 +48,21 @@
             kryptonListBoxBookMark = new Krypton.Toolkit.KryptonListBox();
             kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
+            kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
+            kryptonButtonHideShow = new Krypton.Toolkit.KryptonButton();
+            kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)kryptonPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)kryptonPanel2).BeginInit();
+            kryptonPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonPanel3).BeginInit();
+            kryptonPanel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Bottom;
-            panel1.Location = new Point(734, 446);
+            panel1.Location = new Point(707, 644);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(51, 40);
@@ -67,7 +74,7 @@
             checkBox_ChangeTheme.Anchor = AnchorStyles.Bottom;
             checkBox_ChangeTheme.AutoSize = true;
             checkBox_ChangeTheme.Font = new Font("Calibri", 10F);
-            checkBox_ChangeTheme.Location = new Point(192, 348);
+            checkBox_ChangeTheme.Location = new Point(154, 18);
             checkBox_ChangeTheme.Margin = new Padding(3, 2, 3, 2);
             checkBox_ChangeTheme.Name = "checkBox_ChangeTheme";
             checkBox_ChangeTheme.Size = new Size(104, 21);
@@ -79,7 +86,7 @@
             // txtNote
             // 
             txtNote.Anchor = AnchorStyles.Bottom;
-            txtNote.Location = new Point(617, 415);
+            txtNote.Location = new Point(590, 613);
             txtNote.Margin = new Padding(3, 2, 3, 2);
             txtNote.Name = "txtNote";
             txtNote.Size = new Size(110, 23);
@@ -89,7 +96,7 @@
             // btnBookmark
             // 
             btnBookmark.Anchor = AnchorStyles.Bottom;
-            btnBookmark.Location = new Point(131, 478);
+            btnBookmark.Location = new Point(104, 676);
             btnBookmark.Margin = new Padding(3, 2, 3, 2);
             btnBookmark.Name = "btnBookmark";
             btnBookmark.Size = new Size(82, 22);
@@ -102,7 +109,7 @@
             // btnSaveNote
             // 
             btnSaveNote.Anchor = AnchorStyles.Bottom;
-            btnSaveNote.Location = new Point(286, 478);
+            btnSaveNote.Location = new Point(259, 676);
             btnSaveNote.Margin = new Padding(3, 2, 3, 2);
             btnSaveNote.Name = "btnSaveNote";
             btnSaveNote.Size = new Size(82, 22);
@@ -115,7 +122,7 @@
             // txtPageNumber
             // 
             txtPageNumber.Anchor = AnchorStyles.Bottom;
-            txtPageNumber.Location = new Point(649, 463);
+            txtPageNumber.Location = new Point(622, 661);
             txtPageNumber.Margin = new Padding(3, 2, 3, 2);
             txtPageNumber.Name = "txtPageNumber";
             txtPageNumber.Size = new Size(110, 23);
@@ -125,7 +132,7 @@
             // btnGoToPage
             // 
             btnGoToPage.Anchor = AnchorStyles.Bottom;
-            btnGoToPage.Location = new Point(470, 478);
+            btnGoToPage.Location = new Point(443, 676);
             btnGoToPage.Margin = new Padding(3, 2, 3, 2);
             btnGoToPage.Name = "btnGoToPage";
             btnGoToPage.Size = new Size(82, 22);
@@ -140,7 +147,7 @@
             lblPageInfo.Anchor = AnchorStyles.Bottom;
             lblPageInfo.AutoSize = true;
             lblPageInfo.Font = new Font("Calibri", 10F);
-            lblPageInfo.Location = new Point(90, 353);
+            lblPageInfo.Location = new Point(71, 31);
             lblPageInfo.Name = "lblPageInfo";
             lblPageInfo.Size = new Size(58, 17);
             lblPageInfo.TabIndex = 7;
@@ -151,7 +158,7 @@
             listBoxBookmarks.Anchor = AnchorStyles.Bottom;
             listBoxBookmarks.FormattingEnabled = true;
             listBoxBookmarks.ItemHeight = 15;
-            listBoxBookmarks.Location = new Point(780, 419);
+            listBoxBookmarks.Location = new Point(753, 617);
             listBoxBookmarks.Margin = new Padding(3, 2, 3, 2);
             listBoxBookmarks.Name = "listBoxBookmarks";
             listBoxBookmarks.Size = new Size(132, 79);
@@ -194,7 +201,7 @@
             // kryptonButtonBookmark
             // 
             kryptonButtonBookmark.Anchor = AnchorStyles.Bottom;
-            kryptonButtonBookmark.Location = new Point(93, 383);
+            kryptonButtonBookmark.Location = new Point(7, 65);
             kryptonButtonBookmark.Name = "kryptonButtonBookmark";
             kryptonButtonBookmark.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonBookmark.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -243,7 +250,7 @@
             // kryptonButtonSaveNote
             // 
             kryptonButtonSaveNote.Anchor = AnchorStyles.Bottom;
-            kryptonButtonSaveNote.Location = new Point(264, 383);
+            kryptonButtonSaveNote.Location = new Point(168, 65);
             kryptonButtonSaveNote.Name = "kryptonButtonSaveNote";
             kryptonButtonSaveNote.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonSaveNote.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -292,7 +299,7 @@
             // kryptonButtonGoToPage
             // 
             kryptonButtonGoToPage.Anchor = AnchorStyles.Bottom;
-            kryptonButtonGoToPage.Location = new Point(444, 383);
+            kryptonButtonGoToPage.Location = new Point(329, 65);
             kryptonButtonGoToPage.Name = "kryptonButtonGoToPage";
             kryptonButtonGoToPage.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonGoToPage.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -341,7 +348,7 @@
             // kryptonTextBoxPageNumber
             // 
             kryptonTextBoxPageNumber.Anchor = AnchorStyles.Bottom;
-            kryptonTextBoxPageNumber.Location = new Point(524, 333);
+            kryptonTextBoxPageNumber.Location = new Point(485, 18);
             kryptonTextBoxPageNumber.Name = "kryptonTextBoxPageNumber";
             kryptonTextBoxPageNumber.Size = new Size(150, 30);
             kryptonTextBoxPageNumber.StateCommon.Back.Color1 = Color.White;
@@ -360,7 +367,7 @@
             // kryptonTextBoxNote
             // 
             kryptonTextBoxNote.Anchor = AnchorStyles.Bottom;
-            kryptonTextBoxNote.Location = new Point(355, 333);
+            kryptonTextBoxNote.Location = new Point(312, 18);
             kryptonTextBoxNote.Name = "kryptonTextBoxNote";
             kryptonTextBoxNote.Size = new Size(150, 30);
             kryptonTextBoxNote.StateCommon.Back.Color1 = Color.White;
@@ -374,15 +381,16 @@
             kryptonTextBoxNote.StateCommon.Content.Padding = new Padding(10, 0, 10, 0);
             kryptonTextBoxNote.TabIndex = 29;
             kryptonTextBoxNote.Text = "Note";
+            kryptonTextBoxNote.TextChanged += kryptonTextBoxNote_TextChanged;
             kryptonTextBoxNote.Enter += kryptonTextBox1_Enter;
             // 
             // kryptonListBoxBookMark
             // 
             kryptonListBoxBookMark.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            kryptonListBoxBookMark.Location = new Point(713, 12);
+            kryptonListBoxBookMark.Location = new Point(36, 24);
             kryptonListBoxBookMark.Name = "kryptonListBoxBookMark";
             kryptonListBoxBookMark.Padding = new Padding(10, 0, 10, 0);
-            kryptonListBoxBookMark.Size = new Size(202, 135);
+            kryptonListBoxBookMark.Size = new Size(202, 213);
             kryptonListBoxBookMark.StateCommon.Back.Color1 = Color.White;
             kryptonListBoxBookMark.StateCommon.Back.Color2 = Color.White;
             kryptonListBoxBookMark.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
@@ -395,11 +403,11 @@
             // 
             // kryptonPanel1
             // 
-            kryptonPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            kryptonPanel1.Location = new Point(38, 12);
+            kryptonPanel1.Dock = DockStyle.Fill;
+            kryptonPanel1.Location = new Point(0, 0);
             kryptonPanel1.Name = "kryptonPanel1";
             kryptonPanel1.Padding = new Padding(10, 0, 10, 0);
-            kryptonPanel1.Size = new Size(653, 297);
+            kryptonPanel1.Size = new Size(658, 540);
             kryptonPanel1.StateCommon.Color1 = Color.White;
             kryptonPanel1.StateCommon.Color2 = Color.White;
             kryptonPanel1.TabIndex = 0;
@@ -408,35 +416,105 @@
             // kryptonPictureBox1
             // 
             kryptonPictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            kryptonPictureBox1.Location = new Point(720, 198);
+            kryptonPictureBox1.Location = new Point(38, 268);
             kryptonPictureBox1.Name = "kryptonPictureBox1";
             kryptonPictureBox1.Size = new Size(200, 200);
             kryptonPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             kryptonPictureBox1.TabIndex = 31;
             kryptonPictureBox1.TabStop = false;
             // 
+            // kryptonPanel2
+            // 
+            kryptonPanel2.Controls.Add(kryptonListBoxBookMark);
+            kryptonPanel2.Controls.Add(kryptonPictureBox1);
+            kryptonPanel2.Dock = DockStyle.Right;
+            kryptonPanel2.Location = new Point(658, 0);
+            kryptonPanel2.Name = "kryptonPanel2";
+            kryptonPanel2.Size = new Size(260, 540);
+            kryptonPanel2.StateCommon.Color1 = Color.WhiteSmoke;
+            kryptonPanel2.TabIndex = 32;
+            // 
+            // kryptonButtonHideShow
+            // 
+            kryptonButtonHideShow.Anchor = AnchorStyles.Bottom;
+            kryptonButtonHideShow.Location = new Point(490, 65);
+            kryptonButtonHideShow.Name = "kryptonButtonHideShow";
+            kryptonButtonHideShow.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
+            kryptonButtonHideShow.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonHideShow.OverrideDefault.Back.ColorAngle = 45F;
+            kryptonButtonHideShow.OverrideDefault.Border.Color1 = Color.FromArgb(6, 174, 244);
+            kryptonButtonHideShow.OverrideDefault.Border.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonHideShow.OverrideDefault.Border.ColorAngle = 45F;
+            kryptonButtonHideShow.OverrideDefault.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            kryptonButtonHideShow.OverrideDefault.Border.Rounding = 20F;
+            kryptonButtonHideShow.OverrideDefault.Border.Width = 1;
+            kryptonButtonHideShow.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            kryptonButtonHideShow.Size = new Size(155, 43);
+            kryptonButtonHideShow.StateCommon.Back.Color1 = Color.FromArgb(6, 174, 244);
+            kryptonButtonHideShow.StateCommon.Back.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonHideShow.StateCommon.Back.ColorAngle = 45F;
+            kryptonButtonHideShow.StateCommon.Border.Color1 = Color.FromArgb(6, 174, 244);
+            kryptonButtonHideShow.StateCommon.Border.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonHideShow.StateCommon.Border.ColorAngle = 45F;
+            kryptonButtonHideShow.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            kryptonButtonHideShow.StateCommon.Border.Rounding = 20F;
+            kryptonButtonHideShow.StateCommon.Border.Width = 1;
+            kryptonButtonHideShow.StateCommon.Content.ShortText.Color1 = Color.White;
+            kryptonButtonHideShow.StateCommon.Content.ShortText.Color2 = Color.White;
+            kryptonButtonHideShow.StateCommon.Content.ShortText.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            kryptonButtonHideShow.StatePressed.Back.Color1 = Color.FromArgb(20, 145, 198);
+            kryptonButtonHideShow.StatePressed.Back.Color2 = Color.FromArgb(22, 121, 206);
+            kryptonButtonHideShow.StatePressed.Back.ColorAngle = 135F;
+            kryptonButtonHideShow.StatePressed.Border.Color1 = Color.FromArgb(20, 145, 198);
+            kryptonButtonHideShow.StatePressed.Border.Color2 = Color.FromArgb(22, 121, 206);
+            kryptonButtonHideShow.StatePressed.Border.ColorAngle = 135F;
+            kryptonButtonHideShow.StatePressed.Border.Rounding = 20F;
+            kryptonButtonHideShow.StatePressed.Border.Width = 1;
+            kryptonButtonHideShow.StateTracking.Back.Color1 = Color.FromArgb(8, 142, 254);
+            kryptonButtonHideShow.StateTracking.Back.Color2 = Color.FromArgb(6, 174, 244);
+            kryptonButtonHideShow.StateTracking.Back.ColorAngle = 45F;
+            kryptonButtonHideShow.StateTracking.Border.Color1 = Color.FromArgb(6, 174, 244);
+            kryptonButtonHideShow.StateTracking.Border.Color2 = Color.FromArgb(8, 142, 254);
+            kryptonButtonHideShow.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            kryptonButtonHideShow.StateTracking.Border.Rounding = 20F;
+            kryptonButtonHideShow.StateTracking.Border.Width = 1;
+            kryptonButtonHideShow.TabIndex = 27;
+            kryptonButtonHideShow.Values.DropDownArrowColor = Color.Empty;
+            kryptonButtonHideShow.Values.Text = "Hide";
+            kryptonButtonHideShow.Click += kryptonButtonHideShow_Click;
+            // 
+            // kryptonPanel3
+            // 
+            kryptonPanel3.Controls.Add(kryptonButtonBookmark);
+            kryptonPanel3.Controls.Add(kryptonButtonHideShow);
+            kryptonPanel3.Controls.Add(kryptonButtonSaveNote);
+            kryptonPanel3.Controls.Add(kryptonButtonGoToPage);
+            kryptonPanel3.Controls.Add(kryptonTextBoxPageNumber);
+            kryptonPanel3.Controls.Add(kryptonTextBoxNote);
+            kryptonPanel3.Controls.Add(lblPageInfo);
+            kryptonPanel3.Controls.Add(checkBox_ChangeTheme);
+            kryptonPanel3.Dock = DockStyle.Bottom;
+            kryptonPanel3.Location = new Point(0, 420);
+            kryptonPanel3.Name = "kryptonPanel3";
+            kryptonPanel3.Size = new Size(658, 120);
+            kryptonPanel3.StateCommon.Color1 = Color.WhiteSmoke;
+            kryptonPanel3.TabIndex = 0;
+            // 
             // BookReaderForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(942, 432);
-            Controls.Add(kryptonPictureBox1);
+            ClientSize = new Size(918, 540);
+            Controls.Add(kryptonPanel3);
             Controls.Add(kryptonPanel1);
-            Controls.Add(kryptonListBoxBookMark);
-            Controls.Add(kryptonTextBoxNote);
-            Controls.Add(kryptonTextBoxPageNumber);
-            Controls.Add(kryptonButtonGoToPage);
-            Controls.Add(kryptonButtonSaveNote);
-            Controls.Add(kryptonButtonBookmark);
             Controls.Add(listBoxBookmarks);
-            Controls.Add(lblPageInfo);
             Controls.Add(btnGoToPage);
             Controls.Add(txtPageNumber);
             Controls.Add(btnSaveNote);
             Controls.Add(btnBookmark);
             Controls.Add(txtNote);
-            Controls.Add(checkBox_ChangeTheme);
             Controls.Add(panel1);
+            Controls.Add(kryptonPanel2);
             Icon = (Icon)resources.GetObject("$this.Icon");
             LocalCustomPalette = kryptonCustomPaletteBase1;
             Margin = new Padding(3, 2, 3, 2);
@@ -447,6 +525,11 @@
             Load += BookReaderForm_Load;
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).EndInit();
             ((System.ComponentModel.ISupportInitialize)kryptonPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)kryptonPanel2).EndInit();
+            kryptonPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)kryptonPanel3).EndInit();
+            kryptonPanel3.ResumeLayout(false);
+            kryptonPanel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -471,5 +554,8 @@
         private Krypton.Toolkit.KryptonListBox kryptonListBoxBookMark;
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox1;
+        private Krypton.Toolkit.KryptonPanel kryptonPanel2;
+        private Krypton.Toolkit.KryptonButton kryptonButtonHideShow;
+        private Krypton.Toolkit.KryptonPanel kryptonPanel3;
     }
 }

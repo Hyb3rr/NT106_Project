@@ -405,5 +405,29 @@ namespace BookReaderApp.ViewForm
         {
 
         }
+
+        private void kryptonButtonHideShow_Click(object sender, EventArgs e)
+        {
+            kryptonPanel2.Visible = !kryptonPanel2.Visible;
+            if (kryptonPanel2.Visible)
+            {
+                kryptonButtonHideShow.Text = "Hide";
+                //kryptonPanel1.Dock = DockStyle.None;
+                //kryptonPanel1.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;
+
+            }
+            else
+            {
+                kryptonButtonHideShow.Text = "Show";
+                //kryptonPanel1.Dock = DockStyle.Top;
+                //kryptonPanel1.Anchor = AnchorStyles.None;
+            }
+            this.LayoutMdi(MdiLayout.ArrangeIcons);
+        }
+
+        private void kryptonTextBoxNote_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }       
