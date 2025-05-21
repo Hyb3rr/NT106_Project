@@ -107,7 +107,7 @@
             menuStripAdmin.Location = new Point(0, 0);
             menuStripAdmin.Name = "menuStripAdmin";
             menuStripAdmin.Padding = new Padding(6, 3, 0, 3);
-            menuStripAdmin.Size = new Size(1013, 30);
+            menuStripAdmin.Size = new Size(1063, 30);
             menuStripAdmin.TabIndex = 0;
             menuStripAdmin.Text = "menuStrip1";
             // 
@@ -121,14 +121,14 @@
             // menuLogoutToolStripMenuItem
             // 
             menuLogoutToolStripMenuItem.Name = "menuLogoutToolStripMenuItem";
-            menuLogoutToolStripMenuItem.Size = new Size(224, 26);
+            menuLogoutToolStripMenuItem.Size = new Size(176, 26);
             menuLogoutToolStripMenuItem.Text = "menuLogout";
             menuLogoutToolStripMenuItem.Click += menuLogoutToolStripMenuItem_Click;
             // 
             // menuExitToolStripMenuItem
             // 
             menuExitToolStripMenuItem.Name = "menuExitToolStripMenuItem";
-            menuExitToolStripMenuItem.Size = new Size(224, 26);
+            menuExitToolStripMenuItem.Size = new Size(176, 26);
             menuExitToolStripMenuItem.Text = "menuExit";
             menuExitToolStripMenuItem.Click += menuExitToolStripMenuItem_Click;
             // 
@@ -192,7 +192,7 @@
             tabControlAdmin.Location = new Point(14, 67);
             tabControlAdmin.Name = "tabControlAdmin";
             tabControlAdmin.SelectedIndex = 0;
-            tabControlAdmin.Size = new Size(951, 420);
+            tabControlAdmin.Size = new Size(1001, 471);
             tabControlAdmin.TabIndex = 1;
             tabControlAdmin.SelectedIndexChanged += tabControlAdmin_SelectedIndexChanged;
             // 
@@ -211,7 +211,7 @@
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(943, 387);
+            tabPage1.Size = new Size(993, 438);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "tabUsers";
             tabPage1.UseVisualStyleBackColor = true;
@@ -229,7 +229,7 @@
             // kryptonTextBoxSearchUser
             // 
             kryptonTextBoxSearchUser.Anchor = AnchorStyles.Top;
-            kryptonTextBoxSearchUser.Location = new Point(674, 7);
+            kryptonTextBoxSearchUser.Location = new Point(699, 7);
             kryptonTextBoxSearchUser.Margin = new Padding(3, 4, 3, 4);
             kryptonTextBoxSearchUser.Name = "kryptonTextBoxSearchUser";
             kryptonTextBoxSearchUser.Size = new Size(171, 34);
@@ -249,7 +249,7 @@
             // kryptonButtonDeleteUser
             // 
             kryptonButtonDeleteUser.Anchor = AnchorStyles.Bottom;
-            kryptonButtonDeleteUser.Location = new Point(361, 268);
+            kryptonButtonDeleteUser.Location = new Point(386, 319);
             kryptonButtonDeleteUser.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonDeleteUser.Name = "kryptonButtonDeleteUser";
             kryptonButtonDeleteUser.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
@@ -299,7 +299,7 @@
             // kryptonButtonEditUser
             // 
             kryptonButtonEditUser.Anchor = AnchorStyles.Bottom;
-            kryptonButtonEditUser.Location = new Point(545, 268);
+            kryptonButtonEditUser.Location = new Point(570, 319);
             kryptonButtonEditUser.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonEditUser.Name = "kryptonButtonEditUser";
             kryptonButtonEditUser.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -368,7 +368,7 @@
             // kryptonButtonAddUser
             // 
             kryptonButtonAddUser.Anchor = AnchorStyles.Bottom;
-            kryptonButtonAddUser.Location = new Point(178, 268);
+            kryptonButtonAddUser.Location = new Point(203, 319);
             kryptonButtonAddUser.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonAddUser.Name = "kryptonButtonAddUser";
             kryptonButtonAddUser.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -445,7 +445,7 @@
             dgvUsers.Location = new Point(46, 43);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.RowHeadersWidth = 51;
-            dgvUsers.Size = new Size(856, 218);
+            dgvUsers.Size = new Size(906, 269);
             dgvUsers.TabIndex = 0;
             // 
             // tabPage2
@@ -1109,7 +1109,7 @@
             // 
             kryptonComboBoxChooseTag.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             kryptonComboBoxChooseTag.DropDownWidth = 138;
-            kryptonComboBoxChooseTag.Location = new Point(539, 43);
+            kryptonComboBoxChooseTag.Location = new Point(589, 43);
             kryptonComboBoxChooseTag.Margin = new Padding(3, 4, 3, 4);
             kryptonComboBoxChooseTag.Name = "kryptonComboBoxChooseTag";
             kryptonComboBoxChooseTag.Size = new Size(171, 38);
@@ -1137,11 +1137,12 @@
             kryptonComboBoxChooseTag.StateTracking.Item.Content.ShortText.Color2 = Color.White;
             kryptonComboBoxChooseTag.StateTracking.Item.Content.ShortText.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kryptonComboBoxChooseTag.TabIndex = 16;
+            kryptonComboBoxChooseTag.Visible = false;
             // 
             // kryptonTextBoxSearchAll
             // 
             kryptonTextBoxSearchAll.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            kryptonTextBoxSearchAll.Location = new Point(715, 45);
+            kryptonTextBoxSearchAll.Location = new Point(765, 45);
             kryptonTextBoxSearchAll.Name = "kryptonTextBoxSearchAll";
             kryptonTextBoxSearchAll.Size = new Size(171, 34);
             kryptonTextBoxSearchAll.StateCommon.Back.Color1 = Color.White;
@@ -1160,7 +1161,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1013, 475);
+            ClientSize = new Size(1063, 526);
             Controls.Add(kryptonComboBoxChooseTag);
             Controls.Add(kryptonTextBoxSearchAll);
             Controls.Add(SearchAll);

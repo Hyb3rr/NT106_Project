@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Krypton.Toolkit;
 using System.Drawing.Drawing2D;
+using BookReaderApp.Services;
+using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace BookReaderApp.ViewForm
 {
@@ -54,8 +57,8 @@ namespace BookReaderApp.ViewForm
             //this.Controls.Add(_pdfViewer);
             kryptonPanel1.Controls.Add(_pdfViewer); // Thay đổi từ this.Controls.Add sang panel1.Controls.Add
 
-            // Mở file PDF  
-            LoadPdf(filePath);
+            // Xử lý tất cả các trường hợp mở sách
+            OpenBookWithFallback();
             ShowRandomImage();
             MakeRoundedPictureBox(kryptonPictureBox1);
         }
@@ -103,11 +106,79 @@ namespace BookReaderApp.ViewForm
             }
         }
 
+        private void OpenBookWithFallback()
+        {
+            try
+            {
+                // TRƯỜNG HỢP 1 & 2: Có filepath
+                if (!string.IsNullOrEmpty(_book.FilePath))
+                {
+                    if (File.Exists(_book.FilePath))
+                    {
+                        // TRƯỜNG HỢP 1: File tồn tại tại đường dẫn -> Mở trực tiếp
+                        LoadPdf(_book.FilePath);
+                        return;
+                    }
+                    else
+                    {
+                        // TRƯỜNG HỢP 2: Có filepath nhưng file không tồn tại -> Tải từ Drive
+                        if (!string.IsNullOrEmpty(_book.DriveUrl))
+                        {
+                            MessageBox.Show("Sách không tồn tại tại đường dẫn ban đầu. Hệ thống sẽ tải từ đám mây.",
+                                "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            DownloadBookFromCloud(_book.FilePath);
+                            return;
+                        }
+                    }
+                }
 
+                // TRƯỜNG HỢP 3: Không có filepath hoặc có nhưng không có DriveUrl
+                if (string.IsNullOrEmpty(_book.DriveUrl))
+                {
+                    // Trường hợp không có cả filepath và DriveUrl
+                    MessageBox.Show("Không có thông tin về đường dẫn sách trong đám mây!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Close();
+                    return;
+                }
+
+                // TRƯỜNG HỢP 3 với DriveUrl: Tạo đường dẫn mới và tải từ Drive
+                string defaultFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "BookReaderBooks");
+                Directory.CreateDirectory(defaultFolder); // Đảm bảo thư mục tồn tại
+
+                // Extract filename from DriveUrl or use title with .pdf extension
+                string fileName = Path.GetFileName(_book.FilePath) ??
+                                 (_book.Title?.Replace(" ", "_") + ".pdf") ??
+                                 $"{_book.BookId}_book.pdf";
+
+                string newFilePath = Path.Combine(defaultFolder, fileName);
+
+                MessageBox.Show("Sách chưa có trên máy. Hệ thống sẽ tải sách từ đám mây.",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Cập nhật FilePath mới
+                _book.FilePath = newFilePath;
+                _context.SaveChanges();
+
+                // Tải sách với đường dẫn mới
+                DownloadBookFromCloud(newFilePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi mở sách: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Close();
+            }
+        }
+
+        // Sửa lại phương thức LoadPdf
         private void LoadPdf(string filePath)
         {
             try
             {
+                if (!File.Exists(filePath))
+                {
+                    throw new FileNotFoundException("File không tồn tại tại đường dẫn này", filePath);
+                }
+
                 var pdfDocument = PdfDocument.Load(filePath);
                 _pdfViewer.Document = pdfDocument;
 
@@ -122,10 +193,189 @@ namespace BookReaderApp.ViewForm
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Không thể mở file PDF: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Close();
+                throw new Exception($"Không thể mở file PDF: {ex.Message}", ex);
             }
         }
+
+        // Thêm phương thức để tải sách từ đám mây
+        private async void DownloadBookFromCloud(string localFilePath)
+        {
+            Form? loadingForm = null;
+            ProgressBar? progressBar = null;
+
+            try
+            {
+                // Hiển thị thông báo đang tải
+                loadingForm = new Form
+                {
+                    Text = "Đang tải sách...",
+                    StartPosition = FormStartPosition.CenterParent,
+                    Size = new Size(400, 150),
+                    FormBorderStyle = FormBorderStyle.FixedDialog,
+                    MaximizeBox = false,
+                    MinimizeBox = false,
+                    ControlBox = false
+                };
+
+                var label = new Label
+                {
+                    Text = "Đang tải sách từ đám mây, vui lòng chờ...",
+                    AutoSize = true,
+                    Location = new Point(100, 30)
+                };
+
+                progressBar = new ProgressBar
+                {
+                    Width = 350,
+                    Height = 20,
+                    Location = new Point(25, 70),
+                    Minimum = 0,
+                    Maximum = 100,
+                    Value = 0
+                };
+
+                loadingForm.Controls.Add(label);
+                loadingForm.Controls.Add(progressBar);
+                loadingForm.Show(this);
+                Application.DoEvents(); // Để UI kịp cập nhật
+
+                // Lấy thông tin file từ cơ sở dữ liệu
+                var driveUrl = _book.DriveUrl;
+
+                if (string.IsNullOrEmpty(driveUrl))
+                {
+                    MessageBox.Show("Không tìm thấy đường dẫn file trên đám mây!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    loadingForm.Close();
+                    this.Close();
+                    return;
+                }
+
+                // Debug: Show the Drive URL
+                Debug.WriteLine($"DriveURL: {driveUrl}");
+
+                // Lấy ID file từ DriveUrl
+                string fileId = ExtractFileIdFromUrl(driveUrl);
+
+                // Debug: Show the extracted file ID
+                Debug.WriteLine($"Extracted FileID: {fileId}");
+
+                if (string.IsNullOrEmpty(fileId))
+                {
+                    // Show the actual URL in the error message
+                    MessageBox.Show($"Không thể xác định ID file từ đường dẫn Google Drive!\nURL: {driveUrl}",
+                        "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    loadingForm.Close();
+                    this.Close();
+                    return;
+                }
+
+                // Tạo thư mục nếu chưa tồn tại
+                var directory = Path.GetDirectoryName(localFilePath);
+                if (!Directory.Exists(directory) && directory != null)
+                {
+                    Directory.CreateDirectory(directory);
+                }
+
+                // Tiến trình tải
+                var progress = new Progress<double>(p =>
+                {
+                    if (progressBar != null && !progressBar.IsDisposed)
+                        progressBar.Value = (int)(p * 100);
+                });
+
+                // Sử dụng helper đã có để tải file
+                var driveServiceHelper = new DriveServiceHelper();
+                await driveServiceHelper.DownloadFileAsync(fileId, localFilePath, progress);
+
+                // Kiểm tra thành công
+                if (File.Exists(localFilePath))
+                {
+                    // Cập nhật đường dẫn vào database
+                    _book.FilePath = localFilePath;
+                    _context.SaveChanges();
+
+                    loadingForm.Close();
+                    loadingForm = null;
+
+                    try
+                    {
+                        LoadPdf(localFilePath);
+                    }
+                    catch (Exception pdfEx)
+                    {
+                        MessageBox.Show($"Đã tải file thành công nhưng không mở được file PDF: {pdfEx.Message}",
+                            "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        this.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Không thể tải sách từ đám mây!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải sách từ đám mây: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
+            finally
+            {
+                loadingForm?.Close();
+            }
+        }
+
+
+        // Phương thức để trích xuất ID file từ Google Drive URL
+        private string ExtractFileIdFromUrl(string driveUrl)
+        {
+            try
+            {
+                // Handle standard Google Drive sharing URL formats
+                if (driveUrl.Contains("/file/d/"))
+                {
+                    // Format: https://drive.google.com/file/d/[fileId]/view
+                    int startIndex = driveUrl.IndexOf("/file/d/") + 9;
+                    int endIndex = driveUrl.IndexOf("/", startIndex);
+                    if (endIndex == -1)
+                        endIndex = driveUrl.Length;
+
+                    return driveUrl.Substring(startIndex, endIndex - startIndex);
+                }
+                else if (driveUrl.Contains("id="))
+                {
+                    // Format: https://drive.google.com/open?id=[fileId]
+                    int startIndex = driveUrl.IndexOf("id=") + 3;
+                    int endIndex = driveUrl.IndexOf("&", startIndex);
+                    if (endIndex == -1)
+                        endIndex = driveUrl.Length;
+
+                    return driveUrl.Substring(startIndex, endIndex - startIndex);
+                }
+                else if (driveUrl.Contains("drive.google.com"))
+                {
+                    // Try to find any alphanumeric sequence that looks like a Drive ID
+                    // Drive IDs are typically long alphanumeric strings
+                    string pattern = @"[-\w]{25,}";
+                    Match match = Regex.Match(driveUrl, pattern);
+                    if (match.Success)
+                    {
+                        return match.Value;
+                    }
+                }
+
+                // If we get here, we couldn't extract the ID
+                MessageBox.Show($"Không thể xác định ID file từ đường dẫn: {driveUrl}\n\nHãy đảm bảo URL có dạng: https://drive.google.com/file/d/YOUR_FILE_ID/view",
+                    "Lỗi URL Drive", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi xử lý URL Drive: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return string.Empty;
+            }
+        }
+
         private void LoadBookmarks()
         {
             var bookmarks = _context.Bookmarks

@@ -71,7 +71,7 @@
             // 
             dgvBooks.Anchor = AnchorStyles.None;
             dgvBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBooks.Location = new Point(918, 48);
+            dgvBooks.Location = new Point(926, 44);
             dgvBooks.Name = "dgvBooks";
             dgvBooks.RowHeadersWidth = 51;
             dgvBooks.Size = new Size(65, 36);
@@ -133,7 +133,7 @@
             // kryptonButton1
             // 
             kryptonButton1.Anchor = AnchorStyles.Bottom;
-            kryptonButton1.Location = new Point(150, 394);
+            kryptonButton1.Location = new Point(157, 369);
             kryptonButton1.Margin = new Padding(3, 4, 3, 4);
             kryptonButton1.Name = "kryptonButton1";
             kryptonButton1.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -183,7 +183,7 @@
             // kryptonButton2
             // 
             kryptonButton2.Anchor = AnchorStyles.Bottom;
-            kryptonButton2.Location = new Point(334, 394);
+            kryptonButton2.Location = new Point(341, 369);
             kryptonButton2.Margin = new Padding(3, 4, 3, 4);
             kryptonButton2.Name = "kryptonButton2";
             kryptonButton2.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -233,7 +233,7 @@
             // kryptonButtonViewDetails
             // 
             kryptonButtonViewDetails.Anchor = AnchorStyles.Bottom;
-            kryptonButtonViewDetails.Location = new Point(518, 394);
+            kryptonButtonViewDetails.Location = new Point(525, 369);
             kryptonButtonViewDetails.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonViewDetails.Name = "kryptonButtonViewDetails";
             kryptonButtonViewDetails.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -283,7 +283,7 @@
             // kryptonButton3
             // 
             kryptonButton3.Anchor = AnchorStyles.Bottom;
-            kryptonButton3.Location = new Point(708, 394);
+            kryptonButton3.Location = new Point(715, 369);
             kryptonButton3.Margin = new Padding(3, 4, 3, 4);
             kryptonButton3.Name = "kryptonButton3";
             kryptonButton3.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -333,7 +333,7 @@
             // kryptonTextBox1
             // 
             kryptonTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            kryptonTextBox1.Location = new Point(746, 41);
+            kryptonTextBox1.Location = new Point(762, 41);
             kryptonTextBox1.Margin = new Padding(3, 4, 3, 4);
             kryptonTextBox1.Name = "kryptonTextBox1";
             kryptonTextBox1.Size = new Size(171, 35);
@@ -355,7 +355,7 @@
             // 
             kryptonComboBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             kryptonComboBox1.DropDownWidth = 138;
-            kryptonComboBox1.Location = new Point(569, 38);
+            kryptonComboBox1.Location = new Point(585, 38);
             kryptonComboBox1.Margin = new Padding(3, 4, 3, 4);
             kryptonComboBox1.Name = "kryptonComboBox1";
             kryptonComboBox1.Size = new Size(171, 38);
@@ -411,7 +411,7 @@
             kryptonDataGridViewLibrary.Margin = new Padding(3, 4, 3, 4);
             kryptonDataGridViewLibrary.Name = "kryptonDataGridViewLibrary";
             kryptonDataGridViewLibrary.RowHeadersWidth = 51;
-            kryptonDataGridViewLibrary.Size = new Size(947, 288);
+            kryptonDataGridViewLibrary.Size = new Size(963, 264);
             kryptonDataGridViewLibrary.StateCommon.Background.Color1 = Color.White;
             kryptonDataGridViewLibrary.StateCommon.Background.Color2 = Color.White;
             kryptonDataGridViewLibrary.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
@@ -450,10 +450,11 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox2.BackColor = Color.White;
-            pictureBox2.Location = new Point(779, 108);
+            pictureBox2.Location = new Point(783, 98);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(160, 203);
+            pictureBox2.Size = new Size(214, 264);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
@@ -462,7 +463,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1092, 444);
+            ClientSize = new Size(1108, 436);
             Controls.Add(pictureBox2);
             Controls.Add(kryptonPictureAvatar);
             Controls.Add(kryptonPictureBox1);

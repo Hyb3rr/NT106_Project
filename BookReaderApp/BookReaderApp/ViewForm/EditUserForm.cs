@@ -25,7 +25,11 @@ namespace BookReaderApp.ViewForm
             // Hiển thị thông tin người dùng
             kryptonTextBoxUsrname.Text = _user.Username;
             kryptonTextBoxEmail.Text = _user.Email;
-            kryptonComboBoxRole.SelectedIndex = (int)_user.Role;
+            // Đặt source là enum
+            kryptonComboBoxRole.DataSource = Enum.GetValues(typeof(User.UserRole));
+
+            // Gán đúng giá trị enum
+            kryptonComboBoxRole.SelectedItem = _user.Role;
             chkIsActive.Checked = _user.IsActive;
         }
 
@@ -53,7 +57,14 @@ namespace BookReaderApp.ViewForm
             DialogResult = DialogResult.Cancel; // Hủy bỏ
             Close();
         }
-
+        private bool IsPasswordStrong(string password)
+        {
+            return password.Length >= 8 &&
+                   password.Any(char.IsUpper) &&
+                   password.Any(char.IsLower) &&
+                   password.Any(char.IsDigit) &&
+                   password.Any(ch => !char.IsLetterOrDigit(ch));
+        }
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(kryptonTextBoxUsrname.Text) || string.IsNullOrWhiteSpace(kryptonTextBoxEmail.Text))
@@ -61,11 +72,22 @@ namespace BookReaderApp.ViewForm
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
+            // Nếu có nhập mật khẩu mới thì hash và lưu
+            if (!string.IsNullOrWhiteSpace(kryptonTextBoxPassword.Text))
+            {
+                if (!IsPasswordStrong(kryptonTextBoxPassword.Text))
+                {
+                    MessageBox.Show("Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                _user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(kryptonTextBoxPassword.Text);
+            }
             // Cập nhật thông tin người dùng
             _user.Username = kryptonTextBoxUsrname.Text;
             _user.Email = kryptonTextBoxEmail.Text;
-            _user.Role = (User.UserRole)kryptonComboBoxRole.SelectedIndex;
+#pragma warning disable CS8605 // Unboxing a possibly null value.
+            _user.Role = (User.UserRole)kryptonComboBoxRole.SelectedItem;
+#pragma warning restore CS8605 // Unboxing a possibly null value.
             _user.IsActive = chkIsActive.Checked;
 
             _context.SaveChanges();

@@ -1,4 +1,5 @@
 ﻿using Google.Apis.Auth.OAuth2;
+using Google.Apis.Download;
 using Google.Apis.Drive.v3;
 using Google.Apis.Services;
 using Google.Apis.Upload;
@@ -108,19 +109,91 @@ namespace BookReaderApp.Services
         /// <param name="fileId">The ID of the file to download.</param>
         /// <param name="destinationPath">The local path to save the file.</param>
         /// <returns>A task representing the asynchronous operation.</returns>
-        public async Task DownloadFileAsync(string fileId, string destinationPath)
+        public async Task DownloadFileAsync(string fileId, string destinationPath, IProgress<double>? progress = null)
         {
             try
             {
+                if (string.IsNullOrEmpty(fileId))
+                {
+                    throw new ArgumentException("ID file Google Drive không được để trống");
+                }
+
                 var request = _driveService.Files.Get(fileId);
+
+                // Sử dụng cách tải file đơn giản hơn và tương thích với API hiện tại
                 using var stream = new MemoryStream();
 
-                // Download the file
-                await request.DownloadAsync(stream);
+                // Tải file và báo cáo tiến trình
+                if (progress != null)
+                {
+                    // Báo cáo tiến độ bắt đầu
+                    progress.Report(0.1); // Báo cáo 10% khi bắt đầu
 
-                // Save to the destination path
+                    try
+                    {
+                        // Tạo và thiết lập MediaDownloader
+                        var downloader = new Google.Apis.Download.MediaDownloader(_driveService)
+                        {
+                            ChunkSize = 256 * 1024 // 256KB mỗi chunk
+                        };
+
+                        // Theo dõi tiến độ tải
+                        downloader.ProgressChanged += (IDownloadProgress downloadProgress) =>
+                        {
+                            switch (downloadProgress.Status)
+                            {
+                                case DownloadStatus.Downloading:
+                                    // Ước tính tiến độ dựa trên bytes đã tải
+                                    // Tăng dần từ 10% đến 90% tùy theo số bytes đã tải
+                                    long bytesDownloaded = downloadProgress.BytesDownloaded;
+                                    if (bytesDownloaded > 0)
+                                    {
+                                        // Giả lập tiến độ dựa trên bytes đã tải (tối đa 90%)
+                                        double estimatedProgress = 0.1 + (Math.Min(bytesDownloaded, 10000000) / 10000000.0) * 0.8;
+                                        progress.Report(Math.Min(0.9, estimatedProgress));
+                                    }
+                                    break;
+
+                                case DownloadStatus.Completed:
+                                    // Hoàn thành 100%
+                                    progress.Report(1.0);
+                                    break;
+                            }
+                        };
+
+                        // Tạo URI cho request tải xuống
+                        string downloadUrl = $"https://www.googleapis.com/drive/v3/files/{fileId}?alt=media";
+                        Uri uri = new Uri(downloadUrl);
+
+                        // Tải file
+                        var result = await downloader.DownloadAsync(downloadUrl, stream);
+
+                        // Kiểm tra kết quả
+                        if (result.Status != DownloadStatus.Completed)
+                        {
+                            throw new Exception($"Download failed with status: {result.Status}");
+                        }
+
+                        // Báo cáo hoàn thành 100%
+                        progress.Report(1.0);
+                    }
+                    catch
+                    {
+                        // Báo cáo lỗi
+                        progress.Report(0);
+                        throw;
+                    }
+                }
+                else
+                {
+                    // Nếu không cần báo cáo tiến trình, sử dụng phương thức đơn giản
+                    await request.DownloadAsync(stream);
+                }
+
+                // Ghi file ra đĩa
+                stream.Position = 0; // Reset position to beginning
                 using var fileStream = new FileStream(destinationPath, FileMode.Create, FileAccess.Write);
-                stream.WriteTo(fileStream);
+                await stream.CopyToAsync(fileStream);
             }
             catch (Exception ex)
             {
@@ -128,5 +201,6 @@ namespace BookReaderApp.Services
                 throw;
             }
         }
+
     }
 }

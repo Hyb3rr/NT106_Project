@@ -65,7 +65,8 @@ namespace BookReaderApp.Data
                     FullName = "Administrator",
                     CreatedDate = DateTime.Now,
                     IsActive = true,
-                    Role = User.UserRole.Admin
+                    Role = User.UserRole.Admin,
+                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\male-female-profile-avatar-user-avatars-gender-icons.jpg",
                 },
                 new User
                 {
@@ -75,7 +76,8 @@ namespace BookReaderApp.Data
                     FullName = "Nguyễn Văn A",
                     CreatedDate = DateTime.Now,
                     IsActive = true,
-                    Role = User.UserRole.User
+                    Role = User.UserRole.User,
+                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Female1.PNG"
                 },
                 new User
                 {
@@ -85,7 +87,8 @@ namespace BookReaderApp.Data
                     FullName = "Trần Thị B",
                     CreatedDate = DateTime.Now,
                     IsActive = true,
-                    Role = User.UserRole.User
+                    Role = User.UserRole.User,
+                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Male1.PNG"
                 },
                 new User
                 {
@@ -95,37 +98,41 @@ namespace BookReaderApp.Data
                     FullName = "Lê Văn C",
                     CreatedDate = DateTime.Now,
                     IsActive = true,
-                    Role = User.UserRole.User
+                    Role = User.UserRole.User,
+                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Male2.PNG"
                 },
                 new User
                 {
                     Username = "user4",
                     PasswordHash = BCrypt.Net.BCrypt.HashPassword("User@123"),
                     Email = "user4@example.com",
-                    FullName = "Trần Thị D",
+                    FullName = "Dương Văn D",
                     CreatedDate = DateTime.Now,
                     IsActive = true,
-                    Role = User.UserRole.User
+                    Role = User.UserRole.User,
+                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Male4.PNG"
                 },
                 new User
                 {
                     Username = "user5",
                     PasswordHash = BCrypt.Net.BCrypt.HashPassword("User@123"),
-                    Email = "user4@example.com",
+                    Email = "user5@example.com",
                     FullName = "Trần Thị E",
                     CreatedDate = DateTime.Now,
                     IsActive = true,
-                    Role = User.UserRole.User
+                    Role = User.UserRole.User,
+                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Male6.PNG"
                 },
                 new User
                 {
                     Username = "user6",
                     PasswordHash = BCrypt.Net.BCrypt.HashPassword("User@123"),
-                    Email = "user4@example.com",
+                    Email = "user6@example.com",
                     FullName = "Trần Thị F",
                     CreatedDate = DateTime.Now,
                     IsActive = true,
-                    Role = User.UserRole.User
+                    Role = User.UserRole.User,
+                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Female6.PNG"
                 }
             };
 
@@ -187,8 +194,9 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(1936, 1, 1),
                     CategoryId = tamLyHocCategory.CategoryId,
                     UploaderId = admin.UserId,
-                    FilePath = @"D:\BookSamples\DacNhanTam.pdf",
-                    DriveUrl = "https://drive.google.com/file/d/12345/view"
+                    FilePath = @"C:\Users\HP\Downloads\book\Đắc Nhân Tâm.pdf",
+                    DriveUrl = "https://drive.google.com/file/d/1SEFKLsAHgJd35q7yo-usIzOz59ZQK3sw/view?usp=drive_link",
+                    CoverImage = @"C:\Users\HP\Downloads\book\Bia\Đắc Nhân Tâm.PNG"
                 },
                 new Book
                 {
@@ -198,8 +206,9 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(2008, 8, 1),
                     CategoryId = congNgheCategory.CategoryId,
                     UploaderId = admin.UserId,
-                    FilePath = @"D:\BookSamples\CleanCode.pdf",
-                    DriveUrl = "https://drive.google.com/file/d/23456/view"
+                    FilePath = @"C:\Users\HP\Downloads\book\clean_code.pdf",
+                    DriveUrl = "https://drive.google.com/file/d/1q0G-6vdeeaRWfbdpgQrkPqlrnZtFEqd9/view?usp=drive_link",
+                    CoverImage = @"C:\Users\HP\Downloads\book\Bia\Clean_code.PNG"
                 },
                 new Book
                 {
@@ -209,8 +218,9 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(1988, 1, 1),
                     CategoryId = vanHocCategory.CategoryId,
                     UploaderId = admin.UserId,
-                    FilePath = @"D:\BookSamples\NhaGiaKim.pdf",
-                    DriveUrl = "https://drive.google.com/file/d/34567/view"
+                    FilePath = @"C:\Users\HP\Downloads\book\Nha-gia-kim.pdf",
+                    DriveUrl = "https://drive.google.com/file/d/1jGzKuxo3xICYL17xKvYZU4IDGzTdD0l9/view?usp=drive_link",
+                    CoverImage = @"C:\Users\HP\Downloads\book\Bia\Nhà giả kim.PNG"
                 },
                 new Book
                 {
@@ -220,8 +230,9 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(2010, 9, 1),
                     CategoryId = khoaHocCategory.CategoryId,
                     UploaderId = admin.UserId,
-                    FilePath = @"D:\BookSamples\BiMatVuTru.pdf",
-                    DriveUrl = "https://drive.google.com/file/d/45678/view"
+                    FilePath = @"C:\Users\HP\Downloads\book\Bi-mat-vu-tru.pdf",
+                    DriveUrl = "https://drive.google.com/file/d/1s0TrfAIOrmYmdXt-pvsDuOhemM0iZyUO/view?usp=drive_link",
+                    CoverImage = @"C:\Users\HP\Downloads\book\Bia\Bí mật vũ trụ.PNG"
                 },
                 new Book
                 {
@@ -231,8 +242,9 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(2011, 1, 1),
                     CategoryId = kinhDoanhCategory.CategoryId,
                     UploaderId = admin.UserId,
-                    FilePath = @"D:\BookSamples\KhoiNghiepTinhGon.pdf",
-                    DriveUrl = "https://drive.google.com/file/d/56789/view"
+                    FilePath = @"C:\Users\HP\Downloads\book\Khoi nghiep tinh gon - Eric Ries.pdf",
+                    DriveUrl = "https://drive.google.com/file/d/14YOKwKgm4NDnAOxLHCc5m6c5wJakGk_f/view?usp=drive_link",
+                    CoverImage = @"C:\Users\HP\Downloads\book\Bia\Khởi nghiệp tinh gọn.PNG"
                 }
             };
 
