@@ -1,4 +1,18 @@
-# Ignore token và credentials
+# ─── Ignore sensitive files ─────────────────────────────────
 **/token*.json
 **/credentials*.json
 
+# ─── Visual Studio artefacts ───────────────────────────────
+.vs/
+*.user
+*.suo
+
+# ─── Build output (for all projects) ───────────────────────
+bin/
+obj/
+
+# ─── WebView2 local cache ──────────────────────────────────
+*.exe.WebView2/
+
+# ─── Logs ───────────────────────────────────────────────────
+*.log
