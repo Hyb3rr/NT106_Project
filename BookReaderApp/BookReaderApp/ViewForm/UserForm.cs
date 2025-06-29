@@ -477,7 +477,7 @@ namespace BookReaderApp.ViewForm
                     //    pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
                     //}
                 }
-                catch (Exception ex)
+                catch (Exception )
                 {
                     // Xóa ảnh trong trường hợp lỗi
                     pictureBox2.Image = null;

@@ -206,6 +206,8 @@ namespace BookReaderApp.ViewForm
         {
             _failedLoginAttempts = 0;
             lblMessage.Visible = false;
+            TextBox tb = kryptonTextBox2.TextBox;
+            tb.PasswordChar = checkBoxShowPass.Checked ? '\0' : '*';
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -391,6 +393,12 @@ namespace BookReaderApp.ViewForm
         private void chkRememberMe_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBoxShowPass_CheckedChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = kryptonTextBox2.TextBox;
+            textBox.PasswordChar = checkBoxShowPass.Checked ? '\0' : '*';
         }
     }
 }

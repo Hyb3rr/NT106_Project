@@ -32,7 +32,10 @@ namespace BookReaderApp.ViewForm
         }
         private void RegisterForm_Load(object sender, EventArgs e)
         {
-
+            TextBox tb = kryptonTextBox4.TextBox;
+            tb.PasswordChar = checkBox1.Checked ? '\0' : '*';
+            TextBox tb1 = kryptonTextBox5.TextBox;
+            tb1.PasswordChar = checkBox2.Checked ? '\0' : '*';
         }
         private async void ShowMsg(string m, bool ok)
         {
@@ -359,7 +362,7 @@ namespace BookReaderApp.ViewForm
             }
             // Xử lý ảnh đại diện
             string avatarPath = kryptonTextBoxAvatarPath.Text;
-            string permanentAvatarPath = null;
+            string? permanentAvatarPath = null;
 
             if (!string.IsNullOrEmpty(avatarPath) && File.Exists(avatarPath))
             {
@@ -430,6 +433,19 @@ namespace BookReaderApp.ViewForm
                     MessageBox.Show($"Không thể hiển thị ảnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = kryptonTextBox4.TextBox;
+            textBox.PasswordChar = checkBox1.Checked ? '\0' : '*';
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = kryptonTextBox5.TextBox;
+            textBox.PasswordChar = checkBox2.Checked ? '\0' : '*';
         }
     }
 }
