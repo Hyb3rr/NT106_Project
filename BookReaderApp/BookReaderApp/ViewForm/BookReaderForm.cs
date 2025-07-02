@@ -391,6 +391,24 @@ namespace BookReaderApp.ViewForm
                 kryptonListBoxBookMark.Items.Add($"Trang {page + 1}");
             }
         }
+
+        private void LoadNotes()
+        {
+            var notes = _context.Notes
+            .Where(n => n.UserId == _userId && n.BookId == _book.BookId)
+            .OrderBy(n => n.PageNumber)
+            .ToList();
+
+            kryptonListBoxNotes.Items.Clear();
+
+            foreach (var note in notes)
+            {
+                // Hiển thị trang và một phần nội dung note
+                string displayText = $"Trang {note.PageNumber + 1}: {note.Content.Substring(0, Math.Min(note.Content.Length, 30))}...";
+                kryptonListBoxNotes.Items.Add(displayText);
+            }
+        }
+
         private void checkBox_ChangeTheme_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_ChangeTheme.Checked)
@@ -551,6 +569,7 @@ namespace BookReaderApp.ViewForm
         private void BookReaderForm_Load(object sender, EventArgs e)
         {
             LoadBookmarks();
+            LoadNotes();
         }
 
         private void listBoxBookmarks_SelectedIndexChanged(object sender, EventArgs e)
@@ -595,6 +614,7 @@ namespace BookReaderApp.ViewForm
                 SaveNoteForPage(currentPage, kryptonTextBoxNote.Text);
                 MessageBox.Show($"Đã lưu ghi chú cho trang: {currentPage + 1}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 kryptonTextBoxNote.Clear();
+                LoadNotes();
             }
             else
             {
@@ -654,6 +674,45 @@ namespace BookReaderApp.ViewForm
         {
 
         }
-        
+        // Thêm method để hiển thị chi tiết note
+        private void ShowNoteDetails(int pageNumber)
+        {
+            var note = _context.Notes
+                .FirstOrDefault(n => n.UserId == _userId && n.BookId == _book.BookId && n.PageNumber == pageNumber);
+
+            if (note != null)
+            {
+                MessageBox.Show($"Ghi chú trang {pageNumber + 1}:\n\n{note.Content}",
+                    "Chi tiết ghi chú", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        private void kryptonListBoxNotes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (kryptonListBoxNotes.SelectedItem != null)
+            {
+                var selectedText = kryptonListBoxNotes.SelectedItem.ToString();
+
+                // Extract page number từ text "Trang X: ..."
+                if (selectedText.StartsWith("Trang "))
+                {
+                    var colonIndex = selectedText.IndexOf(":");
+                    if (colonIndex > 0)
+                    {
+                        var pageText = selectedText.Substring(6, colonIndex - 6); // "Trang " = 6 chars
+                        if (int.TryParse(pageText, out int pageNumber))
+                        {
+                            if (pageNumber > 0 && pageNumber <= _pdfViewer.Document.PageCount)
+                            {
+                                _pdfViewer.Renderer.Page = pageNumber - 1;
+                                UpdatePageLabel();
+
+                                // Hiển thị full note content trong MessageBox hoặc TextBox
+                                ShowNoteDetails(pageNumber - 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }       

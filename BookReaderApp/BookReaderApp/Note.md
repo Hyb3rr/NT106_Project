@@ -25,3 +25,6 @@ Install-Package Microsoft.Web.WebView2
 dotnet add package Microsoft.Web.WebView2 --version 1.0.1901.102
 
 icon: icon8, freepik, flaticon
+
+
+taskkill /F /IM BookReaderApp.exe

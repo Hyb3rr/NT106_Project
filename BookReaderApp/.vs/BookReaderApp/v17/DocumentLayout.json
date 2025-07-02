@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\FINAL\\edit\\NT106_Project-newFE\\BookReaderApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|d:\\final\\edit\\nt106_project-newfe\\bookreaderapp\\bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|d:\\final\\edit\\nt106_project-newfe\\bookreaderapp\\bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB507FD-1693-412B-910C-440D66FCE34B}|BookReaderApp\\BookReaderApp.csproj|solutionrelative:bookreaderapp\\viewform\\bookreaderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookReaderForm.cs",
+              "DocumentMoniker": "D:\\FINAL\\edit\\NT106_Project-newFE\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\BookReaderForm.cs",
+              "ToolTip": "D:\\FINAL\\edit\\NT106_Project-newFE\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs*",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\BookReaderForm.cs*",
+              "ViewState": "AgIAAG4CAAAAAAAAAAAAAGgCAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T07:49:07.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookReaderForm.cs [Design]",
+              "DocumentMoniker": "D:\\FINAL\\edit\\NT106_Project-newFE\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs",
+              "RelativeDocumentMoniker": "BookReaderApp\\ViewForm\\BookReaderForm.cs",
+              "ToolTip": "D:\\FINAL\\edit\\NT106_Project-newFE\\BookReaderApp\\BookReaderApp\\ViewForm\\BookReaderForm.cs [Design]*",
+              "RelativeToolTip": "BookReaderApp\\ViewForm\\BookReaderForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T07:47:43.823Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
