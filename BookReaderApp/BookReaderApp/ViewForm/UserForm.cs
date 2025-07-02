@@ -11,6 +11,7 @@ using BookReaderApp.Data;
 using BookReaderApp.Models;
 using BookReaderApp.Services;
 using Krypton.Toolkit;
+using System.IO;
 
 namespace BookReaderApp.ViewForm
 {
@@ -182,23 +183,98 @@ namespace BookReaderApp.ViewForm
                 })
                 .ToList();
         }
-
-
-        private string DownloadBookFromGoogleDrive(string driveUrl, string bookTitle)
+        // Thêm hàm kiểm tra file PDF hợp lệ
+        private bool IsValidPdfFile(string filePath)
         {
+            try
+            {
+                using (var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
+                {
+                    // Kiểm tra 4 byte đầu của file PDF (%PDF)
+                    byte[] header = new byte[4];
+                    fileStream.Read(header, 0, 4);
+
+                    string headerString = System.Text.Encoding.ASCII.GetString(header);
+                    return headerString == "%PDF";
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+        private async Task<string> DownloadBookFromGoogleDrive(string driveUrl, string bookTitle)
+        {
+            // try
+            // {
+            //     // Lấy fileId từ URL Google Drive
+            //     string fileId = GetFileIdFromDriveUrl(driveUrl);
+
+            //     // Đường dẫn lưu file cục bộ
+            //     string savePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), $"{bookTitle}.pdf");
+
+            //     // Tải file từ Google Drive
+            //     var driveHelper = new GoogleDriveHelper("credentials.json", "BookReaderApp");
+            //      driveHelper.DownloadFile(fileId, savePath);
+
+            //     MessageBox.Show($"File đã được tải xuống: {savePath}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //     return savePath;
+            // }
+            // catch (Exception ex)
+            // {
+            //     MessageBox.Show($"Đã xảy ra lỗi khi tải file từ Google Drive: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //     return string.Empty;
+            // }
             try
             {
                 // Lấy fileId từ URL Google Drive
                 string fileId = GetFileIdFromDriveUrl(driveUrl);
 
                 // Đường dẫn lưu file cục bộ
-                string savePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), $"{bookTitle}.pdf");
+                string downloadsPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "book");
+
+                // Tạo thư mục nếu chưa tồn tại
+                Directory.CreateDirectory(downloadsPath);
+
+                // Làm sạch tên file (loại bỏ ký tự không hợp lệ)
+                string cleanTitle = string.Join("_", bookTitle.Split(Path.GetInvalidFileNameChars()));
+                string savePath = Path.Combine(downloadsPath, $"{cleanTitle}.pdf");
+
+                // Xóa file cũ nếu tồn tại
+                if (File.Exists(savePath))
+                {
+                    File.Delete(savePath);
+                }
 
                 // Tải file từ Google Drive
-                var driveHelper = new GoogleDriveHelper("credentials.json", "BookReaderApp");
-                driveHelper.DownloadFile(fileId, savePath);
+                var driveHelper = new DriveServiceHelper();
+                await driveHelper.DownloadFileAsync(fileId, savePath);
 
-                MessageBox.Show($"File đã được tải xuống: {savePath}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Kiểm tra file đã được tải thành công chưa
+                if (!File.Exists(savePath))
+                {
+                    throw new Exception("File không được tải xuống thành công.");
+                }
+
+                // Kiểm tra kích thước file
+                var fileInfo = new FileInfo(savePath);
+                if (fileInfo.Length == 0)
+                {
+                    File.Delete(savePath);
+                    throw new Exception("File tải về có kích thước 0 byte.");
+                }
+
+                // Kiểm tra file PDF hợp lệ
+                if (!IsValidPdfFile(savePath))
+                {
+                    File.Delete(savePath);
+                    throw new Exception("File tải về không phải PDF hợp lệ.");
+                }
+
+                MessageBox.Show($"File đã được tải xuống thành công: {savePath}\nKích thước: {fileInfo.Length / 1024} KB", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 return savePath;
             }
@@ -210,9 +286,52 @@ namespace BookReaderApp.ViewForm
         }
         private string GetFileIdFromDriveUrl(string driveUrl)
         {
-            var uri = new Uri(driveUrl);
-            var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
-            return query["id"] ?? throw new InvalidOperationException("The 'id' parameter is missing in the Google Drive URL.");
+            // var uri = new Uri(driveUrl);
+            // var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+            // return query["id"] ?? throw new InvalidOperationException("The 'id' parameter is missing in the Google Drive URL.");
+
+            // // Dạng 1: https://drive.google.com/file/d/FILE_ID/view
+            // var match = System.Text.RegularExpressions.Regex.Match(driveUrl, @"\/file\/d\/([a-zA-Z0-9_-]+)");
+            // if (match.Success)
+            //     return match.Groups[1].Value;
+
+            // // Dạng 2: https://drive.google.com/open?id=FILE_ID
+            // var uri = new Uri(driveUrl);
+            // var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+            // if (!string.IsNullOrEmpty(query["id"]))
+            //     return query["id"];
+
+            // throw new InvalidOperationException("Không thể xác định fileId từ URL Google Drive.");
+            try
+            {
+                Console.WriteLine($"Input URL: {driveUrl}");
+
+                // Dạng 1: https://drive.google.com/file/d/FILE_ID/view
+                var match = System.Text.RegularExpressions.Regex.Match(driveUrl, @"\/file\/d\/([a-zA-Z0-9_-]+)");
+                if (match.Success)
+                {
+                    var fileId = match.Groups[1].Value;
+                    Console.WriteLine($"Extracted fileId (pattern 1): {fileId}");
+                    return fileId;
+                }
+
+                // Dạng 2: https://drive.google.com/open?id=FILE_ID
+                var uri = new Uri(driveUrl);
+                var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+                if (!string.IsNullOrEmpty(query["id"]))
+                {
+                    var fileId = query["id"];
+                    Console.WriteLine($"Extracted fileId (pattern 2): {fileId}");
+                    return fileId;
+                }
+
+                throw new InvalidOperationException($"Không thể xác định fileId từ URL: {driveUrl}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error extracting fileId: {ex.Message}");
+                throw;
+            }
         }
         private void OpenBookOnline(string driveUrl)
         {
@@ -228,10 +347,36 @@ namespace BookReaderApp.ViewForm
         }
         private void OpenBookOffline(string filePath, Book book)
         {
+            // try
+            // {
+            //     var bookReaderForm = new BookReaderForm(filePath, _context, book, _userId);
+            //     bookReaderForm.ShowDialog();
+            // }
+            // catch (Exception ex)
+            // {
+            //     MessageBox.Show($"Đã xảy ra lỗi khi đọc sách offline: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            // }
             try
             {
-                var bookReaderForm = new BookReaderForm(filePath, _context, book, _userId);
-                bookReaderForm.ShowDialog();
+                // Kiểm tra file có tồn tại và có thể đọc được không
+                if (!File.Exists(filePath))
+                {
+                    MessageBox.Show("File không tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Kiểm tra file có phải PDF hợp lệ không
+                if (!IsValidPdfFile(filePath))
+                {
+                    MessageBox.Show("File PDF không hợp lệ hoặc bị hỏng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Tạo form mới mỗi lần (không tái sử dụng)
+                using (var bookReaderForm = new BookReaderForm(filePath, _context, book, _userId))
+                {
+                    bookReaderForm.ShowDialog();
+                }
             }
             catch (Exception ex)
             {
@@ -239,7 +384,7 @@ namespace BookReaderApp.ViewForm
             }
         }
 
-        private void kryptonButtonReadBook(object sender, EventArgs e)
+        private async void kryptonButtonReadBook(object sender, EventArgs e)
         {
             //if (dgvBooks.SelectedRows.Count > 0)
             //{
@@ -260,6 +405,66 @@ namespace BookReaderApp.ViewForm
             //{
             //    MessageBox.Show("Vui lòng chọn một sách để đọc.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //}
+            // if (kryptonDataGridViewLibrary.SelectedRows.Count > 0)
+            // {
+            //     int bookId = (int)kryptonDataGridViewLibrary.SelectedRows[0].Cells["BookId"].Value;
+            //     var book = _context.Books.Find(bookId);
+
+            //     if (book != null)
+            //     {
+            //         // Kiểm tra xem người dùng muốn đọc online hay offline
+            //         var result = MessageBox.Show("Bạn muốn đọc sách online hay offline?", "Chọn chế độ đọc",
+            //             MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+
+            //         if (result == DialogResult.Yes)
+            //         {
+            //             // Đọc online
+            //             if (!string.IsNullOrEmpty(book.DriveUrl))
+            //             {
+            //                 OpenBookOnline(book.DriveUrl);
+            //             }
+            //             else
+            //             {
+            //                 MessageBox.Show("Không tìm thấy URL Google Drive của sách!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //             }
+            //         }
+            //         else if (result == DialogResult.No)
+            //         {
+            //             // Đọc offline
+            //             if (!string.IsNullOrEmpty(book.FilePath) && File.Exists(book.FilePath))
+            //             {
+            //                 OpenBookOffline(book.FilePath, book);
+            //             }
+            //             else
+            //             {
+            //                 // Hỏi người dùng có muốn tải sách về không
+            //                 var downloadResult = MessageBox.Show("File sách chưa được tải về. Bạn có muốn tải sách về không?", "Tải sách",
+            //                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            //                 if (downloadResult == DialogResult.Yes)
+            //                 {
+            //                     if (!string.IsNullOrEmpty(book.DriveUrl))
+            //                     {
+            //                         string savePath = DownloadBookFromGoogleDrive(book.DriveUrl, book.Title);
+            //                         OpenBookOffline(savePath, book);
+            //                     }
+            //                     else
+            //                     {
+            //                         MessageBox.Show("Không tìm thấy URL Google Drive của sách!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            //     else
+            //     {
+            //         MessageBox.Show("Không tìm thấy thông tin sách.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //     }
+            // }
+            // else
+            // {
+            //     MessageBox.Show("Vui lòng chọn một sách để đọc.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // }
             if (kryptonDataGridViewLibrary.SelectedRows.Count > 0)
             {
                 int bookId = (int)kryptonDataGridViewLibrary.SelectedRows[0].Cells["BookId"].Value;
@@ -267,13 +472,11 @@ namespace BookReaderApp.ViewForm
 
                 if (book != null)
                 {
-                    // Kiểm tra xem người dùng muốn đọc online hay offline
                     var result = MessageBox.Show("Bạn muốn đọc sách online hay offline?", "Chọn chế độ đọc",
                         MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 
                     if (result == DialogResult.Yes)
                     {
-                        // Đọc online
                         if (!string.IsNullOrEmpty(book.DriveUrl))
                         {
                             OpenBookOnline(book.DriveUrl);
@@ -285,14 +488,12 @@ namespace BookReaderApp.ViewForm
                     }
                     else if (result == DialogResult.No)
                     {
-                        // Đọc offline
                         if (!string.IsNullOrEmpty(book.FilePath) && File.Exists(book.FilePath))
                         {
                             OpenBookOffline(book.FilePath, book);
                         }
                         else
                         {
-                            // Hỏi người dùng có muốn tải sách về không
                             var downloadResult = MessageBox.Show("File sách chưa được tải về. Bạn có muốn tải sách về không?", "Tải sách",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -300,8 +501,12 @@ namespace BookReaderApp.ViewForm
                             {
                                 if (!string.IsNullOrEmpty(book.DriveUrl))
                                 {
-                                    string savePath = DownloadBookFromGoogleDrive(book.DriveUrl, book.Title);
-                                    OpenBookOffline(savePath, book);
+                                    // SỬA: Thêm await vì hàm đã thành async
+                                    string savePath = await DownloadBookFromGoogleDrive(book.DriveUrl, book.Title);
+                                    if (!string.IsNullOrEmpty(savePath))
+                                    {
+                                        OpenBookOffline(savePath, book);
+                                    }
                                 }
                                 else
                                 {
