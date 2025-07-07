@@ -10,7 +10,7 @@ namespace BookReaderApp.Data
             var optionsBuilder = new DbContextOptionsBuilder<BookReaderDbContext>();
 
             // Connection string (replace with your actual connection string)
-            var connectionString = "Server=localhost;Database=BookReaderDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;";
+            var connectionString = "Server=.;Database=BookReaderDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;";
             optionsBuilder.UseSqlServer(connectionString);
 
             return new BookReaderDbContext(optionsBuilder.Options);

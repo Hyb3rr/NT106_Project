@@ -28,3 +28,13 @@ icon: icon8, freepik, flaticon
 
 
 taskkill /F /IM BookReaderApp.exe
+
+
+
+dotnet ef database drop     # xoá hẳn DB
+dotnet ef migrations remove --force   # lặp lại tới khi folder Migrations rỗng
+# hoặc xoá thư mục Migrations bằng tay
+
+# Rồi tạo migration gốc mới
+dotnet ef migrations add InitialCreate
+dotnet ef database update

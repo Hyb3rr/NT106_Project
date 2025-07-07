@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FINAL\\edit\\NT106_Project-newFE\\BookReaderApp\\BookReaderApp\\BookReaderApp.csproj": {}
+    "D:\\NT106_Project\\BookReaderApp\\BookReaderApp\\BookReaderApp.csproj": {}
   },
   "projects": {
-    "D:\\FINAL\\edit\\NT106_Project-newFE\\BookReaderApp\\BookReaderApp\\BookReaderApp.csproj": {
+    "D:\\NT106_Project\\BookReaderApp\\BookReaderApp\\BookReaderApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FINAL\\edit\\NT106_Project-newFE\\BookReaderApp\\BookReaderApp\\BookReaderApp.csproj",
+        "projectUniqueName": "D:\\NT106_Project\\BookReaderApp\\BookReaderApp\\BookReaderApp.csproj",
         "projectName": "BookReaderApp",
-        "projectPath": "D:\\FINAL\\edit\\NT106_Project-newFE\\BookReaderApp\\BookReaderApp\\BookReaderApp.csproj",
+        "projectPath": "D:\\NT106_Project\\BookReaderApp\\BookReaderApp\\BookReaderApp.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\FINAL\\edit\\NT106_Project-newFE\\BookReaderApp\\BookReaderApp\\obj\\",
+        "outputPath": "D:\\NT106_Project\\BookReaderApp\\BookReaderApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,6 +65,12 @@
             "Krypton.Toolkit": {
               "target": "Package",
               "version": "[95.25.4.111, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

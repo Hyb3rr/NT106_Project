@@ -58,7 +58,7 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Bottom;
-            panel1.Location = new Point(884, 585);
+            panel1.Location = new Point(886, 571);
             panel1.Name = "panel1";
             panel1.Size = new Size(58, 53);
             panel1.TabIndex = 0;
@@ -69,7 +69,7 @@
             checkBox_ChangeTheme.Anchor = AnchorStyles.Bottom;
             checkBox_ChangeTheme.AutoSize = true;
             checkBox_ChangeTheme.Font = new Font("Calibri", 10F);
-            checkBox_ChangeTheme.Location = new Point(264, 457);
+            checkBox_ChangeTheme.Location = new Point(266, 443);
             checkBox_ChangeTheme.Name = "checkBox_ChangeTheme";
             checkBox_ChangeTheme.Size = new Size(126, 25);
             checkBox_ChangeTheme.TabIndex = 1;
@@ -80,7 +80,7 @@
             // txtNote
             // 
             txtNote.Anchor = AnchorStyles.Bottom;
-            txtNote.Location = new Point(750, 543);
+            txtNote.Location = new Point(752, 529);
             txtNote.Name = "txtNote";
             txtNote.Size = new Size(125, 27);
             txtNote.TabIndex = 2;
@@ -89,7 +89,7 @@
             // btnBookmark
             // 
             btnBookmark.Anchor = AnchorStyles.Bottom;
-            btnBookmark.Location = new Point(195, 627);
+            btnBookmark.Location = new Point(197, 613);
             btnBookmark.Name = "btnBookmark";
             btnBookmark.Size = new Size(94, 29);
             btnBookmark.TabIndex = 3;
@@ -101,7 +101,7 @@
             // btnSaveNote
             // 
             btnSaveNote.Anchor = AnchorStyles.Bottom;
-            btnSaveNote.Location = new Point(372, 627);
+            btnSaveNote.Location = new Point(374, 613);
             btnSaveNote.Name = "btnSaveNote";
             btnSaveNote.Size = new Size(94, 29);
             btnSaveNote.TabIndex = 4;
@@ -113,7 +113,7 @@
             // txtPageNumber
             // 
             txtPageNumber.Anchor = AnchorStyles.Bottom;
-            txtPageNumber.Location = new Point(787, 607);
+            txtPageNumber.Location = new Point(789, 593);
             txtPageNumber.Name = "txtPageNumber";
             txtPageNumber.Size = new Size(125, 27);
             txtPageNumber.TabIndex = 5;
@@ -122,7 +122,7 @@
             // btnGoToPage
             // 
             btnGoToPage.Anchor = AnchorStyles.Bottom;
-            btnGoToPage.Location = new Point(582, 627);
+            btnGoToPage.Location = new Point(584, 613);
             btnGoToPage.Name = "btnGoToPage";
             btnGoToPage.Size = new Size(94, 29);
             btnGoToPage.TabIndex = 6;
@@ -136,7 +136,7 @@
             lblPageInfo.Anchor = AnchorStyles.Bottom;
             lblPageInfo.AutoSize = true;
             lblPageInfo.Font = new Font("Calibri", 10F);
-            lblPageInfo.Location = new Point(148, 461);
+            lblPageInfo.Location = new Point(150, 447);
             lblPageInfo.Name = "lblPageInfo";
             lblPageInfo.Size = new Size(70, 21);
             lblPageInfo.TabIndex = 7;
@@ -146,7 +146,7 @@
             // 
             listBoxBookmarks.Anchor = AnchorStyles.Bottom;
             listBoxBookmarks.FormattingEnabled = true;
-            listBoxBookmarks.Location = new Point(936, 340);
+            listBoxBookmarks.Location = new Point(938, 326);
             listBoxBookmarks.Name = "listBoxBookmarks";
             listBoxBookmarks.Size = new Size(150, 104);
             listBoxBookmarks.TabIndex = 8;
@@ -188,7 +188,7 @@
             // kryptonButtonBookmark
             // 
             kryptonButtonBookmark.Anchor = AnchorStyles.Bottom;
-            kryptonButtonBookmark.Location = new Point(151, 501);
+            kryptonButtonBookmark.Location = new Point(153, 487);
             kryptonButtonBookmark.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonBookmark.Name = "kryptonButtonBookmark";
             kryptonButtonBookmark.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -238,7 +238,7 @@
             // kryptonButtonSaveNote
             // 
             kryptonButtonSaveNote.Anchor = AnchorStyles.Bottom;
-            kryptonButtonSaveNote.Location = new Point(347, 501);
+            kryptonButtonSaveNote.Location = new Point(349, 487);
             kryptonButtonSaveNote.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonSaveNote.Name = "kryptonButtonSaveNote";
             kryptonButtonSaveNote.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -288,7 +288,7 @@
             // kryptonButtonGoToPage
             // 
             kryptonButtonGoToPage.Anchor = AnchorStyles.Bottom;
-            kryptonButtonGoToPage.Location = new Point(552, 501);
+            kryptonButtonGoToPage.Location = new Point(554, 487);
             kryptonButtonGoToPage.Margin = new Padding(3, 4, 3, 4);
             kryptonButtonGoToPage.Name = "kryptonButtonGoToPage";
             kryptonButtonGoToPage.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -338,7 +338,7 @@
             // kryptonTextBoxPageNumber
             // 
             kryptonTextBoxPageNumber.Anchor = AnchorStyles.Bottom;
-            kryptonTextBoxPageNumber.Location = new Point(644, 434);
+            kryptonTextBoxPageNumber.Location = new Point(646, 420);
             kryptonTextBoxPageNumber.Margin = new Padding(3, 4, 3, 4);
             kryptonTextBoxPageNumber.Name = "kryptonTextBoxPageNumber";
             kryptonTextBoxPageNumber.Size = new Size(171, 35);
@@ -358,7 +358,7 @@
             // kryptonTextBoxNote
             // 
             kryptonTextBoxNote.Anchor = AnchorStyles.Bottom;
-            kryptonTextBoxNote.Location = new Point(451, 434);
+            kryptonTextBoxNote.Location = new Point(453, 420);
             kryptonTextBoxNote.Margin = new Padding(3, 4, 3, 4);
             kryptonTextBoxNote.Name = "kryptonTextBoxNote";
             kryptonTextBoxNote.Size = new Size(171, 35);
@@ -378,7 +378,7 @@
             // kryptonListBoxBookMark
             // 
             kryptonListBoxBookMark.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            kryptonListBoxBookMark.Location = new Point(912, 13);
+            kryptonListBoxBookMark.Location = new Point(916, 13);
             kryptonListBoxBookMark.Margin = new Padding(3, 4, 3, 4);
             kryptonListBoxBookMark.Name = "kryptonListBoxBookMark";
             kryptonListBoxBookMark.Padding = new Padding(11, 0, 11, 0);
@@ -400,7 +400,7 @@
             kryptonPanel1.Margin = new Padding(3, 4, 3, 4);
             kryptonPanel1.Name = "kryptonPanel1";
             kryptonPanel1.Padding = new Padding(11, 0, 11, 0);
-            kryptonPanel1.Size = new Size(835, 386);
+            kryptonPanel1.Size = new Size(839, 372);
             kryptonPanel1.StateCommon.Color1 = Color.White;
             kryptonPanel1.StateCommon.Color2 = Color.White;
             kryptonPanel1.TabIndex = 0;
@@ -409,7 +409,7 @@
             // kryptonPictureBox1
             // 
             kryptonPictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            kryptonPictureBox1.Location = new Point(923, 279);
+            kryptonPictureBox1.Location = new Point(927, 265);
             kryptonPictureBox1.Margin = new Padding(3, 4, 3, 4);
             kryptonPictureBox1.Name = "kryptonPictureBox1";
             kryptonPictureBox1.Size = new Size(224, 267);
@@ -420,7 +420,7 @@
             // kryptonListBoxNotes
             // 
             kryptonListBoxNotes.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            kryptonListBoxNotes.Location = new Point(912, 142);
+            kryptonListBoxNotes.Location = new Point(916, 142);
             kryptonListBoxNotes.Margin = new Padding(3, 4, 3, 4);
             kryptonListBoxNotes.Name = "kryptonListBoxNotes";
             kryptonListBoxNotes.Padding = new Padding(11, 0, 11, 0);
@@ -438,7 +438,7 @@
             // kryptonLabel1
             // 
             kryptonLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            kryptonLabel1.Location = new Point(1076, 25);
+            kryptonLabel1.Location = new Point(1080, 25);
             kryptonLabel1.Name = "kryptonLabel1";
             kryptonLabel1.Size = new Size(80, 24);
             kryptonLabel1.TabIndex = 33;
@@ -447,7 +447,7 @@
             // kryptonLabel2
             // 
             kryptonLabel2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            kryptonLabel2.Location = new Point(1104, 155);
+            kryptonLabel2.Location = new Point(1108, 155);
             kryptonLabel2.Name = "kryptonLabel2";
             kryptonLabel2.Size = new Size(52, 24);
             kryptonLabel2.TabIndex = 34;
@@ -457,7 +457,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1168, 559);
+            ClientSize = new Size(1172, 545);
             Controls.Add(kryptonLabel2);
             Controls.Add(kryptonLabel1);
             Controls.Add(kryptonListBoxNotes);

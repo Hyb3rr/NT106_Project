@@ -652,8 +652,8 @@ namespace BookReaderApp.ViewForm
 
         private void kryptonPictureBox1_Click(object sender, EventArgs e)
         {
-            var controllerForm = new Controller();
-            controllerForm.Show();
+            var chatMainForm = new ChatMainForm(_context, _userId);
+            chatMainForm.Show();
         }
 
         private void kryptonDataGridViewLibrary_SelectionChanged(object sender, EventArgs e)

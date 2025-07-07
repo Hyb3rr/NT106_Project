@@ -19,6 +19,9 @@
     <Compile Update="ViewForm\BookReaderForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ViewForm\ChatMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ViewForm\ChatRoom\ClienForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -26,6 +29,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ViewForm\ChatRoom\ServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\CreateChatRoomForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ViewForm\EditBookForm.cs">

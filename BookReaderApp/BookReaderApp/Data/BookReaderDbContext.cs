@@ -17,6 +17,9 @@ namespace BookReaderApp.Data
         public DbSet<Note> Notes { get; set; } = null!;
         public DbSet<UserLibrary> UserLibraries { get; set; } = null!;
         public DbSet<AdminLog> AdminLogs { get; set; } = null!;
+        public DbSet<ChatRoom> ChatRooms { get; set; } = null!;
+        public DbSet<ChatMessage> ChatMessages { get; set; } = null!;
+        public DbSet<ChatRoomMember> ChatRoomMembers { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -114,6 +117,42 @@ namespace BookReaderApp.Data
                 .WithMany()
                 .HasForeignKey(al => al.AdminId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            // Chat Room Relationships
+            modelBuilder.Entity<ChatRoom>()
+                .HasOne(cr => cr.Book)
+                .WithMany()
+                .HasForeignKey(cr => cr.BookId)
+                .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<ChatMessage>()
+                .HasOne(cm => cm.ChatRoom)
+                .WithMany(cr => cr.Messages)
+                .HasForeignKey(cm => cm.ChatRoomId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<ChatMessage>()
+                .HasOne(cm => cm.User)
+                .WithMany()
+                .HasForeignKey(cm => cm.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<ChatRoomMember>()
+                .HasOne(crm => crm.ChatRoom)
+                .WithMany(cr => cr.Members)
+                .HasForeignKey(crm => crm.ChatRoomId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<ChatRoomMember>()
+                .HasOne(crm => crm.User)
+                .WithMany()
+                .HasForeignKey(crm => crm.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Unique constraint for ChatRoomMember
+            modelBuilder.Entity<ChatRoomMember>()
+                .HasIndex(crm => new { crm.ChatRoomId, crm.UserId })
+                .IsUnique();
         }
     }
 }
