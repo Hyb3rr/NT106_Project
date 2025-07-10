@@ -44,13 +44,15 @@
             kryptonButtonReview = new Krypton.Toolkit.KryptonButton();
             kryptonButtonClose = new Krypton.Toolkit.KryptonButton();
             kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(components);
+            kryptonPictureBox3 = new Krypton.Toolkit.KryptonPictureBox();
+            ((System.ComponentModel.ISupportInitialize)kryptonPictureBox3).BeginInit();
             SuspendLayout();
             // 
             // lblTitle
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            lblTitle.Location = new Point(26, -11);
+            lblTitle.Location = new Point(25, 3);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(33, 17);
             lblTitle.TabIndex = 0;
@@ -60,21 +62,21 @@
             // 
             lblAuthor.AutoSize = true;
             lblAuthor.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            lblAuthor.Location = new Point(26, 21);
+            lblAuthor.Location = new Point(25, 35);
             lblAuthor.Name = "lblAuthor";
-            lblAuthor.Size = new Size(50, 17);
+            lblAuthor.Size = new Size(47, 17);
             lblAuthor.TabIndex = 1;
-            lblAuthor.Text = "Author";
+            lblAuthor.Text = "Tác giả";
             // 
             // lblCategory
             // 
             lblCategory.AutoSize = true;
             lblCategory.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            lblCategory.Location = new Point(26, 53);
+            lblCategory.Location = new Point(25, 67);
             lblCategory.Name = "lblCategory";
-            lblCategory.Size = new Size(61, 17);
+            lblCategory.Size = new Size(54, 17);
             lblCategory.TabIndex = 2;
-            lblCategory.Text = "Category";
+            lblCategory.Text = "Thể loại";
             // 
             // txtDescription
             // 
@@ -89,11 +91,11 @@
             // 
             lblPublishedDate.AutoSize = true;
             lblPublishedDate.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            lblPublishedDate.Location = new Point(26, 85);
+            lblPublishedDate.Location = new Point(25, 99);
             lblPublishedDate.Name = "lblPublishedDate";
-            lblPublishedDate.Size = new Size(97, 17);
+            lblPublishedDate.Size = new Size(93, 17);
             lblPublishedDate.TabIndex = 5;
-            lblPublishedDate.Text = "Published Date";
+            lblPublishedDate.Text = "Ngày xuất bản";
             // 
             // btnReadBook
             // 
@@ -135,19 +137,19 @@
             // 
             lblAverageRating.AutoSize = true;
             lblAverageRating.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            lblAverageRating.Location = new Point(26, 117);
+            lblAverageRating.Location = new Point(25, 131);
             lblAverageRating.Name = "lblAverageRating";
-            lblAverageRating.Size = new Size(97, 17);
+            lblAverageRating.Size = new Size(126, 17);
             lblAverageRating.TabIndex = 9;
-            lblAverageRating.Text = "Average Rating";
+            lblAverageRating.Text = "Đánh giá trung bình";
             // 
             // kryptonRichTextBox1
             // 
             kryptonRichTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            kryptonRichTextBox1.Location = new Point(24, 160);
+            kryptonRichTextBox1.Location = new Point(25, 160);
             kryptonRichTextBox1.Name = "kryptonRichTextBox1";
             kryptonRichTextBox1.ReadOnly = true;
-            kryptonRichTextBox1.Size = new Size(654, 112);
+            kryptonRichTextBox1.Size = new Size(660, 109);
             kryptonRichTextBox1.StateCommon.Border.Rounding = 20F;
             kryptonRichTextBox1.StateCommon.Border.Width = 1;
             kryptonRichTextBox1.StateCommon.Content.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -158,7 +160,7 @@
             // kryptonButtonReadBook
             // 
             kryptonButtonReadBook.Anchor = AnchorStyles.Bottom;
-            kryptonButtonReadBook.Location = new Point(26, 290);
+            kryptonButtonReadBook.Location = new Point(26, 285);
             kryptonButtonReadBook.Name = "kryptonButtonReadBook";
             kryptonButtonReadBook.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonReadBook.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -201,13 +203,13 @@
             kryptonButtonReadBook.StateTracking.Border.Width = 1;
             kryptonButtonReadBook.TabIndex = 25;
             kryptonButtonReadBook.Values.DropDownArrowColor = Color.Empty;
-            kryptonButtonReadBook.Values.Text = "Read ";
+            kryptonButtonReadBook.Values.Text = "Đọc";
             kryptonButtonReadBook.Click += kryptonButtonReadBook_Click;
             // 
             // kryptonButtonReview
             // 
             kryptonButtonReview.Anchor = AnchorStyles.Bottom;
-            kryptonButtonReview.Location = new Point(215, 290);
+            kryptonButtonReview.Location = new Point(215, 285);
             kryptonButtonReview.Name = "kryptonButtonReview";
             kryptonButtonReview.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonReview.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -250,13 +252,13 @@
             kryptonButtonReview.StateTracking.Border.Width = 1;
             kryptonButtonReview.TabIndex = 26;
             kryptonButtonReview.Values.DropDownArrowColor = Color.Empty;
-            kryptonButtonReview.Values.Text = "Review";
+            kryptonButtonReview.Values.Text = "Đánh giá";
             kryptonButtonReview.Click += kryptonButtonReview_Click;
             // 
             // kryptonButtonClose
             // 
             kryptonButtonClose.Anchor = AnchorStyles.Bottom;
-            kryptonButtonClose.Location = new Point(417, 290);
+            kryptonButtonClose.Location = new Point(417, 285);
             kryptonButtonClose.Name = "kryptonButtonClose";
             kryptonButtonClose.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonClose.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -299,7 +301,7 @@
             kryptonButtonClose.StateTracking.Border.Width = 1;
             kryptonButtonClose.TabIndex = 27;
             kryptonButtonClose.Values.DropDownArrowColor = Color.Empty;
-            kryptonButtonClose.Values.Text = "Close";
+            kryptonButtonClose.Values.Text = "Đóng";
             kryptonButtonClose.Click += kryptonButtonClose_Click;
             // 
             // kryptonCustomPaletteBase1
@@ -334,11 +336,24 @@
             kryptonCustomPaletteBase1.HeaderStyles.HeaderCommon.StateCommon.Content.Padding = new Padding(10, -1, -1, -1);
             kryptonCustomPaletteBase1.UseThemeFormChromeBorderWidth = Krypton.Toolkit.InheritBool.True;
             // 
+            // kryptonPictureBox3
+            // 
+            kryptonPictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            kryptonPictureBox3.Image = (Image)resources.GetObject("kryptonPictureBox3.Image");
+            kryptonPictureBox3.Location = new Point(471, 3);
+            kryptonPictureBox3.Margin = new Padding(3, 2, 3, 2);
+            kryptonPictureBox3.Name = "kryptonPictureBox3";
+            kryptonPictureBox3.Size = new Size(199, 145);
+            kryptonPictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            kryptonPictureBox3.TabIndex = 28;
+            kryptonPictureBox3.TabStop = false;
+            // 
             // BookDetailForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(728, 350);
+            ClientSize = new Size(740, 348);
+            Controls.Add(kryptonPictureBox3);
             Controls.Add(kryptonButtonClose);
             Controls.Add(kryptonButtonReview);
             Controls.Add(kryptonButtonReadBook);
@@ -360,6 +375,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "BookDetailForm";
             Load += BookDetailForm_Load;
+            ((System.ComponentModel.ISupportInitialize)kryptonPictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -380,5 +396,6 @@
         private Krypton.Toolkit.KryptonButton kryptonButtonReview;
         private Krypton.Toolkit.KryptonButton kryptonButtonClose;
         private Krypton.Toolkit.KryptonCustomPaletteBase kryptonCustomPaletteBase1;
+        private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox3;
     }
 }

@@ -33,7 +33,7 @@ namespace BookReaderApp.ViewForm
             _context = context;
             _book = book;
             _userId = userId;
-
+            panel2.Visible = true;
             // Kiểm tra file có tồn tại không  
             if (!File.Exists(filePath))
             {
@@ -712,6 +712,26 @@ namespace BookReaderApp.ViewForm
                         }
                     }
                 }
+            }
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            panel2.Visible = !panel2.Visible;
+
+            // Optionally, change the button text based on the panel's visibility
+            if (panel2.Visible)
+            {
+                panel2.Text = "Hide Area";
+            }
+            else
+            {
+                panel2.Text = "Show Area";
             }
         }
     }

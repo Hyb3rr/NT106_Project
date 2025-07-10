@@ -42,7 +42,7 @@ namespace BookReaderApp
             // Thêm DbContext với cấu hình SQL Server
             services.AddDbContext<BookReaderDbContext>(options =>
             {
-                var connectionString = "Server=localhost;Database=BookReaderDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;";
+                var connectionString = "Server=HOPE\\SQLEXPRESS01;Database=BookReaderDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;";
                 options.UseSqlServer(connectionString);
             });
 

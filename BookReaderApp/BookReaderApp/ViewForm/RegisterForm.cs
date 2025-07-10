@@ -447,5 +447,10 @@ namespace BookReaderApp.ViewForm
             TextBox textBox = kryptonTextBox5.TextBox;
             textBox.PasswordChar = checkBox2.Checked ? '\0' : '*';
         }
+
+        private void kryptonPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

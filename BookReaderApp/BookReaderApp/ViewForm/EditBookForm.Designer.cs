@@ -58,41 +58,41 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label3.Location = new Point(53, 158);
+            label3.Location = new Point(38, 146);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(54, 17);
+            label3.Size = new Size(76, 17);
             label3.TabIndex = 41;
-            label3.Text = "FilePath";
+            label3.Text = "Đường dẫn";
             // 
             // label2
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label2.Location = new Point(53, 113);
+            label2.Location = new Point(38, 101);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(50, 17);
+            label2.Size = new Size(47, 17);
             label2.TabIndex = 40;
-            label2.Text = "Author";
+            label2.Text = "Tác giả";
             // 
             // label1
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label1.Location = new Point(53, 68);
+            label1.Location = new Point(38, 56);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(36, 17);
+            label1.Size = new Size(48, 17);
             label1.TabIndex = 39;
-            label1.Text = "Titile";
+            label1.Text = "Tựa đề";
             // 
             // dtpPublishedDate
             // 
             dtpPublishedDate.Anchor = AnchorStyles.None;
-            dtpPublishedDate.Location = new Point(637, 152);
+            dtpPublishedDate.Location = new Point(639, 146);
             dtpPublishedDate.Margin = new Padding(2);
             dtpPublishedDate.Name = "dtpPublishedDate";
             dtpPublishedDate.Size = new Size(219, 24);
@@ -102,7 +102,7 @@
             // txtFilePath
             // 
             txtFilePath.Anchor = AnchorStyles.None;
-            txtFilePath.Location = new Point(623, 224);
+            txtFilePath.Location = new Point(625, 218);
             txtFilePath.Margin = new Padding(2);
             txtFilePath.Name = "txtFilePath";
             txtFilePath.Size = new Size(110, 24);
@@ -119,7 +119,7 @@
             // txtTitle
             // 
             txtTitle.Anchor = AnchorStyles.None;
-            txtTitle.Location = new Point(613, 184);
+            txtTitle.Location = new Point(615, 178);
             txtTitle.Margin = new Padding(2);
             txtTitle.Name = "txtTitle";
             txtTitle.Size = new Size(110, 24);
@@ -167,7 +167,7 @@
             cmbCategory.Anchor = AnchorStyles.None;
             cmbCategory.FormattingEnabled = true;
             cmbCategory.Items.AddRange(new object[] { "Tình yêu", "Học đường" });
-            cmbCategory.Location = new Point(686, 37);
+            cmbCategory.Location = new Point(688, 31);
             cmbCategory.Margin = new Padding(2);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(132, 23);
@@ -210,7 +210,7 @@
             // 
             kryptonComboBoxRole.Anchor = AnchorStyles.None;
             kryptonComboBoxRole.DropDownWidth = 138;
-            kryptonComboBoxRole.Location = new Point(288, 55);
+            kryptonComboBoxRole.Location = new Point(290, 49);
             kryptonComboBoxRole.Margin = new Padding(2, 3, 2, 3);
             kryptonComboBoxRole.Name = "kryptonComboBoxRole";
             kryptonComboBoxRole.Size = new Size(149, 34);
@@ -242,7 +242,7 @@
             // kryptonTextBoxTitle
             // 
             kryptonTextBoxTitle.Anchor = AnchorStyles.None;
-            kryptonTextBoxTitle.Location = new Point(116, 55);
+            kryptonTextBoxTitle.Location = new Point(118, 49);
             kryptonTextBoxTitle.Margin = new Padding(2, 3, 2, 3);
             kryptonTextBoxTitle.Name = "kryptonTextBoxTitle";
             kryptonTextBoxTitle.Size = new Size(149, 30);
@@ -260,7 +260,7 @@
             // kryptonTextBoxAuthor
             // 
             kryptonTextBoxAuthor.Anchor = AnchorStyles.None;
-            kryptonTextBoxAuthor.Location = new Point(116, 100);
+            kryptonTextBoxAuthor.Location = new Point(118, 94);
             kryptonTextBoxAuthor.Margin = new Padding(2);
             kryptonTextBoxAuthor.Name = "kryptonTextBoxAuthor";
             kryptonTextBoxAuthor.Size = new Size(149, 30);
@@ -279,7 +279,7 @@
             // kryptonTextBoxFilePath
             // 
             kryptonTextBoxFilePath.Anchor = AnchorStyles.None;
-            kryptonTextBoxFilePath.Location = new Point(116, 145);
+            kryptonTextBoxFilePath.Location = new Point(118, 139);
             kryptonTextBoxFilePath.Margin = new Padding(2, 3, 2, 3);
             kryptonTextBoxFilePath.Name = "kryptonTextBoxFilePath";
             kryptonTextBoxFilePath.Size = new Size(149, 30);
@@ -297,7 +297,7 @@
             // kryptonButtonSave
             // 
             kryptonButtonSave.Anchor = AnchorStyles.None;
-            kryptonButtonSave.Location = new Point(71, 237);
+            kryptonButtonSave.Location = new Point(73, 231);
             kryptonButtonSave.Margin = new Padding(2, 3, 2, 3);
             kryptonButtonSave.Name = "kryptonButtonSave";
             kryptonButtonSave.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -341,13 +341,13 @@
             kryptonButtonSave.StateTracking.Border.Width = 1;
             kryptonButtonSave.TabIndex = 46;
             kryptonButtonSave.Values.DropDownArrowColor = Color.Empty;
-            kryptonButtonSave.Values.Text = "Save";
+            kryptonButtonSave.Values.Text = "Lưu";
             kryptonButtonSave.Click += kryptonButtonSave_Click;
             // 
             // kryptonButtonCancel
             // 
             kryptonButtonCancel.Anchor = AnchorStyles.None;
-            kryptonButtonCancel.Location = new Point(247, 237);
+            kryptonButtonCancel.Location = new Point(249, 231);
             kryptonButtonCancel.Margin = new Padding(2, 3, 2, 3);
             kryptonButtonCancel.Name = "kryptonButtonCancel";
             kryptonButtonCancel.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -391,13 +391,13 @@
             kryptonButtonCancel.StateTracking.Border.Width = 1;
             kryptonButtonCancel.TabIndex = 47;
             kryptonButtonCancel.Values.DropDownArrowColor = Color.Empty;
-            kryptonButtonCancel.Values.Text = "Cancel";
+            kryptonButtonCancel.Values.Text = "Hủy";
             kryptonButtonCancel.Click += kryptonButtonCancel_Click;
             // 
             // kryptonButtonBrowse
             // 
             kryptonButtonBrowse.Anchor = AnchorStyles.None;
-            kryptonButtonBrowse.Location = new Point(415, 237);
+            kryptonButtonBrowse.Location = new Point(417, 231);
             kryptonButtonBrowse.Margin = new Padding(2, 3, 2, 3);
             kryptonButtonBrowse.Name = "kryptonButtonBrowse";
             kryptonButtonBrowse.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
@@ -441,13 +441,13 @@
             kryptonButtonBrowse.StateTracking.Border.Width = 1;
             kryptonButtonBrowse.TabIndex = 48;
             kryptonButtonBrowse.Values.DropDownArrowColor = Color.Empty;
-            kryptonButtonBrowse.Values.Text = "Browse File";
+            kryptonButtonBrowse.Values.Text = "Tải file";
             kryptonButtonBrowse.Click += kryptonButtonBrowse_Click;
             // 
             // kryptonDateTimePicker1
             // 
             kryptonDateTimePicker1.Anchor = AnchorStyles.None;
-            kryptonDateTimePicker1.Location = new Point(462, 55);
+            kryptonDateTimePicker1.Location = new Point(464, 49);
             kryptonDateTimePicker1.Margin = new Padding(2, 3, 2, 3);
             kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
             kryptonDateTimePicker1.Size = new Size(182, 33);
@@ -464,7 +464,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(736, 299);
+            ClientSize = new Size(744, 275);
             Controls.Add(kryptonDateTimePicker1);
             Controls.Add(kryptonButtonBrowse);
             Controls.Add(kryptonButtonCancel);

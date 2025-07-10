@@ -682,7 +682,7 @@ namespace BookReaderApp.ViewForm
                     //    pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
                     //}
                 }
-                catch (Exception )
+                catch (Exception)
                 {
                     // Xóa ảnh trong trường hợp lỗi
                     pictureBox2.Image = null;
@@ -693,6 +693,41 @@ namespace BookReaderApp.ViewForm
                 // Xóa ảnh khi không có dòng nào được chọn
                 pictureBox2.Image = null;
             }
+        }
+
+        private void kryptonPictureBox2_Click(object sender, EventArgs e)
+        {
+            // Tìm LoginForm trong các form đang mở
+            LoginForm? existingLoginForm = null;
+
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is LoginForm)
+                {
+                    existingLoginForm = (LoginForm)form;
+                    break;
+                }
+            }
+
+            if (existingLoginForm != null)
+            {
+                // Nếu đã có LoginForm, hiển thị nó
+                existingLoginForm.Show();
+            }
+            else
+            {
+                // Nếu chưa có, tạo mới
+                var loginForm = new LoginForm(_context);
+                loginForm.Show();
+            }
+
+            // Đóng form hiện tại
+            this.Hide();
+        }
+
+        private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

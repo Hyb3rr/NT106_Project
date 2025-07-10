@@ -46,7 +46,7 @@
             // btnCancel
             // 
             btnCancel.Anchor = AnchorStyles.None;
-            btnCancel.Location = new Point(326, 217);
+            btnCancel.Location = new Point(327, 214);
             btnCancel.Margin = new Padding(3, 2, 3, 2);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(158, 57);
@@ -59,7 +59,7 @@
             // btnSave
             // 
             btnSave.Anchor = AnchorStyles.None;
-            btnSave.Location = new Point(142, 217);
+            btnSave.Location = new Point(143, 214);
             btnSave.Margin = new Padding(3, 2, 3, 2);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(158, 57);
@@ -74,27 +74,27 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label2.Location = new Point(187, 74);
+            label2.Location = new Point(188, 71);
             label2.Name = "label2";
-            label2.Size = new Size(76, 17);
+            label2.Size = new Size(43, 17);
             label2.TabIndex = 30;
-            label2.Text = "Description";
+            label2.Text = "Mô tả";
             // 
             // label1
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 10F, FontStyle.Bold);
-            label1.Location = new Point(187, 37);
+            label1.Location = new Point(188, 34);
             label1.Name = "label1";
-            label1.Size = new Size(61, 17);
+            label1.Size = new Size(54, 17);
             label1.TabIndex = 29;
-            label1.Text = "Category";
+            label1.Text = "Thể loại";
             // 
             // txtDescription
             // 
             txtDescription.Anchor = AnchorStyles.None;
-            txtDescription.Location = new Point(569, 31);
+            txtDescription.Location = new Point(570, 28);
             txtDescription.Margin = new Padding(3, 2, 3, 2);
             txtDescription.Name = "txtDescription";
             txtDescription.Size = new Size(110, 23);
@@ -104,7 +104,7 @@
             // txtCategoryName
             // 
             txtCategoryName.Anchor = AnchorStyles.None;
-            txtCategoryName.Location = new Point(555, 122);
+            txtCategoryName.Location = new Point(556, 119);
             txtCategoryName.Margin = new Padding(3, 2, 3, 2);
             txtCategoryName.Name = "txtCategoryName";
             txtCategoryName.Size = new Size(110, 23);
@@ -146,7 +146,7 @@
             // kryptonButtonSave
             // 
             kryptonButtonSave.Anchor = AnchorStyles.None;
-            kryptonButtonSave.Location = new Point(142, 159);
+            kryptonButtonSave.Location = new Point(143, 156);
             kryptonButtonSave.Name = "kryptonButtonSave";
             kryptonButtonSave.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonSave.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -195,7 +195,7 @@
             // kryptonButtonCancel
             // 
             kryptonButtonCancel.Anchor = AnchorStyles.None;
-            kryptonButtonCancel.Location = new Point(329, 159);
+            kryptonButtonCancel.Location = new Point(330, 156);
             kryptonButtonCancel.Name = "kryptonButtonCancel";
             kryptonButtonCancel.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonCancel.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -244,7 +244,7 @@
             // kryptonTextBoxCategory
             // 
             kryptonTextBoxCategory.Anchor = AnchorStyles.None;
-            kryptonTextBoxCategory.Location = new Point(307, 24);
+            kryptonTextBoxCategory.Location = new Point(308, 21);
             kryptonTextBoxCategory.Name = "kryptonTextBoxCategory";
             kryptonTextBoxCategory.Size = new Size(150, 30);
             kryptonTextBoxCategory.StateCommon.Back.Color1 = Color.White;
@@ -261,7 +261,7 @@
             // kryptonTextBoxDescription
             // 
             kryptonTextBoxDescription.Anchor = AnchorStyles.None;
-            kryptonTextBoxDescription.Location = new Point(307, 61);
+            kryptonTextBoxDescription.Location = new Point(308, 58);
             kryptonTextBoxDescription.Name = "kryptonTextBoxDescription";
             kryptonTextBoxDescription.Size = new Size(150, 30);
             kryptonTextBoxDescription.StateCommon.Back.Color1 = Color.White;
@@ -279,7 +279,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(724, 239);
+            ClientSize = new Size(728, 227);
             Controls.Add(kryptonTextBoxDescription);
             Controls.Add(kryptonTextBoxCategory);
             Controls.Add(kryptonButtonCancel);

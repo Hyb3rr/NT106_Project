@@ -110,7 +110,7 @@
             // kryptonButton1
             // 
             kryptonButton1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            kryptonButton1.Location = new Point(288, 330);
+            kryptonButton1.Location = new Point(288, 300);
             kryptonButton1.Name = "kryptonButton1";
             kryptonButton1.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -153,13 +153,13 @@
             kryptonButton1.StateTracking.Border.Width = 1;
             kryptonButton1.TabIndex = 12;
             kryptonButton1.Values.DropDownArrowColor = Color.Empty;
-            kryptonButton1.Values.Text = "Save";
+            kryptonButton1.Values.Text = "Lưu";
             kryptonButton1.Click += kryptonButton1_Click;
             // 
             // kryptonButton2
             // 
             kryptonButton2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            kryptonButton2.Location = new Point(472, 330);
+            kryptonButton2.Location = new Point(476, 300);
             kryptonButton2.Name = "kryptonButton2";
             kryptonButton2.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton2.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -202,7 +202,7 @@
             kryptonButton2.StateTracking.Border.Width = 1;
             kryptonButton2.TabIndex = 13;
             kryptonButton2.Values.DropDownArrowColor = Color.Empty;
-            kryptonButton2.Values.Text = "Cancel";
+            kryptonButton2.Values.Text = "Hủy";
             kryptonButton2.Click += kryptonButton2_Click;
             // 
             // kryptonRichTextBox1
@@ -210,7 +210,7 @@
             kryptonRichTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             kryptonRichTextBox1.Location = new Point(30, 146);
             kryptonRichTextBox1.Name = "kryptonRichTextBox1";
-            kryptonRichTextBox1.Size = new Size(614, 158);
+            kryptonRichTextBox1.Size = new Size(618, 146);
             kryptonRichTextBox1.StateCommon.Back.Color1 = Color.White;
             kryptonRichTextBox1.StateCommon.Border.Color1 = Color.FromArgb(242, 242, 242);
             kryptonRichTextBox1.StateCommon.Border.Color2 = Color.FromArgb(242, 242, 242);
@@ -340,7 +340,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(736, 379);
+            ClientSize = new Size(744, 355);
             Controls.Add(kryptonLabel2);
             Controls.Add(kryptonLabel1);
             Controls.Add(kryptonPictureBox4);
