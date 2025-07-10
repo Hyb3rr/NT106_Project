@@ -149,7 +149,7 @@
             kryptonRichTextBox1.Location = new Point(25, 160);
             kryptonRichTextBox1.Name = "kryptonRichTextBox1";
             kryptonRichTextBox1.ReadOnly = true;
-            kryptonRichTextBox1.Size = new Size(660, 109);
+            kryptonRichTextBox1.Size = new Size(662, 103);
             kryptonRichTextBox1.StateCommon.Border.Rounding = 20F;
             kryptonRichTextBox1.StateCommon.Border.Width = 1;
             kryptonRichTextBox1.StateCommon.Content.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -160,7 +160,7 @@
             // kryptonButtonReadBook
             // 
             kryptonButtonReadBook.Anchor = AnchorStyles.Bottom;
-            kryptonButtonReadBook.Location = new Point(26, 285);
+            kryptonButtonReadBook.Location = new Point(27, 279);
             kryptonButtonReadBook.Name = "kryptonButtonReadBook";
             kryptonButtonReadBook.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonReadBook.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -209,7 +209,7 @@
             // kryptonButtonReview
             // 
             kryptonButtonReview.Anchor = AnchorStyles.Bottom;
-            kryptonButtonReview.Location = new Point(215, 285);
+            kryptonButtonReview.Location = new Point(216, 279);
             kryptonButtonReview.Name = "kryptonButtonReview";
             kryptonButtonReview.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonReview.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -258,7 +258,7 @@
             // kryptonButtonClose
             // 
             kryptonButtonClose.Anchor = AnchorStyles.Bottom;
-            kryptonButtonClose.Location = new Point(417, 285);
+            kryptonButtonClose.Location = new Point(418, 279);
             kryptonButtonClose.Name = "kryptonButtonClose";
             kryptonButtonClose.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonClose.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -340,7 +340,7 @@
             // 
             kryptonPictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             kryptonPictureBox3.Image = (Image)resources.GetObject("kryptonPictureBox3.Image");
-            kryptonPictureBox3.Location = new Point(471, 3);
+            kryptonPictureBox3.Location = new Point(488, 3);
             kryptonPictureBox3.Margin = new Padding(3, 2, 3, 2);
             kryptonPictureBox3.Name = "kryptonPictureBox3";
             kryptonPictureBox3.Size = new Size(199, 145);
@@ -352,7 +352,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(740, 348);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(744, 336);
             Controls.Add(kryptonPictureBox3);
             Controls.Add(kryptonButtonClose);
             Controls.Add(kryptonButtonReview);
