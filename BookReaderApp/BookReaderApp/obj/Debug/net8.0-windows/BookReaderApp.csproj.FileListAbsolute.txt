@@ -919,3 +919,9 @@ C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderA
 C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\obj\Debug\net8.0-windows\BookReaderApp.pdb
 C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\obj\Debug\net8.0-windows\BookReaderApp.genruntimeconfig.cache
 C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\obj\Debug\net8.0-windows\ref\BookReaderApp.dll
+C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\obj\Debug\net8.0-windows\BookReaderApp.ViewForm.ChatMainForm.resources
+C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\obj\Debug\net8.0-windows\BookReaderApp.ViewForm.ClienForm.resources
+C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\obj\Debug\net8.0-windows\BookReaderApp.ViewForm.Controller.resources
+C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\obj\Debug\net8.0-windows\BookReaderApp.ViewForm.ServerForm.resources
+C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\obj\Debug\net8.0-windows\BookReaderApp.ViewForm.ProgressForm.resources
+C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\obj\Debug\net8.0-windows\BookReaderApp.sourcelink.json

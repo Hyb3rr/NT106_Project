@@ -12,7 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookReaderApp.Migrations
 {
     [DbContext(typeof(BookReaderDbContext))]
+<<<<<<<< Updated upstream:BookReaderApp/BookReaderApp/Migrations/20250711033846_InitialCreate.Designer.cs
     [Migration("20250711033846_InitialCreate")]
+========
+    [Migration("20250711083024_InitialCreate")]
+>>>>>>>> Stashed changes:BookReaderApp/BookReaderApp/Migrations/20250711083024_InitialCreate.Designer.cs
     partial class InitialCreate
     {
         /// <inheritdoc />

@@ -28,7 +28,7 @@ namespace BookReaderApp.ViewForm
         // ========================= QUẢN LÝ NGƯỜI DÙNG =========================
         private void LoadUsers()
         {
-            dgvUsers.DataSource = _context.Users
+            kryptonDataGridViewUsers.DataSource = _context.Users
                 .Select(u => new
                 {
                     u.UserId,
@@ -87,7 +87,7 @@ namespace BookReaderApp.ViewForm
         // ========================= QUẢN LÝ SÁCH =========================
         private void LoadBooks()
         {
-            dgvBooks.DataSource = _context.Books
+            kryptonDataGridViewBooks.DataSource = _context.Books
                 .Select(b => new
                 {
                     b.BookId,
@@ -148,7 +148,7 @@ namespace BookReaderApp.ViewForm
         // ========================= QUẢN LÝ THỂ LOẠI =========================
         private void LoadCategories()
         {
-            dgvCategories.DataSource = _context.Categories
+            kryptonDataGridViewCategories.DataSource = _context.Categories
                 .Select(c => new
                 {
                     c.CategoryId,
@@ -189,9 +189,9 @@ namespace BookReaderApp.ViewForm
 
         private void btnEditUser_Click(object sender, EventArgs e)
         {
-            if (dgvUsers.SelectedRows.Count > 0)
+            if (kryptonDataGridViewUsers.SelectedRows.Count > 0)
             {
-                int userId = (int)dgvUsers.SelectedRows[0].Cells["UserId"].Value;
+                int userId = (int)kryptonDataGridViewUsers.SelectedRows[0].Cells["UserId"].Value;
                 var user = _context.Users.Find(userId);
 
                 if (user != null)
@@ -207,9 +207,9 @@ namespace BookReaderApp.ViewForm
 
         private void btnDeleteUser_Click(object sender, EventArgs e)
         {
-            if (dgvUsers.SelectedRows.Count > 0)
+            if (kryptonDataGridViewUsers.SelectedRows.Count > 0)
             {
-                int userId = (int)dgvUsers.SelectedRows[0].Cells["UserId"].Value;
+                int userId = (int)kryptonDataGridViewUsers.SelectedRows[0].Cells["UserId"].Value;
                 var user = _context.Users.Find(userId);
 
                 if (user != null)
@@ -232,9 +232,9 @@ namespace BookReaderApp.ViewForm
 
         private void btnEditBook_Click(object sender, EventArgs e)
         {
-            if (dgvBooks.SelectedRows.Count > 0)
+            if (kryptonDataGridViewBooks.SelectedRows.Count > 0)
             {
-                int bookId = (int)dgvBooks.SelectedRows[0].Cells["BookId"].Value;
+                int bookId = (int)kryptonDataGridViewBooks.SelectedRows[0].Cells["BookId"].Value;
                 var book = _context.Books.Find(bookId);
 
                 if (book != null)
@@ -250,9 +250,9 @@ namespace BookReaderApp.ViewForm
 
         private void btnDeleteBook_Click(object sender, EventArgs e)
         {
-            if (dgvBooks.SelectedRows.Count > 0)
+            if (kryptonDataGridViewBooks.SelectedRows.Count > 0)
             {
-                int bookId = (int)dgvBooks.SelectedRows[0].Cells["BookId"].Value;
+                int bookId = (int)kryptonDataGridViewBooks.SelectedRows[0].Cells["BookId"].Value;
                 var book = _context.Books.Find(bookId);
 
                 if (book != null)
@@ -266,9 +266,9 @@ namespace BookReaderApp.ViewForm
 
         private async void btnUploadToDrive_Click(object sender, EventArgs e)
         {
-            if (dgvBooks.SelectedRows.Count > 0)
+            if (kryptonDataGridViewBooks.SelectedRows.Count > 0)
             {
-                int bookId = (int)dgvBooks.SelectedRows[0].Cells["BookId"].Value;
+                int bookId = (int)kryptonDataGridViewBooks.SelectedRows[0].Cells["BookId"].Value;
                 var book = _context.Books.Find(bookId);
 
                 if (book != null && !string.IsNullOrEmpty(book.FilePath))
@@ -303,9 +303,9 @@ namespace BookReaderApp.ViewForm
 
         private void btnEditCategory_Click(object sender, EventArgs e)
         {
-            if (dgvCategories.SelectedRows.Count > 0)
+            if (kryptonDataGridViewCategories.SelectedRows.Count > 0)
             {
-                int categoryId = (int)dgvCategories.SelectedRows[0].Cells["CategoryId"].Value;
+                int categoryId = (int)kryptonDataGridViewCategories.SelectedRows[0].Cells["CategoryId"].Value;
                 var category = _context.Categories.Find(categoryId);
 
                 if (category != null)
@@ -321,9 +321,9 @@ namespace BookReaderApp.ViewForm
 
         private void btnDeleteCategory_Click(object sender, EventArgs e)
         {
-            if (dgvCategories.SelectedRows.Count > 0)
+            if (kryptonDataGridViewCategories.SelectedRows.Count > 0)
             {
-                int categoryId = (int)dgvCategories.SelectedRows[0].Cells["CategoryId"].Value;
+                int categoryId = (int)kryptonDataGridViewCategories.SelectedRows[0].Cells["CategoryId"].Value;
                 var category = _context.Categories.Find(categoryId);
 
                 if (category != null)
@@ -358,6 +358,7 @@ namespace BookReaderApp.ViewForm
             {
                 // Nếu đã có LoginForm, hiển thị nó
                 existingLoginForm.Show();
+
             }
             else
             {
@@ -407,7 +408,7 @@ namespace BookReaderApp.ViewForm
                 })
                 .ToList();
             // Update DataGridView
-            dgvBooks.DataSource = filteredBooks;
+            kryptonDataGridViewBooks.DataSource = filteredBooks;
         }
 
         private void tabControlAdmin_SelectedIndexChanged(object sender, EventArgs e)
@@ -438,7 +439,7 @@ namespace BookReaderApp.ViewForm
                 .ToList();
 
             // Update DataGridView
-            dgvUsers.DataSource = filteredUsers;
+            kryptonDataGridViewUsers.DataSource = filteredUsers;
         }*/
 
         private void ChooseTag_SelectedIndexChanged(object sender, EventArgs e)
@@ -473,7 +474,7 @@ namespace BookReaderApp.ViewForm
             //                u.LastLogin
             //            })
             //            .ToList();
-            //        dgvUsers.DataSource = filteredUsers;
+            //        kryptonDataGridViewUsers.DataSource = filteredUsers;
             //        break;
 
             //    case "Books":
@@ -492,7 +493,7 @@ namespace BookReaderApp.ViewForm
             //                b.PublishedDate
             //            })
             //            .ToList();
-            //        dgvBooks.DataSource = filteredBooks;
+            //        kryptonDataGridViewBooks.DataSource = filteredBooks;
             //        break;
 
             //    case "Categories":
@@ -507,7 +508,7 @@ namespace BookReaderApp.ViewForm
             //                c.Description
             //            })
             //            .ToList();
-            //        dgvCategories.DataSource = filteredCategories;
+            //        kryptonDataGridViewCategories.DataSource = filteredCategories;
             //        break;
 
             //    default:
@@ -544,7 +545,7 @@ namespace BookReaderApp.ViewForm
                     u.LastLogin
                 })
                 .ToList();
-            dgvUsers.DataSource = filteredUsers;
+            kryptonDataGridViewUsers.DataSource = filteredUsers;
 
             // Filter Books
             var filteredBooks = _context.Books
@@ -562,7 +563,7 @@ namespace BookReaderApp.ViewForm
                     b.PublishedDate
                 })
                 .ToList();
-            dgvBooks.DataSource = filteredBooks;
+            kryptonDataGridViewBooks.DataSource = filteredBooks;
 
             // Filter Categories
             var filteredCategories = _context.Categories
@@ -576,7 +577,7 @@ namespace BookReaderApp.ViewForm
                     c.Description
                 })
                 .ToList();
-            dgvCategories.DataSource = filteredCategories;
+            kryptonDataGridViewCategories.DataSource = filteredCategories;
         }*/
 
         private void SearchCate_TextChanged(object sender, EventArgs e)
@@ -594,7 +595,7 @@ namespace BookReaderApp.ViewForm
                 })
                 .ToList();
             // Update DataGridView
-            dgvCategories.DataSource = filteredCategories;
+            kryptonDataGridViewCategories.DataSource = filteredCategories;
         }
 
         private void kryptonButtonAddUser_Click(object sender, EventArgs e)
@@ -608,9 +609,9 @@ namespace BookReaderApp.ViewForm
 
         private void kryptonButtonEditUser_Click(object sender, EventArgs e)
         {
-            if (dgvUsers.SelectedRows.Count > 0)
+            if (kryptonDataGridViewUsers.SelectedRows.Count > 0)
             {
-                int userId = (int)dgvUsers.SelectedRows[0].Cells["UserId"].Value;
+                int userId = (int)kryptonDataGridViewUsers.SelectedRows[0].Cells["UserId"].Value;
                 var user = _context.Users.Find(userId);
 
                 if (user != null)
@@ -626,9 +627,9 @@ namespace BookReaderApp.ViewForm
 
         private void kryptonButtonDeleteUser_Click(object sender, EventArgs e)
         {
-            if (dgvUsers.SelectedRows.Count > 0)
+            if (kryptonDataGridViewUsers.SelectedRows.Count > 0)
             {
-                int userId = (int)dgvUsers.SelectedRows[0].Cells["UserId"].Value;
+                int userId = (int)kryptonDataGridViewUsers.SelectedRows[0].Cells["UserId"].Value;
                 var user = _context.Users.Find(userId);
 
                 if (user != null)
@@ -651,9 +652,9 @@ namespace BookReaderApp.ViewForm
 
         private void kryptonButtonEditBook_Click(object sender, EventArgs e)
         {
-            if (dgvBooks.SelectedRows.Count > 0)
+            if (kryptonDataGridViewBooks.SelectedRows.Count > 0)
             {
-                int bookId = (int)dgvBooks.SelectedRows[0].Cells["BookId"].Value;
+                int bookId = (int)kryptonDataGridViewBooks.SelectedRows[0].Cells["BookId"].Value;
                 var book = _context.Books.Find(bookId);
 
                 if (book != null)
@@ -669,9 +670,9 @@ namespace BookReaderApp.ViewForm
 
         private void kryptonButtonDeleteBook_Click(object sender, EventArgs e)
         {
-            if (dgvBooks.SelectedRows.Count > 0)
+            if (kryptonDataGridViewBooks.SelectedRows.Count > 0)
             {
-                int bookId = (int)dgvBooks.SelectedRows[0].Cells["BookId"].Value;
+                int bookId = (int)kryptonDataGridViewBooks.SelectedRows[0].Cells["BookId"].Value;
                 var book = _context.Books.Find(bookId);
 
                 if (book != null)
@@ -685,9 +686,9 @@ namespace BookReaderApp.ViewForm
 
         private async void kryptonButtonUploadToDrive_Click(object sender, EventArgs e)
         {
-            if (dgvBooks.SelectedRows.Count > 0)
+            if (kryptonDataGridViewBooks.SelectedRows.Count > 0)
             {
-                int bookId = (int)dgvBooks.SelectedRows[0].Cells["BookId"].Value;
+                int bookId = (int)kryptonDataGridViewBooks.SelectedRows[0].Cells["BookId"].Value;
                 var book = _context.Books.Find(bookId);
 
                 if (book != null && !string.IsNullOrEmpty(book.FilePath))
@@ -722,9 +723,9 @@ namespace BookReaderApp.ViewForm
 
         private void kryptonButtonEditCategory_Click(object sender, EventArgs e)
         {
-            if (dgvCategories.SelectedRows.Count > 0)
+            if (kryptonDataGridViewCategories.SelectedRows.Count > 0)
             {
-                int categoryId = (int)dgvCategories.SelectedRows[0].Cells["CategoryId"].Value;
+                int categoryId = (int)kryptonDataGridViewCategories.SelectedRows[0].Cells["CategoryId"].Value;
                 var category = _context.Categories.Find(categoryId);
 
                 if (category != null)
@@ -740,9 +741,9 @@ namespace BookReaderApp.ViewForm
 
         private void kryptonButtonDeleteCategory_Click(object sender, EventArgs e)
         {
-            if (dgvCategories.SelectedRows.Count > 0)
+            if (kryptonDataGridViewCategories.SelectedRows.Count > 0)
             {
-                int categoryId = (int)dgvCategories.SelectedRows[0].Cells["CategoryId"].Value;
+                int categoryId = (int)kryptonDataGridViewCategories.SelectedRows[0].Cells["CategoryId"].Value;
                 var category = _context.Categories.Find(categoryId);
 
                 if (category != null)
@@ -776,7 +777,7 @@ namespace BookReaderApp.ViewForm
                 .ToList();
 
             // Update DataGridView
-            dgvUsers.DataSource = filteredUsers;
+            kryptonDataGridViewUsers.DataSource = filteredUsers;
         }
 
         private void kryptonTextBoxSearchAll_TextChanged(object sender, EventArgs e)
@@ -801,17 +802,30 @@ namespace BookReaderApp.ViewForm
                             (u.FullName != null && u.FullName.Contains(keyword, StringComparison.OrdinalIgnoreCase)))
                 .Select(u => new
                 {
-                    u.UserId,
-                    /* u.UserId,*/
+                    /*u.UserId,
+                    *//* u.UserId,*//*
                     u.Username,
                     u.Email,
                     u.Role,
                     u.IsActive,
                     u.CreatedDate,
+                    u.LastLogin,
+                    u.FullName*/
+                    u.UserId,
+                    u.Username,
+                    u.PasswordHash,
+                    u.Email,
+                    u.FullName,
+                    u.Avatar,
+                    u.Role,
+                    u.IsActive,
+                    u.CreatedDate,
                     u.LastLogin
+
+
                 })
                 .ToList();
-            dgvUsers.DataSource = filteredUsers;
+            kryptonDataGridViewUsers.DataSource = filteredUsers;
 
             // Filter Books
             var filteredBooks = _context.Books
@@ -822,14 +836,25 @@ namespace BookReaderApp.ViewForm
                             (b.Category != null && b.Category.CategoryName != null && b.Category.CategoryName.Contains(keyword, StringComparison.OrdinalIgnoreCase)))
                 .Select(b => new
                 {
-                    b.BookId,
+                    /*b.BookId,
                     b.Title,
                     b.Author,
                     Category = b.Category != null ? b.Category.CategoryName : "Unknown",
-                    b.PublishedDate
+                    b.PublishedDate*/
+
+                    b.BookId,
+                    b.Title,
+                    b.Description,
+                    b.Author,
+                    CategoryName = b.Category != null ? b.Category.CategoryName : "Unknown",
+                    UploaderUsername = b.Uploader != null ? b.Uploader.Username : "Unknown",
+                    b.PublishedDate,
+                    b.CoverImage,
+                    b.FilePath,
+                    b.DriveUrl
                 })
                 .ToList();
-            dgvBooks.DataSource = filteredBooks;
+            kryptonDataGridViewBooks.DataSource = filteredBooks;
 
             // Filter Categories
             var filteredCategories = _context.Categories
@@ -841,9 +866,10 @@ namespace BookReaderApp.ViewForm
                     c.CategoryId,
                     c.CategoryName,
                     c.Description
+
                 })
                 .ToList();
-            dgvCategories.DataSource = filteredCategories;
+            kryptonDataGridViewCategories.DataSource = filteredCategories;
         }
 
         private void btnInitializeData_Click(object sender, EventArgs e)

@@ -66,7 +66,11 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.Admin,
+<<<<<<< Updated upstream
                     Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\male-female-profile-avatar-user-avatars-gender-icons.jpg",
+=======
+                    Avatar = @"C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\Resources\male-female-profile-avatar-user-avatars-gender-icons.jpg",
+>>>>>>> Stashed changes
                 },
                 new User
                 {
@@ -77,7 +81,11 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
+<<<<<<< Updated upstream
                     Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Female1.PNG"
+=======
+                    Avatar = @"C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Female1.PNG"
+>>>>>>> Stashed changes
                 },
                 new User
                 {
@@ -88,7 +96,11 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
+<<<<<<< Updated upstream
                     Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male1.PNG"
+=======
+                    Avatar = @"C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male1.PNG"
+>>>>>>> Stashed changes
                 },
                 new User
                 {
@@ -99,7 +111,11 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
+<<<<<<< Updated upstream
                     Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male2.PNG"
+=======
+                    Avatar = @"C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male2.PNG"
+>>>>>>> Stashed changes
                 },
                 new User
                 {
@@ -110,7 +126,11 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
+<<<<<<< Updated upstream
                     Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male4.PNG"
+=======
+                    Avatar = @"C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male4.PNG"
+>>>>>>> Stashed changes
                 },
                 new User
                 {
@@ -121,7 +141,11 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
+<<<<<<< Updated upstream
                     Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male6.PNG"
+=======
+                    Avatar = @"C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male6.PNG"
+>>>>>>> Stashed changes
                 },
                 new User
                 {
@@ -132,7 +156,11 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
+<<<<<<< Updated upstream
                     Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Female6.PNG"
+=======
+                    Avatar = @"C:\Users\LENOVO\Documents\GitHub\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Female6.PNG"
+>>>>>>> Stashed changes
                 }
             };
 
@@ -195,9 +223,15 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(1936, 1, 1),
                     CategoryId = tamLyHocCategory.CategoryId,
                     UploaderId = admin.UserId,
+<<<<<<< Updated upstream
                     FilePath = @"C:\Users\rinch\Downloads\book\Đắc Nhân Tâm.pdf",
                     DriveUrl = "https://drive.google.com/file/d/1SEFKLsAHgJd35q7yo-usIzOz59ZQK3sw/view?usp=drive_link",
                     CoverImage = @"C:\Users\rinch\Downloads\book\Bia\Đắc Nhân Tâm.PNG"
+=======
+                    FilePath = @"C:\Users\LENOVO\Downloads\book\Đắc Nhân Tâm.pdf",
+                    DriveUrl = "https://drive.google.com/file/d/1SEFKLsAHgJd35q7yo-usIzOz59ZQK3sw/view?usp=drive_link",
+                    CoverImage = @"C:\Users\LENOVO\Downloads\book\Bia\Đắc Nhân Tâm.PNG"
+>>>>>>> Stashed changes
                 },
                 new Book
                 {
@@ -207,9 +241,15 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(2008, 8, 1),
                     CategoryId = congNgheCategory.CategoryId,
                     UploaderId = admin.UserId,
+<<<<<<< Updated upstream
                     FilePath = @"C:\Users\rinch\Downloads\book\clean_code.pdf",
                     DriveUrl = "https://drive.google.com/file/d/1q0G-6vdeeaRWfbdpgQrkPqlrnZtFEqd9/view?usp=drive_link",
                     CoverImage = @"C:\Users\rinch\Downloads\book\Bia\Clean_code.PNG"
+=======
+                    FilePath = @"C:\Users\LENOVO\Downloads\book\clean_code.pdf",
+                    DriveUrl = "https://drive.google.com/file/d/1q0G-6vdeeaRWfbdpgQrkPqlrnZtFEqd9/view?usp=drive_link",
+                    CoverImage = @"C:\Users\LENOVO\Downloads\book\Bia\Clean_code.PNG"
+>>>>>>> Stashed changes
                 },
                 new Book
                 {
@@ -219,9 +259,15 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(1988, 1, 1),
                     CategoryId = vanHocCategory.CategoryId,
                     UploaderId = admin.UserId,
+<<<<<<< Updated upstream
                     FilePath = @"C:\Users\rinch\Downloads\book\Nha-gia-kim.pdf",
                     DriveUrl = "https://drive.google.com/file/d/1jGzKuxo3xICYL17xKvYZU4IDGzTdD0l9/view?usp=drive_link",
                     CoverImage = @"C:\Users\rinch\Downloads\book\Bia\Nhà giả kim.PNG"
+=======
+                    FilePath = @"C:\Users\LENOVO\Downloads\book\Nha-gia-kim.pdf",
+                    DriveUrl = "https://drive.google.com/file/d/1jGzKuxo3xICYL17xKvYZU4IDGzTdD0l9/view?usp=drive_link",
+                    CoverImage = @"C:\Users\LENOVO\Downloads\book\Bia\Nhà giả kim.PNG"
+>>>>>>> Stashed changes
                 },
                 new Book
                 {
@@ -231,9 +277,15 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(2010, 9, 1),
                     CategoryId = khoaHocCategory.CategoryId,
                     UploaderId = admin.UserId,
+<<<<<<< Updated upstream
                     FilePath = @"C:\Users\rinch\Downloads\book\Bi-mat-vu-tru.pdf",
                     DriveUrl = "https://drive.google.com/file/d/1s0TrfAIOrmYmdXt-pvsDuOhemM0iZyUO/view?usp=drive_link",
                     CoverImage = @"C:\Users\rinch\Downloads\book\Bia\Bí mật vũ trụ.PNG"
+=======
+                    FilePath = @"C:\Users\LENOVO\Downloads\book\Bi-mat-vu-tru.pdf",
+                    DriveUrl = "https://drive.google.com/file/d/1s0TrfAIOrmYmdXt-pvsDuOhemM0iZyUO/view?usp=drive_link",
+                    CoverImage = @"C:\Users\LENOVO\Downloads\book\Bia\Bí mật vũ trụ.PNG"
+>>>>>>> Stashed changes
                 },
                 new Book
                 {
@@ -243,9 +295,15 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(2011, 1, 1),
                     CategoryId = kinhDoanhCategory.CategoryId,
                     UploaderId = admin.UserId,
+<<<<<<< Updated upstream
                     FilePath = @"C:\Users\rinch\Downloads\book\Khoi nghiep tinh gon - Eric Ries.pdf",
                     DriveUrl = "https://drive.google.com/file/d/14YOKwKgm4NDnAOxLHCc5m6c5wJakGk_f/view?usp=drive_link",
                     CoverImage = @"C:\Users\rinch\Downloads\book\Bia\Khởi nghiệp tinh gọn.PNG"
+=======
+                    FilePath = @"C:\Users\LENOVO\Downloads\book\Khoi nghiep tinh gon - Eric Ries.pdf",
+                    DriveUrl = "https://drive.google.com/file/d/14YOKwKgm4NDnAOxLHCc5m6c5wJakGk_f/view?usp=drive_link",
+                    CoverImage = @"C:\Users\LENOVO\Downloads\book\Bia\Khởi nghiệp tinh gọn.PNG"
+>>>>>>> Stashed changes
                 }
             };
 

@@ -44,6 +44,7 @@
             menuSettingsToolStripMenuItem = new ToolStripMenuItem();
             tabControlAdmin = new TabControl();
             tabPage1 = new TabPage();
+            kryptonDataGridViewUsers = new Krypton.Toolkit.KryptonDataGridView();
             btnInitializeData = new Krypton.Toolkit.KryptonButton();
             kryptonTextBoxSearchUser = new Krypton.Toolkit.KryptonTextBox();
             kryptonButtonDeleteUser = new Krypton.Toolkit.KryptonButton();
@@ -55,6 +56,7 @@
             btnAddUser = new Button();
             dgvUsers = new DataGridView();
             tabPage2 = new TabPage();
+            kryptonDataGridViewBooks = new Krypton.Toolkit.KryptonDataGridView();
             kryptonTextBoxSearch = new Krypton.Toolkit.KryptonTextBox();
             kryptonButtonUploadToDrive = new Krypton.Toolkit.KryptonButton();
             kryptonButtonDeleteBook = new Krypton.Toolkit.KryptonButton();
@@ -67,6 +69,7 @@
             btnAddBook = new Button();
             dgvBooks = new DataGridView();
             tabPage3 = new TabPage();
+            kryptonDataGridViewCategories = new Krypton.Toolkit.KryptonDataGridView();
             kryptonButtonDeleteCategory = new Krypton.Toolkit.KryptonButton();
             kryptonButtonEditCategory = new Krypton.Toolkit.KryptonButton();
             kryptonTextBoxSearchCate = new Krypton.Toolkit.KryptonTextBox();
@@ -90,10 +93,13 @@
             menuStripAdmin.SuspendLayout();
             tabControlAdmin.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonDataGridViewUsers).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonDataGridViewBooks).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvBooks).BeginInit();
             tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonDataGridViewCategories).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvCategories).BeginInit();
             kryptonToolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)kryptonComboBoxChooseTag).BeginInit();
@@ -106,8 +112,13 @@
             menuStripAdmin.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, quảnLýToolStripMenuItem, thốngKêToolStripMenuItem, cấuHìnhToolStripMenuItem });
             menuStripAdmin.Location = new Point(0, 0);
             menuStripAdmin.Name = "menuStripAdmin";
+<<<<<<< Updated upstream
             menuStripAdmin.Padding = new Padding(5, 2, 0, 2);
             menuStripAdmin.Size = new Size(904, 24);
+=======
+            menuStripAdmin.Padding = new Padding(6, 3, 0, 3);
+            menuStripAdmin.Size = new Size(1095, 30);
+>>>>>>> Stashed changes
             menuStripAdmin.TabIndex = 0;
             menuStripAdmin.Text = "menuStrip1";
             // 
@@ -193,12 +204,17 @@
             tabControlAdmin.Margin = new Padding(3, 2, 3, 2);
             tabControlAdmin.Name = "tabControlAdmin";
             tabControlAdmin.SelectedIndex = 0;
+<<<<<<< Updated upstream
             tabControlAdmin.Size = new Size(878, 347);
+=======
+            tabControlAdmin.Size = new Size(1033, 359);
+>>>>>>> Stashed changes
             tabControlAdmin.TabIndex = 1;
             tabControlAdmin.SelectedIndexChanged += tabControlAdmin_SelectedIndexChanged;
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(kryptonDataGridViewUsers);
             tabPage1.Controls.Add(btnInitializeData);
             tabPage1.Controls.Add(kryptonTextBoxSearchUser);
             tabPage1.Controls.Add(kryptonButtonDeleteUser);
@@ -212,11 +228,34 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Margin = new Padding(3, 2, 3, 2);
             tabPage1.Name = "tabPage1";
+<<<<<<< Updated upstream
             tabPage1.Padding = new Padding(3, 2, 3, 2);
             tabPage1.Size = new Size(870, 319);
+=======
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1025, 326);
+>>>>>>> Stashed changes
             tabPage1.TabIndex = 0;
             tabPage1.Text = "tabUsers";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // kryptonDataGridViewUsers
+            // 
+            kryptonDataGridViewUsers.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            kryptonDataGridViewUsers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            kryptonDataGridViewUsers.BorderStyle = BorderStyle.None;
+            kryptonDataGridViewUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            kryptonDataGridViewUsers.Location = new Point(46, 39);
+            kryptonDataGridViewUsers.Margin = new Padding(3, 4, 3, 4);
+            kryptonDataGridViewUsers.Name = "kryptonDataGridViewUsers";
+            kryptonDataGridViewUsers.RowHeadersWidth = 51;
+            kryptonDataGridViewUsers.Size = new Size(938, 160);
+            kryptonDataGridViewUsers.StateCommon.Background.Color1 = Color.White;
+            kryptonDataGridViewUsers.StateCommon.Background.Color2 = Color.White;
+            kryptonDataGridViewUsers.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            kryptonDataGridViewUsers.StateCommon.DataCell.Border.Rounding = 20F;
+            kryptonDataGridViewUsers.StateCommon.DataCell.Border.Width = 1;
+            kryptonDataGridViewUsers.TabIndex = 20;
             // 
             // btnInitializeData
             // 
@@ -232,7 +271,12 @@
             // kryptonTextBoxSearchUser
             // 
             kryptonTextBoxSearchUser.Anchor = AnchorStyles.Top;
+<<<<<<< Updated upstream
             kryptonTextBoxSearchUser.Location = new Point(613, 5);
+=======
+            kryptonTextBoxSearchUser.Location = new Point(715, 7);
+            kryptonTextBoxSearchUser.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonTextBoxSearchUser.Name = "kryptonTextBoxSearchUser";
             kryptonTextBoxSearchUser.Size = new Size(150, 30);
             kryptonTextBoxSearchUser.StateCommon.Back.Color1 = Color.White;
@@ -251,7 +295,12 @@
             // kryptonButtonDeleteUser
             // 
             kryptonButtonDeleteUser.Anchor = AnchorStyles.Bottom;
+<<<<<<< Updated upstream
             kryptonButtonDeleteUser.Location = new Point(339, 233);
+=======
+            kryptonButtonDeleteUser.Location = new Point(402, 207);
+            kryptonButtonDeleteUser.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonButtonDeleteUser.Name = "kryptonButtonDeleteUser";
             kryptonButtonDeleteUser.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
             kryptonButtonDeleteUser.OverrideDefault.Back.Color2 = Color.FromArgb(250, 252, 252);
@@ -300,7 +349,12 @@
             // kryptonButtonEditUser
             // 
             kryptonButtonEditUser.Anchor = AnchorStyles.Bottom;
+<<<<<<< Updated upstream
             kryptonButtonEditUser.Location = new Point(500, 233);
+=======
+            kryptonButtonEditUser.Location = new Point(586, 207);
+            kryptonButtonEditUser.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonButtonEditUser.Name = "kryptonButtonEditUser";
             kryptonButtonEditUser.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonEditUser.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -370,7 +424,12 @@
             // kryptonButtonAddUser
             // 
             kryptonButtonAddUser.Anchor = AnchorStyles.Bottom;
+<<<<<<< Updated upstream
             kryptonButtonAddUser.Location = new Point(179, 233);
+=======
+            kryptonButtonAddUser.Location = new Point(219, 207);
+            kryptonButtonAddUser.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonButtonAddUser.Name = "kryptonButtonAddUser";
             kryptonButtonAddUser.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonAddUser.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -449,11 +508,17 @@
             dgvUsers.Margin = new Padding(3, 2, 3, 2);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.RowHeadersWidth = 51;
+<<<<<<< Updated upstream
             dgvUsers.Size = new Size(795, 196);
+=======
+            dgvUsers.Size = new Size(938, 157);
+>>>>>>> Stashed changes
             dgvUsers.TabIndex = 0;
+            dgvUsers.Visible = false;
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(kryptonDataGridViewBooks);
             tabPage2.Controls.Add(kryptonTextBoxSearch);
             tabPage2.Controls.Add(kryptonButtonUploadToDrive);
             tabPage2.Controls.Add(kryptonButtonDeleteBook);
@@ -468,16 +533,44 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Margin = new Padding(3, 2, 3, 2);
             tabPage2.Name = "tabPage2";
+<<<<<<< Updated upstream
             tabPage2.Padding = new Padding(3, 2, 3, 2);
             tabPage2.Size = new Size(870, 319);
+=======
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1025, 326);
+>>>>>>> Stashed changes
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabBooks";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // kryptonDataGridViewBooks
+            // 
+            kryptonDataGridViewBooks.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            kryptonDataGridViewBooks.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            kryptonDataGridViewBooks.BorderStyle = BorderStyle.None;
+            kryptonDataGridViewBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            kryptonDataGridViewBooks.Location = new Point(34, 47);
+            kryptonDataGridViewBooks.Margin = new Padding(3, 4, 3, 4);
+            kryptonDataGridViewBooks.Name = "kryptonDataGridViewBooks";
+            kryptonDataGridViewBooks.RowHeadersWidth = 51;
+            kryptonDataGridViewBooks.Size = new Size(938, 160);
+            kryptonDataGridViewBooks.StateCommon.Background.Color1 = Color.White;
+            kryptonDataGridViewBooks.StateCommon.Background.Color2 = Color.White;
+            kryptonDataGridViewBooks.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            kryptonDataGridViewBooks.StateCommon.DataCell.Border.Rounding = 20F;
+            kryptonDataGridViewBooks.StateCommon.DataCell.Border.Width = 1;
+            kryptonDataGridViewBooks.TabIndex = 21;
+            // 
             // kryptonTextBoxSearch
             // 
             kryptonTextBoxSearch.Anchor = AnchorStyles.Top;
+<<<<<<< Updated upstream
             kryptonTextBoxSearch.Location = new Point(593, 6);
+=======
+            kryptonTextBoxSearch.Location = new Point(686, 8);
+            kryptonTextBoxSearch.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonTextBoxSearch.Name = "kryptonTextBoxSearch";
             kryptonTextBoxSearch.Size = new Size(150, 30);
             kryptonTextBoxSearch.StateCommon.Back.Color1 = Color.White;
@@ -495,7 +588,12 @@
             // kryptonButtonUploadToDrive
             // 
             kryptonButtonUploadToDrive.Anchor = AnchorStyles.Bottom;
+<<<<<<< Updated upstream
             kryptonButtonUploadToDrive.Location = new Point(546, 185);
+=======
+            kryptonButtonUploadToDrive.Location = new Point(631, 213);
+            kryptonButtonUploadToDrive.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonButtonUploadToDrive.Name = "kryptonButtonUploadToDrive";
             kryptonButtonUploadToDrive.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
             kryptonButtonUploadToDrive.OverrideDefault.Back.Color2 = Color.FromArgb(250, 252, 252);
@@ -544,7 +642,12 @@
             // kryptonButtonDeleteBook
             // 
             kryptonButtonDeleteBook.Anchor = AnchorStyles.Bottom;
+<<<<<<< Updated upstream
             kryptonButtonDeleteBook.Location = new Point(224, 185);
+=======
+            kryptonButtonDeleteBook.Location = new Point(265, 213);
+            kryptonButtonDeleteBook.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonButtonDeleteBook.Name = "kryptonButtonDeleteBook";
             kryptonButtonDeleteBook.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
             kryptonButtonDeleteBook.OverrideDefault.Back.Color2 = Color.FromArgb(250, 252, 252);
@@ -593,7 +696,12 @@
             // kryptonButtonEditBook
             // 
             kryptonButtonEditBook.Anchor = AnchorStyles.Bottom;
+<<<<<<< Updated upstream
             kryptonButtonEditBook.Location = new Point(386, 185);
+=======
+            kryptonButtonEditBook.Location = new Point(448, 213);
+            kryptonButtonEditBook.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonButtonEditBook.Name = "kryptonButtonEditBook";
             kryptonButtonEditBook.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonEditBook.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -642,7 +750,12 @@
             // kryptonButtonAddBook
             // 
             kryptonButtonAddBook.Anchor = AnchorStyles.Bottom;
+<<<<<<< Updated upstream
             kryptonButtonAddBook.Location = new Point(64, 185);
+=======
+            kryptonButtonAddBook.Location = new Point(82, 215);
+            kryptonButtonAddBook.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonButtonAddBook.Name = "kryptonButtonAddBook";
             kryptonButtonAddBook.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonAddBook.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -755,11 +868,17 @@
             dgvBooks.Margin = new Padding(3, 2, 3, 2);
             dgvBooks.Name = "dgvBooks";
             dgvBooks.RowHeadersWidth = 51;
+<<<<<<< Updated upstream
             dgvBooks.Size = new Size(740, 144);
+=======
+            dgvBooks.Size = new Size(863, 130);
+>>>>>>> Stashed changes
             dgvBooks.TabIndex = 0;
+            dgvBooks.Visible = false;
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(kryptonDataGridViewCategories);
             tabPage3.Controls.Add(kryptonButtonDeleteCategory);
             tabPage3.Controls.Add(kryptonButtonEditCategory);
             tabPage3.Controls.Add(kryptonTextBoxSearchCate);
@@ -772,16 +891,44 @@
             tabPage3.Location = new Point(4, 24);
             tabPage3.Margin = new Padding(3, 2, 3, 2);
             tabPage3.Name = "tabPage3";
+<<<<<<< Updated upstream
             tabPage3.Padding = new Padding(3, 2, 3, 2);
             tabPage3.Size = new Size(870, 319);
+=======
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(1025, 326);
+>>>>>>> Stashed changes
             tabPage3.TabIndex = 2;
             tabPage3.Text = "tabCategories";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // kryptonDataGridViewCategories
+            // 
+            kryptonDataGridViewCategories.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            kryptonDataGridViewCategories.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            kryptonDataGridViewCategories.BorderStyle = BorderStyle.None;
+            kryptonDataGridViewCategories.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            kryptonDataGridViewCategories.Location = new Point(26, 48);
+            kryptonDataGridViewCategories.Margin = new Padding(3, 4, 3, 4);
+            kryptonDataGridViewCategories.Name = "kryptonDataGridViewCategories";
+            kryptonDataGridViewCategories.RowHeadersWidth = 51;
+            kryptonDataGridViewCategories.Size = new Size(938, 160);
+            kryptonDataGridViewCategories.StateCommon.Background.Color1 = Color.White;
+            kryptonDataGridViewCategories.StateCommon.Background.Color2 = Color.White;
+            kryptonDataGridViewCategories.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            kryptonDataGridViewCategories.StateCommon.DataCell.Border.Rounding = 20F;
+            kryptonDataGridViewCategories.StateCommon.DataCell.Border.Width = 1;
+            kryptonDataGridViewCategories.TabIndex = 21;
+            // 
             // kryptonButtonDeleteCategory
             // 
             kryptonButtonDeleteCategory.Anchor = AnchorStyles.Bottom;
+<<<<<<< Updated upstream
             kryptonButtonDeleteCategory.Location = new Point(302, 229);
+=======
+            kryptonButtonDeleteCategory.Location = new Point(389, 216);
+            kryptonButtonDeleteCategory.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonButtonDeleteCategory.Name = "kryptonButtonDeleteCategory";
             kryptonButtonDeleteCategory.OverrideDefault.Back.Color1 = Color.FromArgb(250, 252, 252);
             kryptonButtonDeleteCategory.OverrideDefault.Back.Color2 = Color.FromArgb(250, 252, 252);
@@ -830,7 +977,12 @@
             // kryptonButtonEditCategory
             // 
             kryptonButtonEditCategory.Anchor = AnchorStyles.Bottom;
+<<<<<<< Updated upstream
             kryptonButtonEditCategory.Location = new Point(473, 229);
+=======
+            kryptonButtonEditCategory.Location = new Point(603, 216);
+            kryptonButtonEditCategory.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonButtonEditCategory.Name = "kryptonButtonEditCategory";
             kryptonButtonEditCategory.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonEditCategory.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -879,7 +1031,12 @@
             // kryptonTextBoxSearchCate
             // 
             kryptonTextBoxSearchCate.Anchor = AnchorStyles.Top;
+<<<<<<< Updated upstream
             kryptonTextBoxSearchCate.Location = new Point(563, 8);
+=======
+            kryptonTextBoxSearchCate.Location = new Point(646, 11);
+            kryptonTextBoxSearchCate.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonTextBoxSearchCate.Name = "kryptonTextBoxSearchCate";
             kryptonTextBoxSearchCate.Size = new Size(150, 30);
             kryptonTextBoxSearchCate.StateCommon.Back.Color1 = Color.White;
@@ -897,7 +1054,12 @@
             // kryptonButtonAddCategory
             // 
             kryptonButtonAddCategory.Anchor = AnchorStyles.Bottom;
+<<<<<<< Updated upstream
             kryptonButtonAddCategory.Location = new Point(141, 229);
+=======
+            kryptonButtonAddCategory.Location = new Point(191, 216);
+            kryptonButtonAddCategory.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonButtonAddCategory.Name = "kryptonButtonAddCategory";
             kryptonButtonAddCategory.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButtonAddCategory.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -962,8 +1124,13 @@
             dgvCategories.Margin = new Padding(3, 2, 3, 2);
             dgvCategories.Name = "dgvCategories";
             dgvCategories.RowHeadersWidth = 51;
+<<<<<<< Updated upstream
             dgvCategories.Size = new Size(720, 173);
+=======
+            dgvCategories.Size = new Size(828, 211);
+>>>>>>> Stashed changes
             dgvCategories.TabIndex = 3;
+            dgvCategories.Visible = false;
             // 
             // btnDeleteCategory
             // 
@@ -1119,7 +1286,12 @@
             // 
             kryptonComboBoxChooseTag.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             kryptonComboBoxChooseTag.DropDownWidth = 138;
+<<<<<<< Updated upstream
             kryptonComboBoxChooseTag.Location = new Point(517, 32);
+=======
+            kryptonComboBoxChooseTag.Location = new Point(621, 43);
+            kryptonComboBoxChooseTag.Margin = new Padding(3, 4, 3, 4);
+>>>>>>> Stashed changes
             kryptonComboBoxChooseTag.Name = "kryptonComboBoxChooseTag";
             kryptonComboBoxChooseTag.Size = new Size(150, 34);
             kryptonComboBoxChooseTag.StateCommon.ComboBox.Back.Color1 = Color.White;
@@ -1151,8 +1323,12 @@
             // kryptonTextBoxSearchAll
             // 
             kryptonTextBoxSearchAll.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+<<<<<<< Updated upstream
             kryptonTextBoxSearchAll.Location = new Point(671, 34);
             kryptonTextBoxSearchAll.Margin = new Padding(3, 2, 3, 2);
+=======
+            kryptonTextBoxSearchAll.Location = new Point(797, 45);
+>>>>>>> Stashed changes
             kryptonTextBoxSearchAll.Name = "kryptonTextBoxSearchAll";
             kryptonTextBoxSearchAll.Size = new Size(150, 30);
             kryptonTextBoxSearchAll.StateCommon.Back.Color1 = Color.White;
@@ -1171,7 +1347,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< Updated upstream
             ClientSize = new Size(904, 382);
+=======
+            ClientSize = new Size(1095, 414);
+>>>>>>> Stashed changes
             Controls.Add(kryptonComboBoxChooseTag);
             Controls.Add(kryptonTextBoxSearchAll);
             Controls.Add(SearchAll);
@@ -1193,12 +1373,15 @@
             tabControlAdmin.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonDataGridViewUsers).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonDataGridViewBooks).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvBooks).EndInit();
             tabPage3.ResumeLayout(false);
             tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonDataGridViewCategories).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvCategories).EndInit();
             kryptonToolStrip1.ResumeLayout(false);
             kryptonToolStrip1.PerformLayout();
@@ -1266,5 +1449,8 @@
         private Krypton.Toolkit.KryptonButton kryptonButtonEditCategory;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBoxSearchCate;
         private Krypton.Toolkit.KryptonButton btnInitializeData;
+        private Krypton.Toolkit.KryptonDataGridView kryptonDataGridViewUsers;
+        private Krypton.Toolkit.KryptonDataGridView kryptonDataGridViewBooks;
+        private Krypton.Toolkit.KryptonDataGridView kryptonDataGridViewCategories;
     }
 }
