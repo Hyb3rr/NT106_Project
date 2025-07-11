@@ -51,6 +51,7 @@ namespace BookReaderApp.ViewForm
                 Title = txtTitle.Text,
                 Author = txtAuthor.Text,
                 CategoryId = category.CategoryId, // Sử dụng CategoryId của thể loại vừa tìm hoặc thêm
+
                 PublishedDate = dtpPublishedDate.Value,
                 FilePath = txtFilePath.Text,
                 UploaderId = 1 // Thay 1 bằng ID của người dùng hợp lệ

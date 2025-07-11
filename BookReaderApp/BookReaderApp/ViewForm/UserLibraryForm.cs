@@ -36,6 +36,26 @@ namespace BookReaderApp.ViewForm
                     ul.AddedDate
                 })
                 .ToList();
+            if (kryptonDataGridViewLibrary.Columns.Contains("BookId"))
+            {
+                kryptonDataGridViewLibrary.Columns["BookId"].HeaderText = "ID";
+            }
+            if (kryptonDataGridViewLibrary.Columns.Contains("Title"))
+            {
+                kryptonDataGridViewLibrary.Columns["Title"].HeaderText = "Tựa sách";
+            }
+            if (kryptonDataGridViewLibrary.Columns.Contains("Author"))
+            {
+                kryptonDataGridViewLibrary.Columns["Author"].HeaderText = "Tác giả";
+            }
+            if (kryptonDataGridViewLibrary.Columns.Contains("Category"))
+            { 
+                kryptonDataGridViewLibrary.Columns["Category"].HeaderText = "Thể loại";
+            }
+            if (kryptonDataGridViewLibrary.Columns.Contains("PublishedDate"))
+            {
+                kryptonDataGridViewLibrary.Columns["PublishedDate"].HeaderText = "Ngày phát hành";
+            }
         }
 
         private void UserLibraryForm_Load(object sender, EventArgs e)
@@ -185,6 +205,11 @@ namespace BookReaderApp.ViewForm
             {
                 MessageBox.Show("Vui lòng chọn một sách để đánh giá.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void kryptonDataGridViewLibrary_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

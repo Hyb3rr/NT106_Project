@@ -66,7 +66,7 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.Admin,
-                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\male-female-profile-avatar-user-avatars-gender-icons.jpg",
+                    Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\male-female-profile-avatar-user-avatars-gender-icons.jpg",
                 },
                 new User
                 {
@@ -77,7 +77,7 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
-                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Female1.PNG"
+                    Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Female1.PNG"
                 },
                 new User
                 {
@@ -88,7 +88,7 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
-                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Male1.PNG"
+                    Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male1.PNG"
                 },
                 new User
                 {
@@ -99,7 +99,7 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
-                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Male2.PNG"
+                    Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male2.PNG"
                 },
                 new User
                 {
@@ -110,7 +110,7 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
-                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Male4.PNG"
+                    Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male4.PNG"
                 },
                 new User
                 {
@@ -121,7 +121,7 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
-                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Male6.PNG"
+                    Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Male6.PNG"
                 },
                 new User
                 {
@@ -132,7 +132,7 @@ namespace BookReaderApp.Data
                     CreatedDate = DateTime.Now,
                     IsActive = true,
                     Role = User.UserRole.User,
-                    Avatar = @"D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\Resources\Avatar_Female6.PNG"
+                    Avatar = @"C:\Users\rinch\OneDrive\Máy tính\newBE\NT106_Project\BookReaderApp\BookReaderApp\Resources\Avatar_Female6.PNG"
                 }
             };
 
@@ -191,12 +191,13 @@ namespace BookReaderApp.Data
                     Title = "Đắc Nhân Tâm",
                     Author = "Dale Carnegie",
                     Description = "Đắc nhân tâm là quyển sách nổi tiếng nhất, bán chạy nhất của tác giả Dale Carnegie.",
+
                     PublishedDate = new DateTime(1936, 1, 1),
                     CategoryId = tamLyHocCategory.CategoryId,
                     UploaderId = admin.UserId,
-                    FilePath = @"C:\Users\HP\Downloads\book\Đắc Nhân Tâm.pdf",
+                    FilePath = @"C:\Users\rinch\Downloads\book\Đắc Nhân Tâm.pdf",
                     DriveUrl = "https://drive.google.com/file/d/1SEFKLsAHgJd35q7yo-usIzOz59ZQK3sw/view?usp=drive_link",
-                    CoverImage = @"C:\Users\HP\Downloads\book\Bia\Đắc Nhân Tâm.PNG"
+                    CoverImage = @"C:\Users\rinch\Downloads\book\Bia\Đắc Nhân Tâm.PNG"
                 },
                 new Book
                 {
@@ -206,9 +207,9 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(2008, 8, 1),
                     CategoryId = congNgheCategory.CategoryId,
                     UploaderId = admin.UserId,
-                    FilePath = @"C:\Users\HP\Downloads\book\clean_code.pdf",
+                    FilePath = @"C:\Users\rinch\Downloads\book\clean_code.pdf",
                     DriveUrl = "https://drive.google.com/file/d/1q0G-6vdeeaRWfbdpgQrkPqlrnZtFEqd9/view?usp=drive_link",
-                    CoverImage = @"C:\Users\HP\Downloads\book\Bia\Clean_code.PNG"
+                    CoverImage = @"C:\Users\rinch\Downloads\book\Bia\Clean_code.PNG"
                 },
                 new Book
                 {
@@ -218,9 +219,9 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(1988, 1, 1),
                     CategoryId = vanHocCategory.CategoryId,
                     UploaderId = admin.UserId,
-                    FilePath = @"C:\Users\HP\Downloads\book\Nha-gia-kim.pdf",
+                    FilePath = @"C:\Users\rinch\Downloads\book\Nha-gia-kim.pdf",
                     DriveUrl = "https://drive.google.com/file/d/1jGzKuxo3xICYL17xKvYZU4IDGzTdD0l9/view?usp=drive_link",
-                    CoverImage = @"C:\Users\HP\Downloads\book\Bia\Nhà giả kim.PNG"
+                    CoverImage = @"C:\Users\rinch\Downloads\book\Bia\Nhà giả kim.PNG"
                 },
                 new Book
                 {
@@ -230,9 +231,9 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(2010, 9, 1),
                     CategoryId = khoaHocCategory.CategoryId,
                     UploaderId = admin.UserId,
-                    FilePath = @"C:\Users\HP\Downloads\book\Bi-mat-vu-tru.pdf",
+                    FilePath = @"C:\Users\rinch\Downloads\book\Bi-mat-vu-tru.pdf",
                     DriveUrl = "https://drive.google.com/file/d/1s0TrfAIOrmYmdXt-pvsDuOhemM0iZyUO/view?usp=drive_link",
-                    CoverImage = @"C:\Users\HP\Downloads\book\Bia\Bí mật vũ trụ.PNG"
+                    CoverImage = @"C:\Users\rinch\Downloads\book\Bia\Bí mật vũ trụ.PNG"
                 },
                 new Book
                 {
@@ -242,9 +243,9 @@ namespace BookReaderApp.Data
                     PublishedDate = new DateTime(2011, 1, 1),
                     CategoryId = kinhDoanhCategory.CategoryId,
                     UploaderId = admin.UserId,
-                    FilePath = @"C:\Users\HP\Downloads\book\Khoi nghiep tinh gon - Eric Ries.pdf",
+                    FilePath = @"C:\Users\rinch\Downloads\book\Khoi nghiep tinh gon - Eric Ries.pdf",
                     DriveUrl = "https://drive.google.com/file/d/14YOKwKgm4NDnAOxLHCc5m6c5wJakGk_f/view?usp=drive_link",
-                    CoverImage = @"C:\Users\HP\Downloads\book\Bia\Khởi nghiệp tinh gọn.PNG"
+                    CoverImage = @"C:\Users\rinch\Downloads\book\Bia\Khởi nghiệp tinh gọn.PNG"
                 }
             };
 

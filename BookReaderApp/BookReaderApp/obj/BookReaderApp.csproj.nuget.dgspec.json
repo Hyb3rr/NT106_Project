@@ -57,35 +57,35 @@
             },
             "Google.Apis.Auth": {
               "target": "Package",
-              "version": "[1.69.0, )"
+              "version": "[1.70.0, )"
             },
             "Google.Apis.Drive.v3": {
               "target": "Package",
-              "version": "[1.69.0.3740, )"
+              "version": "[1.70.0.3834, )"
             },
             "Krypton.Toolkit": {
               "target": "Package",
-              "version": "[95.25.4.111, )"
+              "version": "[95.25.6.174, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.6, )"
+              "version": "[9.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[9.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[9.0.7, )"
             },
             "Microsoft.Web.WebView2": {
               "target": "Package",
-              "version": "[1.0.3240.44, )"
+              "version": "[1.0.3351.48, )"
             },
             "PdfiumViewer.Native.x86_64.v8-xfa": {
               "target": "Package",
@@ -97,7 +97,7 @@
             },
             "VersOne.Epub": {
               "target": "Package",
-              "version": "[3.3.3, )"
+              "version": "[3.3.4, )"
             }
           },
           "imports": [

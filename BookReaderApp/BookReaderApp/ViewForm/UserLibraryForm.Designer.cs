@@ -107,7 +107,7 @@
             // kryptonButton1
             // 
             kryptonButton1.Anchor = AnchorStyles.Bottom;
-            kryptonButton1.Location = new Point(3, 288);
+            kryptonButton1.Location = new Point(4, 282);
             kryptonButton1.Name = "kryptonButton1";
             kryptonButton1.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton1.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -156,7 +156,7 @@
             // kryptonButton2
             // 
             kryptonButton2.Anchor = AnchorStyles.Bottom;
-            kryptonButton2.Location = new Point(181, 288);
+            kryptonButton2.Location = new Point(182, 282);
             kryptonButton2.Name = "kryptonButton2";
             kryptonButton2.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton2.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -207,7 +207,7 @@
             // kryptonButton3
             // 
             kryptonButton3.Anchor = AnchorStyles.Bottom;
-            kryptonButton3.Location = new Point(354, 288);
+            kryptonButton3.Location = new Point(355, 282);
             kryptonButton3.Name = "kryptonButton3";
             kryptonButton3.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton3.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -256,7 +256,7 @@
             // kryptonButton4
             // 
             kryptonButton4.Anchor = AnchorStyles.Bottom;
-            kryptonButton4.Location = new Point(515, 288);
+            kryptonButton4.Location = new Point(516, 282);
             kryptonButton4.Name = "kryptonButton4";
             kryptonButton4.OverrideDefault.Back.Color1 = Color.FromArgb(6, 174, 244);
             kryptonButton4.OverrideDefault.Back.Color2 = Color.FromArgb(8, 142, 254);
@@ -341,20 +341,21 @@
             kryptonDataGridViewLibrary.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             kryptonDataGridViewLibrary.Location = new Point(35, 25);
             kryptonDataGridViewLibrary.Name = "kryptonDataGridViewLibrary";
-            kryptonDataGridViewLibrary.Size = new Size(602, 257);
+            kryptonDataGridViewLibrary.Size = new Size(604, 251);
             kryptonDataGridViewLibrary.StateCommon.Background.Color1 = Color.White;
             kryptonDataGridViewLibrary.StateCommon.Background.Color2 = Color.White;
             kryptonDataGridViewLibrary.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             kryptonDataGridViewLibrary.StateCommon.DataCell.Border.Rounding = 20F;
             kryptonDataGridViewLibrary.StateCommon.DataCell.Border.Width = 1;
             kryptonDataGridViewLibrary.TabIndex = 13;
+            kryptonDataGridViewLibrary.CellContentClick += kryptonDataGridViewLibrary_CellContentClick;
             // 
             // UserLibraryForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(675, 347);
+            ClientSize = new Size(679, 335);
             Controls.Add(kryptonDataGridViewLibrary);
             Controls.Add(kryptonButton4);
             Controls.Add(kryptonButton3);

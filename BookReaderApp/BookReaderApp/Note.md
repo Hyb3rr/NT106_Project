@@ -1,6 +1,6 @@
 ﻿dotnet ef migrations add InitialCreate
 dotnet ef database update
-
+ 
 dotnet add package Microsoft.Extensions.DependencyInjection
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 

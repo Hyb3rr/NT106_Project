@@ -43,6 +43,46 @@ namespace BookReaderApp.ViewForm
                     u.LastLogin
                 })
                 .ToList();
+            if (dgvUsers.Columns.Contains("UserId"))
+            {
+                dgvUsers.Columns["UserId"].HeaderText = "Mã người dùng"; // User ID
+            }
+            if (dgvUsers.Columns.Contains("Username"))
+            {
+                dgvUsers.Columns["Username"].HeaderText = "Tên đăng nhập"; // Username
+            }
+            if (dgvUsers.Columns.Contains("PasswordHash"))
+            {
+                dgvUsers.Columns["PasswordHash"].HeaderText = "Mật khẩu băm"; // Password Hash
+            }
+            if (dgvUsers.Columns.Contains("Email"))
+            {
+                dgvUsers.Columns["Email"].HeaderText = "Email"; // Email
+            }
+            if (dgvUsers.Columns.Contains("FullName"))
+            {
+                dgvUsers.Columns["FullName"].HeaderText = "Họ và tên"; // Full Name
+            }
+            if (dgvUsers.Columns.Contains("Avatar"))
+            {
+                dgvUsers.Columns["Avatar"].HeaderText = "Ảnh đại diện"; // Avatar
+            }
+            if (dgvUsers.Columns.Contains("Role"))
+            {
+                dgvUsers.Columns["Role"].HeaderText = "Vai trò"; // Role
+            }
+            if (dgvUsers.Columns.Contains("IsActive"))
+            {
+                dgvUsers.Columns["IsActive"].HeaderText = "Hoạt động"; // Is Active
+            }
+            if (dgvUsers.Columns.Contains("CreatedDate"))
+            {
+                dgvUsers.Columns["CreatedDate"].HeaderText = "Ngày tạo"; // Created Date
+            }
+            if (dgvUsers.Columns.Contains("LastLogin"))
+            {
+                dgvUsers.Columns["LastLogin"].HeaderText = "Đăng nhập cuối"; // Last Login
+            }
         }
         // ========================= QUẢN LÝ SÁCH =========================
         private void LoadBooks()
@@ -62,6 +102,48 @@ namespace BookReaderApp.ViewForm
                     b.DriveUrl
                 })
                 .ToList();
+            if (dgvBooks.Columns.Contains("BookId"))
+            {
+                dgvBooks.Columns["BookId"].HeaderText = "Mã Sách"; // Book ID
+            }
+            if (dgvBooks.Columns.Contains("Title"))
+            {
+                dgvBooks.Columns["Title"].HeaderText = "Tựa Đề"; // Title
+            }
+            if (dgvBooks.Columns.Contains("Description"))
+            {
+                dgvBooks.Columns["Description"].HeaderText = "Mô Tả"; // Description
+                                                                      // You might want to limit the width or hide this if it's too long
+                                                                      // dgvBooks.Columns["Description"].Visible = false;
+            }
+            if (dgvBooks.Columns.Contains("Author"))
+            {
+                dgvBooks.Columns["Author"].HeaderText = "Tác Giả"; // Author
+            }
+            if (dgvBooks.Columns.Contains("CategoryName"))
+            {
+                dgvBooks.Columns["CategoryName"].HeaderText = "Thể Loại"; // Category Name
+            }
+            if (dgvBooks.Columns.Contains("UploaderUsername"))
+            {
+                dgvBooks.Columns["UploaderUsername"].HeaderText = "Người Tải Lên"; // Uploader Username
+            }
+            if (dgvBooks.Columns.Contains("PublishedDate"))
+            {
+                dgvBooks.Columns["PublishedDate"].HeaderText = "Ngày Xuất Bản"; // Published Date
+            }
+            if (dgvBooks.Columns.Contains("CoverImage"))
+            {
+                dgvBooks.Columns["CoverImage"].HeaderText = "Ảnh Bìa"; // Cover Image
+                                                                       // This is likely a path or binary data, you might want to hide it or display it in an image column
+                                                                       // dgvBooks.Columns["CoverImage"].Visible = false;
+            }
+            if (dgvBooks.Columns.Contains("FilePath"))
+            {
+                dgvBooks.Columns["FilePath"].HeaderText = "Đường Dẫn Tệp"; // File Path
+                                                                           // Likely to be hidden
+                                                                           // dgvBooks.Columns["FilePath"].Visible = false;
+            }
         }
         // ========================= QUẢN LÝ THỂ LOẠI =========================
         private void LoadCategories()
@@ -74,6 +156,18 @@ namespace BookReaderApp.ViewForm
                     c.Description
                 })
                 .ToList();
+            if (dgvCategories.Columns.Contains("CategoryId"))
+            {
+                dgvCategories.Columns["CategoryId"].HeaderText = "Mã Danh Mục"; // Category ID
+            }
+            if (dgvCategories.Columns.Contains("CategoryName"))
+            {
+                dgvCategories.Columns["CategoryName"].HeaderText = "Tên Danh Mục"; // Category Name
+            }
+            if (dgvCategories.Columns.Contains("Description"))
+            {
+                dgvCategories.Columns["Description"].HeaderText = "Mô Tả"; // Description
+            }
         }
         private void AdminForm_Load(object sender, EventArgs e)
         {

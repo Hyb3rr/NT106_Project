@@ -182,6 +182,27 @@ namespace BookReaderApp.ViewForm
                     b.PublishedDate
                 })
                 .ToList();
+            // After binding, change the column headers
+            if (kryptonDataGridViewLibrary.Columns.Contains("BookId"))
+            {
+                kryptonDataGridViewLibrary.Columns["BookId"].HeaderText = "ID";
+            }
+            if (kryptonDataGridViewLibrary.Columns.Contains("Title"))
+            {
+                kryptonDataGridViewLibrary.Columns["Title"].HeaderText = "Tựa sách";
+            }
+            if (kryptonDataGridViewLibrary.Columns.Contains("Author"))
+            {
+                kryptonDataGridViewLibrary.Columns["Author"].HeaderText = "Tác giả";
+            }
+            if (kryptonDataGridViewLibrary.Columns.Contains("Category"))
+            {
+                kryptonDataGridViewLibrary.Columns["Category"].HeaderText = "Thể loại";
+            }
+            if (kryptonDataGridViewLibrary.Columns.Contains("PublishedDate"))
+            {
+                kryptonDataGridViewLibrary.Columns["PublishedDate"].HeaderText = "Ngày phát hành";
+            }
         }
         // Thêm hàm kiểm tra file PDF hợp lệ
         private bool IsValidPdfFile(string filePath)
