@@ -1,0 +1,13 @@
+# Auto detect text files and perform LF normalization
+#* text=auto
+#* text=auto eol=lf
+#*.cs text eol=crlf
+# ── Quy tắc mặc định ──────────────────────────────────────────
+# Tự động nhận diện file text và luôn lưu LF trong repo
+* text=auto eol=lf
+
+# ── Ngoại lệ cho file cần CRLF (Visual Studio, script Windows) ─
+*.cs   text eol=crlf
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+*.ps1  text eol=crlf

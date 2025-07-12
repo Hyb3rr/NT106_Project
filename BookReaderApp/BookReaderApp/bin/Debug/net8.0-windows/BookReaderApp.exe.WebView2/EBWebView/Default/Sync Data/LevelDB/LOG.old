@@ -1,3 +1,2 @@
-2025/06/29-20:00:14.552 63c Reusing MANIFEST D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\bin\Debug\net8.0-windows\BookReaderApp.exe.WebView2\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
-2025/06/29-20:00:14.553 63c Recovering log #3
-2025/06/29-20:00:14.553 63c Reusing old log D:\FINAL\edit\NT106_Project-newFE\BookReaderApp\BookReaderApp\bin\Debug\net8.0-windows\BookReaderApp.exe.WebView2\EBWebView\Default\Sync Data\LevelDB/000003.log 
+2025/07/12-09:44:22.253 4a58 Creating DB D:\1.NT106\f\NT106_Project\BookReaderApp\BookReaderApp\bin\Debug\net8.0-windows\BookReaderApp.exe.WebView2\EBWebView\Default\Sync Data\LevelDB since it was missing.
+2025/07/12-09:44:22.649 4a58 Reusing MANIFEST D:\1.NT106\f\NT106_Project\BookReaderApp\BookReaderApp\bin\Debug\net8.0-windows\BookReaderApp.exe.WebView2\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001

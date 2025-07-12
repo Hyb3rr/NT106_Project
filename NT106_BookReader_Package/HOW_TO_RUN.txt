@@ -1,0 +1,48 @@
+# BookReader Network Project - NT106
+
+## 📋 Yêu cầu hệ thống
+- Windows 10/11
+- .NET 8.0 SDK
+- Visual Studio 2022 (khuyến nghị)
+
+## 🚀 Cách chạy:
+
+### Demo cơ bản:
+```
+setup_and_run.bat
+```
+
+### Demo Load Balancing:
+```
+demo_load_balancing.bat
+```
+
+### Demo Internet (cần ngrok):
+```
+demo_internet.bat
+```
+
+## ✅ Tính năng đã hoàn thành:
+- Socket programming với TCP
+- Multi-client real-time communication
+- Load balancing với round-robin
+- SQLite database integration
+- Google Drive integration
+- Real-time chat system
+
+## 🔧 Test accounts:
+- admin / admin123 (Admin)
+- user1 / user123 (User)
+- user2 / user123 (User)
+
+## 📊 Đánh giá dự án:
+- App + Socket logic: ✅ Hoàn thành
+- Multi Client: ✅ Hoàn thành
+- Multi Server: ✅ Hoàn thành
+- Demo LAN: ✅ Hoàn thành
+- Load Balancing: ✅ Hoàn thành
+- Demo Internet: ⚠️ Cần ngrok
+- Deploy: ⚠️ Có thể deploy lên cloud
+
+## 📞 Hỗ trợ:
+Nếu gặp lỗi, chạy: clean_project.bat rồi thử lại
