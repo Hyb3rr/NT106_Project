@@ -18,18 +18,11 @@ Mã hóa mật khẩu người dùng: BCrypt.Next (Phiên bản dành cho .NetCo
 Lưu thông tin tên người dùng đăng nhập dưới dạng Base64 bằng cấu hình settings xml lưu ở phía local.<br>
 Tương lai mở rộng: VersOne.Epub, Socket,....<br>
 
-## Mindmap
-![image](https://github.com/user-attachments/assets/4a8cf1ba-4d28-4bc1-9cb1-ca9c789ae9e0)
 
-## Sơ đồ phân rã
-![Picture1](https://github.com/user-attachments/assets/7b7de580-9e63-47b4-85d5-6ea8269fe7fb)
+## Sơ đồ phân rã chức năng
+![z6796874029555_6403a0e3f777579210c96162aab124ee2](https://github.com/user-attachments/assets/67b22dc0-1104-4bb7-9c09-6954b690ac2f)
+
 
 ## Database
-![Picture2](https://github.com/user-attachments/assets/c40796df-6630-4016-8a8f-799ca9c2d128)
-
-
-
-
-
-
+![Copy of Untitled Diagram](https://github.com/user-attachments/assets/4c4ac93e-7c9d-4114-9af4-f5cb5573beaf)
 
